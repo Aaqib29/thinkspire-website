@@ -112,7 +112,17 @@
       align-items: center;
       gap: 14px;
     }
-    .nav-logo img { height: 42px; width: auto; }
+    .nav-logo-icon {
+      background: var(--ink);
+      border-radius: 6px;
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+    .nav-logo-icon img { height: 40px; width: auto; display: block; }
     .nav-logo-text {
       font-family: var(--serif);
       font-size: 21px;
@@ -1318,7 +1328,7 @@
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
       .nav-logo-text { font-size: 18px; }
-      .nav-logo img { height: 32px; }
+      .nav-logo-icon img { height: 30px; }
       section { padding: 80px 5%; }
       #manifesto { padding: 100px 5%; }
       .hero-h1 { font-size: 42px; }
@@ -1368,7 +1378,9 @@
   <!-- ── NAV ── -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire logo" />
+      <div class="nav-logo-icon">
+        <img src="ThinkSpire_New_Logo.png" alt="Thinkspire logo" />
+      </div>
       <div>
         <div class="nav-logo-text">THINK<span>SPIRE</span></div>
         <div class="nav-logo-sub">Consultancy LLP</div>
