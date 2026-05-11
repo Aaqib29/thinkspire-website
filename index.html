@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thinkspire Consultancy LLP — Legal, Regulatory, Financial & Audit Advisory</title>
+  <meta name="description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises. Co-founded by Adv. Shailendra Singh, Bombay High Court." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="ThinkSpire_New_Logo.png" />
+  <link rel="apple-touch-icon" href="ThinkSpire_New_Logo.png" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <link rel="canonical" href="https://www.thethinkspire.com/" />
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.thethinkspire.com/" />
+  <meta property="og:title" content="Thinkspire Consultancy LLP — Legal, Regulatory, Financial & Audit Advisory" />
+  <meta property="og:description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises. Co-founded by Adv. Shailendra Singh, Bombay High Court." />
+  <meta property="og:image" content="https://www.thethinkspire.com/ThinkSpire_New_Logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thinkspire Consultancy LLP" />
+  <meta name="twitter:description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises." />
+  <meta name="twitter:image" content="https://www.thethinkspire.com/ThinkSpire_New_Logo.png" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --red: #C8102E;
+      --red-light: #E8193A;
+      --red-deep: #8C0A20;
+      --red-pale: #FCEBED;
+      --ink: #0A0A0A;
+      --ink-soft: #1A1A1A;
+      --char: #2D2D2D;
+      --paper: #FAF7F2;
+      --paper-warm: #F4EFE6;
+      --line: rgba(10,10,10,0.08);
+      --line-strong: rgba(10,10,10,0.18);
+      --muted: #6B6B6B;
+      --muted-soft: #999;
+      --white: #FFFFFF;
+      --green-wa: #25D366;
+
+      --serif: 'Cormorant Garamond', 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle paper grain */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: multiply;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* ── ANNOUNCEMENT BAR ── */
+    .announce {
+      background: var(--ink);
+      color: rgba(255,255,255,0.7);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 8px 5%;
+      text-align: center;
+      position: relative;
+      z-index: 1001;
+    }
+    .announce span { color: var(--red-light); margin: 0 8px; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250,247,242,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+      padding: 0 5%;
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .nav-logo img { height: 42px; width: auto; }
+    .nav-logo-text {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 2.5px;
+      line-height: 1;
+    }
+    .nav-logo-text span { color: var(--red); }
+    .nav-logo-sub {
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 12.5px;
+      color: var(--char);
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--red); }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px; left: 0;
+      width: 100%; height: 1px;
+      background: var(--red);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--ink);
+      color: var(--white);
+      padding: 11px 22px;
+      border-radius: 2px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { background: var(--red); transform: translateY(-1px); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .hamburger span {
+      width: 24px; height: 1.5px;
+      background: var(--ink);
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px,5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px,-5px); }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 76px; left: 0; right: 0;
+      background: var(--paper);
+      border-bottom: 1px solid var(--line);
+      z-index: 999;
+      padding: 28px 5% 36px;
+      gap: 22px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 500;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .mobile-menu .mob-cta {
+      background: var(--red);
+      color: var(--white);
+      padding: 14px 20px;
+      text-align: center;
+      border: none;
+      margin-top: 8px;
+    }
+
+    /* ─────────────────────────────────────────────
+       HERO — Editorial split layout
+       Left: Headline + lead + CTAs
+       Right: Live "deck" of the 4 practice areas
+    ──────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      padding: 70px 5% 90px;
+      background: var(--paper);
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .hero-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px; height: 1px;
+      background: var(--red);
+    }
+
+    .hero-h1 {
+      font-family: var(--serif);
+      font-size: clamp(44px, 6vw, 78px);
+      font-weight: 500;
+      line-height: 1.02;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 28px;
+    }
+    .hero-h1 em {
+      font-style: italic;
+      color: var(--red);
+      font-weight: 500;
+    }
+    .hero-h1 .underline {
+      position: relative;
+      display: inline-block;
+    }
+    .hero-h1 .underline::after {
+      content: '';
+      position: absolute;
+      bottom: 0.05em; left: 0; right: 0;
+      height: 0.18em;
+      background: rgba(200,16,46,0.18);
+      z-index: -1;
+    }
+
+    .hero-lead {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--char);
+      max-width: 480px;
+      margin-bottom: 36px;
+      font-style: italic;
+    }
+
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--ink);
+      color: var(--white);
+      padding: 16px 30px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      transition: background 0.2s, transform 0.2s;
+      border-radius: 2px;
+    }
+    .btn-primary:hover { background: var(--red); transform: translateY(-2px); }
+    .btn-primary svg { width: 16px; height: 16px; fill: currentColor; }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--ink);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-link:hover { color: var(--red); border-color: var(--red); }
+    .btn-link .arrow {
+      display: inline-block;
+      transition: transform 0.25s;
+    }
+    .btn-link:hover .arrow { transform: translateX(4px); }
+
+    /* Audience pathways */
+    .audience-paths {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .audience-paths-label {
+      width: 100%;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .audience-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--char);
+      padding: 9px 16px;
+      border: 1px solid var(--line-strong);
+      border-radius: 30px;
+      transition: all 0.2s;
+      font-weight: 500;
+      background: var(--paper);
+    }
+    .audience-chip:hover {
+      background: var(--ink);
+      color: var(--white);
+      border-color: var(--ink);
+    }
+    .audience-chip .arrow {
+      font-size: 14px;
+      transition: transform 0.25s;
+    }
+    .audience-chip:hover .arrow { transform: translateX(2px); }
+
+    /* RIGHT: Practice deck — 4 practice areas as "playing cards" */
+    .practice-deck {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-self: stretch;
+    }
+
+    .practice-card {
+      position: relative;
+      background: var(--white);
+      border: 1px solid var(--line);
+      padding: 28px 24px 26px;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .practice-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 50px rgba(0,0,0,0.07);
+      border-color: var(--red);
+    }
+    .practice-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 3px;
+      background: var(--red);
+      transition: width 0.4s ease;
+    }
+    .practice-card:hover::after { width: 100%; }
+
+    /* Tilt the cards slightly for editorial feel */
+    .practice-card:nth-child(1) { transform: translateY(0) rotate(-0.5deg); }
+    .practice-card:nth-child(2) { transform: translateY(20px) rotate(0.5deg); }
+    .practice-card:nth-child(3) { transform: translateY(-10px) rotate(0.3deg); }
+    .practice-card:nth-child(4) { transform: translateY(10px) rotate(-0.3deg); }
+    .practice-card:nth-child(1):hover,
+    .practice-card:nth-child(2):hover,
+    .practice-card:nth-child(3):hover,
+    .practice-card:nth-child(4):hover {
+      transform: translateY(-6px) rotate(0deg);
+    }
+
+    .pc-num {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-style: italic;
+      color: var(--red);
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .pc-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .pc-desc {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .pc-arrow {
+      margin-top: 18px;
+      font-size: 16px;
+      color: var(--ink);
+      transition: transform 0.25s, color 0.25s;
+    }
+    .practice-card:hover .pc-arrow {
+      transform: translateX(6px);
+      color: var(--red);
+    }
+
+    /* Decorative corner triangle inspired by the logo */
+    .practice-card::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 0; height: 0;
+      border-style: solid;
+      border-width: 0 28px 28px 0;
+      border-color: transparent var(--paper-warm) transparent transparent;
+      transition: border-color 0.3s;
+    }
+    .practice-card:hover::before {
+      border-right-color: var(--red);
+    }
+
+    /* ── LIVE TICKER (Hero foot) ── */
+    .hero-ticker {
+      max-width: 1280px;
+      margin: 80px auto 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--line-strong);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .ticker-stat .v {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .ticker-stat .v sub {
+      font-size: 18px;
+      color: var(--red);
+      vertical-align: baseline;
+      bottom: 0;
+    }
+    .ticker-stat .l {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* ─────────────────────────────────────────────
+       MARQUEE STRIP
+    ──────────────────────────────────────────────── */
+    .marquee {
+      background: var(--ink);
+      color: var(--white);
+      padding: 22px 0;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+      border-top: 1px solid var(--red-deep);
+      border-bottom: 1px solid var(--red-deep);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 60px;
+      animation: scroll 40s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+    .marquee-item {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-style: italic;
+      color: rgba(255,255,255,0.85);
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    .marquee-item::after {
+      content: '✦';
+      color: var(--red);
+      font-size: 16px;
+      font-style: normal;
+    }
+    @keyframes scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ─────────────────────────────────────────────
+       SECTION COMMON
+    ──────────────────────────────────────────────── */
+    section { padding: 120px 5%; position: relative; z-index: 2; }
+    .container { max-width: 1280px; margin: 0 auto; }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .section-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px; height: 1px;
+      background: var(--red);
+    }
+
+    .section-h2 {
+      font-family: var(--serif);
+      font-size: clamp(36px, 4.5vw, 60px);
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+    .section-h2 em { font-style: italic; color: var(--red); }
+
+    .section-lead {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--char);
+      max-width: 620px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .section-header-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 60px;
+      margin-bottom: 70px;
+      flex-wrap: wrap;
+    }
+
+    /* ─────────────────────────────────────────────
+       APPROACH (How We Work)
+    ──────────────────────────────────────────────── */
+    #approach {
+      background: var(--paper-warm);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 40px;
+    }
+    .approach-step {
+      padding: 40px 30px 36px 0;
+      border-right: 1px solid var(--line);
+      position: relative;
+    }
+    .approach-step:last-child { border-right: none; padding-right: 0; }
+    .approach-step + .approach-step { padding-left: 30px; }
+
+    .as-num {
+      font-family: var(--serif);
+      font-size: 80px;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--red);
+      line-height: 1;
+      margin-bottom: 24px;
+      letter-spacing: -0.04em;
+      opacity: 0.9;
+    }
+    .as-title {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .as-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ─────────────────────────────────────────────
+       SERVICES — Editorial table layout
+    ──────────────────────────────────────────────── */
+    #services {
+      background: var(--paper);
+    }
+
+    .sector-tabs {
+      display: flex;
+      gap: 2px;
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      border-bottom: 1px solid var(--line-strong);
+    }
+    .stab {
+      font-family: var(--sans);
+      font-size: 12px;
+      padding: 16px 22px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .stab:hover { color: var(--ink); }
+    .stab.active {
+      color: var(--red);
+      border-bottom-color: var(--red);
+    }
+
+    .sectors-stack {
+      margin-top: 50px;
+    }
+
+    .sector-block {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 60px;
+      padding: 48px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: start;
+      transition: opacity 0.3s;
+    }
+    .sector-block.hidden {
+      display: none;
+    }
+    .sector-block:last-child { border-bottom: none; }
+
+    .sb-left {
+      position: sticky;
+      top: 100px;
+    }
+
+    .sb-roman {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-style: italic;
+      color: var(--red);
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .sb-name {
+      font-family: var(--serif);
+      font-size: 38px;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .sb-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .sb-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 4px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .sb-cta:hover { color: var(--red); border-color: var(--red); }
+
+    .sb-services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .service-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      transition: padding 0.25s;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .service-row:hover {
+      padding-left: 14px;
+      border-bottom-color: var(--red);
+    }
+    .service-row .sn {
+      color: var(--ink);
+      font-weight: 500;
+    }
+    .service-row .sa {
+      font-family: var(--serif);
+      color: var(--muted);
+      transition: transform 0.25s, color 0.25s;
+    }
+    .service-row:hover .sa {
+      color: var(--red);
+      transform: translateX(4px);
+    }
+    .service-row.featured .sn::before {
+      content: '★';
+      color: var(--red);
+      margin-right: 8px;
+      font-size: 11px;
+      vertical-align: middle;
+    }
+
+    /* ─────────────────────────────────────────────
+       MANIFESTO — Pull quote style
+    ──────────────────────────────────────────────── */
+    #manifesto {
+      background: var(--ink);
+      color: var(--white);
+      padding: 140px 5%;
+      position: relative;
+      overflow: hidden;
+    }
+    #manifesto::before {
+      content: '"';
+      position: absolute;
+      top: -40px; left: 4%;
+      font-family: var(--serif);
+      font-size: 380px;
+      color: rgba(200,16,46,0.12);
+      line-height: 1;
+      font-weight: 400;
+    }
+
+    .manifesto-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .manifesto-eyebrow {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red-light);
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .manifesto-text {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 400;
+      line-height: 1.35;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+    .manifesto-text em {
+      font-style: italic;
+      color: var(--red-light);
+    }
+    .manifesto-attr {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .ma-line { width: 50px; height: 1px; background: var(--red); }
+    .ma-text {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    /* ─────────────────────────────────────────────
+       VALUES (Why Us) — Asymmetric grid
+    ──────────────────────────────────────────────── */
+    #values {
+      background: var(--paper);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line-strong);
+    }
+    .value-card {
+      padding: 50px 36px 50px 0;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      transition: background 0.3s;
+      position: relative;
+    }
+    .value-card:nth-child(3n) { border-right: none; }
+    .value-card:nth-last-child(-n+3) { border-bottom: none; }
+    .value-card + .value-card { padding-left: 36px; }
+    .value-card:nth-child(3n+1) { padding-left: 0; }
+
+    .value-card:hover { background: var(--paper-warm); }
+
+    .vc-num {
+      font-family: var(--serif);
+      font-size: 13px;
+      font-style: italic;
+      color: var(--red);
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .vc-title {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+    .vc-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ─────────────────────────────────────────────
+       INSIGHTS (Blog Preview)
+    ──────────────────────────────────────────────── */
+    #insights {
+      background: var(--paper-warm);
+      border-top: 1px solid var(--line);
+    }
+
+    .insights-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .article-card:hover { transform: translateY(-4px); }
+    .article-card.featured { grid-row: span 1; }
+
+    .ac-image {
+      aspect-ratio: 16 / 10;
+      background: var(--ink);
+      margin-bottom: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card.featured .ac-image { aspect-ratio: 4 / 3; }
+
+    .ac-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 0%, rgba(200,16,46,0.7) 100%);
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+    .article-card:hover .ac-image::after { opacity: 0.8; }
+
+    .ac-image-text {
+      position: absolute;
+      bottom: 24px; left: 24px;
+      font-family: var(--serif);
+      font-size: 38px;
+      font-weight: 500;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1;
+      z-index: 1;
+      letter-spacing: -0.02em;
+    }
+    .article-card.featured .ac-image-text { font-size: 56px; }
+
+    .ac-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    .ac-cat {
+      color: var(--red);
+      font-weight: 600;
+    }
+    .ac-title {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+      transition: color 0.25s;
+    }
+    .article-card.featured .ac-title {
+      font-size: 30px;
+      line-height: 1.15;
+    }
+    .article-card:hover .ac-title { color: var(--red); }
+
+    .ac-excerpt {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    .insights-cta {
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+    }
+
+    /* ─────────────────────────────────────────────
+       CONTACT — Editorial layout
+    ──────────────────────────────────────────────── */
+    #contact {
+      background: var(--ink);
+      color: var(--white);
+      padding: 140px 5%;
+    }
+    #contact .section-eyebrow { color: var(--red-light); }
+    #contact .section-eyebrow::before { background: var(--red-light); }
+    #contact .section-h2 { color: var(--white); }
+    #contact .section-h2 em { color: var(--red-light); }
+    #contact .section-lead { color: rgba(255,255,255,0.55); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-top: 60px;
+    }
+
+    .contact-channels {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .channel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 26px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: padding 0.25s;
+    }
+    .channel:hover { padding-left: 12px; }
+    .channel-info .label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    .channel-info .value {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--white);
+      font-weight: 500;
+    }
+    .channel-arrow {
+      font-family: var(--serif);
+      font-size: 24px;
+      color: var(--red-light);
+      transition: transform 0.25s;
+    }
+    .channel:hover .channel-arrow { transform: translateX(6px); }
+
+    .contact-card {
+      background: var(--ink-soft);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 48px 42px;
+      position: relative;
+    }
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 80px; height: 1px;
+      background: var(--red);
+    }
+
+    .cc-eyebrow {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red-light);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .cc-title {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 500;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .cc-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .wa-routes {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .wa-route {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 14px 18px;
+      transition: all 0.2s;
+      color: var(--white);
+    }
+    .wa-route:hover {
+      background: rgba(37,211,102,0.08);
+      border-color: rgba(37,211,102,0.3);
+    }
+    .wa-route svg {
+      width: 18px; height: 18px;
+      fill: var(--green-wa);
+      flex-shrink: 0;
+    }
+    .wa-route .wn {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .wa-route .wd {
+      font-size: 11px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 2px;
+    }
+
+    .office-info {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .oi-block .label {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .oi-block .value {
+      font-size: 13px;
+      color: var(--white);
+      line-height: 1.5;
+    }
+
+    /* ─────────────────────────────────────────────
+       FOOTER
+    ──────────────────────────────────────────────── */
+    footer {
+      background: var(--ink);
+      color: var(--white);
+      padding: 80px 5% 36px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      z-index: 2;
+    }
+    .footer-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+      gap: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .fb-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .fb-logo img { height: 36px; }
+    .fb-logo-text {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .fb-logo-text span { color: var(--red-light); }
+    .fb-tagline {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-style: italic;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+      max-width: 280px;
+    }
+    .fb-social {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .fbs {
+      width: 36px; height: 36px;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      transition: all 0.2s;
+    }
+    .fbs:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+
+    .fcol-title {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--red-light);
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    .fcol-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .fcol-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .fcol-links a:hover { color: var(--white); padding-left: 4px; }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 24px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.5px;
+    }
+    .footer-bottom a:hover { color: var(--white); }
+
+    /* ─────────────────────────────────────────────
+       FLOATING WA
+    ──────────────────────────────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 990;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--green-wa);
+      color: var(--white);
+      padding: 14px 22px 14px 16px;
+      border-radius: 50px;
+      box-shadow: 0 12px 32px rgba(37,211,102,0.35);
+      font-size: 13px;
+      font-weight: 500;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .wa-float:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(37,211,102,0.5);
+    }
+    .wa-float svg { width: 22px; height: 22px; fill: white; }
+
+    /* ─────────────────────────────────────────────
+       ANIMATIONS
+    ──────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal.d1 { transition-delay: 0.1s; }
+    .reveal.d2 { transition-delay: 0.2s; }
+    .reveal.d3 { transition-delay: 0.3s; }
+    .reveal.d4 { transition-delay: 0.4s; }
+
+    /* ─────────────────────────────────────────────
+       RESPONSIVE
+    ──────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 60px; }
+      .practice-deck { max-width: 540px; }
+      .approach-grid { grid-template-columns: repeat(2, 1fr); }
+      .approach-step { border-bottom: 1px solid var(--line); padding: 32px 24px 32px 0; }
+      .approach-step:nth-child(2n) { border-right: none; padding-right: 0; }
+      .approach-step + .approach-step { padding-left: 24px; }
+      .approach-step:nth-child(2n+1) { padding-left: 0; }
+      .sector-block { grid-template-columns: 1fr; gap: 30px; }
+      .sb-left { position: static; }
+      .sb-name { font-size: 30px; }
+      .insights-grid { grid-template-columns: 1fr 1fr; }
+      .article-card.featured { grid-column: span 2; }
+      .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+      .footer-grid { grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+      .footer-brand { grid-column: span 3; margin-bottom: 20px; }
+      .values-grid { grid-template-columns: repeat(2, 1fr); }
+      .value-card:nth-child(3n) { border-right: 1px solid var(--line); }
+      .value-card:nth-child(2n) { border-right: none; padding-right: 0; }
+      .value-card + .value-card { padding-left: 0; }
+      .value-card:nth-child(2n+1) { padding-right: 36px; }
+      .value-card:nth-child(2n) { padding-left: 36px; }
+    }
+
+    @media (max-width: 760px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .nav-logo-text { font-size: 18px; }
+      .nav-logo img { height: 32px; }
+      section { padding: 80px 5%; }
+      #manifesto { padding: 100px 5%; }
+      .hero-h1 { font-size: 42px; }
+      .practice-deck { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .practice-card { min-height: 160px; padding: 22px 18px; }
+      .pc-title { font-size: 17px; }
+      .pc-desc { font-size: 11px; }
+      .approach-grid { grid-template-columns: 1fr; }
+      .approach-step { padding: 28px 0 !important; border-right: none; }
+      .sb-services { grid-template-columns: 1fr; }
+      .insights-grid { grid-template-columns: 1fr; }
+      .article-card.featured { grid-column: span 1; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: span 1; }
+      .values-grid { grid-template-columns: 1fr; }
+      .value-card {
+        border-right: none !important;
+        padding: 36px 0 !important;
+      }
+      .office-info { grid-template-columns: 1fr; }
+      .marquee-item { font-size: 16px; gap: 40px; }
+      .marquee-track { gap: 40px; }
+      .wa-float span.text { display: none; }
+      .wa-float { padding: 16px; border-radius: 50%; }
+    }
+
+    @media (max-width: 420px) {
+      .hero-h1 { font-size: 36px; }
+      .section-h2 { font-size: 30px; }
+      .ticker-stat .v { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WhatsApp icon -->
+  <svg style="display:none">
+    <symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- ── ANNOUNCEMENT BAR ── -->
+  <div class="announce" role="banner">
+    Now accepting retainer engagements for FY 2025–26 <span>·</span> IPO Readiness <span>·</span> SEBI Compliance <span>·</span> AIF Setup
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire logo" />
+      <div>
+        <div class="nav-logo-text">THINK<span>SPIRE</span></div>
+        <div class="nav-logo-sub">Consultancy LLP</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Practice Areas</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#values">Why Us</a></li>
+      <li><a href="#insights">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Book a Consultation →</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="closeMobile()">Practice Areas</a>
+    <a href="#approach" onclick="closeMobile()">Approach</a>
+    <a href="#values" onclick="closeMobile()">Why Us</a>
+    <a href="#insights" onclick="closeMobile()">Insights</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
+    <a href="https://wa.me/919819565341" class="mob-cta" target="_blank" rel="noopener noreferrer">WhatsApp Us Now</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-grid">
+      <!-- LEFT — Headline & CTAs -->
+      <div class="hero-left">
+        <h1 class="hero-h1 reveal d1">
+          Legal, regulatory, financial &amp;<br>
+          audit advisory — <em>under</em><br>
+          <span class="underline">one roof.</span>
+        </h1>
+        <p class="hero-lead reveal d2">
+          We help founders, CXOs, investors and IT leaders simplify the complex — from company registration to IPO readiness, M&amp;A to cyber audits.
+        </p>
+        <div class="hero-ctas reveal d3">
+          <a href="#services" class="btn-primary">
+            Explore Practice Areas
+            <svg><use href="#arrow-right"/></svg>
+          </a>
+          <a href="#contact" class="btn-link">
+            Book a consultation <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="audience-paths reveal d4">
+          <div class="audience-paths-label">Quick start — I am a…</div>
+          <a href="#services" class="audience-chip" data-audience="startup">Startup / SME <span class="arrow">→</span></a>
+          <a href="#services" class="audience-chip" data-audience="corporate">CXO / Corporate <span class="arrow">→</span></a>
+          <a href="#services" class="audience-chip" data-audience="investor">HNI / Investor <span class="arrow">→</span></a>
+          <a href="#services" class="audience-chip" data-audience="ipo">IPO Aspirant <span class="arrow">→</span></a>
+        </div>
+      </div>
+
+      <!-- RIGHT — 4-card practice deck -->
+      <div class="practice-deck reveal d2">
+        <a href="#services" class="practice-card" data-jump="legal">
+          <div>
+            <div class="pc-num">I.</div>
+            <div class="pc-title">Legal &amp;<br>Litigation</div>
+            <div class="pc-desc">Corporate law, contracts, dispute resolution, real estate.</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </a>
+        <a href="#services" class="practice-card" data-jump="regulatory">
+          <div>
+            <div class="pc-num">II.</div>
+            <div class="pc-title">Regulatory &amp;<br>Compliance</div>
+            <div class="pc-desc">SEBI, RBI, FEMA, GST, IPO readiness, AIF setup.</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </a>
+        <a href="#services" class="practice-card" data-jump="financial">
+          <div>
+            <div class="pc-num">III.</div>
+            <div class="pc-title">Financial<br>&amp; Tax</div>
+            <div class="pc-desc">M&amp;A, deal advisory, tax planning, capital structuring.</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </a>
+        <a href="#services" class="practice-card" data-jump="tech">
+          <div>
+            <div class="pc-num">IV.</div>
+            <div class="pc-title">Technology<br>&amp; Audit</div>
+            <div class="pc-desc">Cyber audits, ISO, SOC, ITGC, forensic, RBI IT framework.</div>
+          </div>
+          <div class="pc-arrow">→</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- TICKER -->
+    <div class="hero-ticker reveal">
+      <div class="ticker-stat">
+        <div class="v">200<sub>+</sub></div>
+        <div class="l">Clients served</div>
+      </div>
+      <div class="ticker-stat">
+        <div class="v">04</div>
+        <div class="l">Practice verticals</div>
+      </div>
+      <div class="ticker-stat">
+        <div class="v">01</div>
+        <div class="l">Integrated firm</div>
+      </div>
+      <div class="ticker-stat">
+        <div class="v">100<sub>%</sub></div>
+        <div class="l">Confidentiality</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-item">Bombay High Court</div>
+      <div class="marquee-item">SEBI Compliance</div>
+      <div class="marquee-item">IPO Readiness</div>
+      <div class="marquee-item">M&amp;A Advisory</div>
+      <div class="marquee-item">AIF Setup</div>
+      <div class="marquee-item">Cyber Audit</div>
+      <div class="marquee-item">FEMA &amp; RBI</div>
+      <div class="marquee-item">Real Estate Advisory</div>
+      <div class="marquee-item">Forensic Audit</div>
+      <div class="marquee-item">Bombay High Court</div>
+      <div class="marquee-item">SEBI Compliance</div>
+      <div class="marquee-item">IPO Readiness</div>
+      <div class="marquee-item">M&amp;A Advisory</div>
+      <div class="marquee-item">AIF Setup</div>
+      <div class="marquee-item">Cyber Audit</div>
+      <div class="marquee-item">FEMA &amp; RBI</div>
+      <div class="marquee-item">Real Estate Advisory</div>
+      <div class="marquee-item">Forensic Audit</div>
+    </div>
+  </div>
+
+  <!-- ── APPROACH ── -->
+  <section id="approach">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-eyebrow reveal">How We Work</div>
+          <h2 class="section-h2 reveal d1">A four-step approach,<br>built for <em>clarity.</em></h2>
+        </div>
+        <p class="section-lead reveal d2">
+          Whether it's an IPO, an M&amp;A deal, or a routine compliance audit — we follow the same disciplined method that turns complexity into a clear path forward.
+        </p>
+      </div>
+
+      <div class="approach-grid">
+        <div class="approach-step reveal">
+          <div class="as-num">01</div>
+          <div class="as-title">Listen<br>&amp; Diagnose</div>
+          <div class="as-desc">We start with your business reality, not a checklist. Every engagement begins with deep listening to understand context, risk and ambition.</div>
+        </div>
+        <div class="approach-step reveal d1">
+          <div class="as-num">02</div>
+          <div class="as-title">Map<br>&amp; Strategise</div>
+          <div class="as-desc">We map the regulatory, legal and financial landscape — and design a clear, phased strategy with milestones and accountability.</div>
+        </div>
+        <div class="approach-step reveal d2">
+          <div class="as-num">03</div>
+          <div class="as-title">Execute<br>End-to-End</div>
+          <div class="as-desc">From drafting and filings to negotiations and audits — our integrated team executes across all four verticals without handoffs.</div>
+        </div>
+        <div class="approach-step reveal d3">
+          <div class="as-num">04</div>
+          <div class="as-title">Sustain<br>&amp; Advise</div>
+          <div class="as-desc">We stay on as your retained partner — monitoring compliance, anticipating change, and advising as your business evolves.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-eyebrow reveal">Practice Areas</div>
+          <h2 class="section-h2 reveal d1">Four verticals.<br>One <em>integrated</em> firm.</h2>
+        </div>
+        <p class="section-lead reveal d2">
+          Browse all services or filter by practice. Every service is delivered by domain specialists with a single point of accountability.
+        </p>
+      </div>
+
+      <div class="sector-tabs reveal">
+        <button class="stab active" data-filter="all">All Practice Areas</button>
+        <button class="stab" data-filter="legal">Legal &amp; Litigation</button>
+        <button class="stab" data-filter="regulatory">Regulatory &amp; Compliance</button>
+        <button class="stab" data-filter="financial">Financial &amp; Tax</button>
+        <button class="stab" data-filter="tech">Technology &amp; Audit</button>
+      </div>
+
+      <div class="sectors-stack">
+
+        <!-- LEGAL -->
+        <div class="sector-block" data-sector="legal" id="sec-legal">
+          <div class="sb-left">
+            <div class="sb-roman">— I —</div>
+            <div class="sb-name">Legal &amp;<br>Litigation</div>
+            <div class="sb-desc">Practicing in the Bombay High Court, our legal team handles corporate law, contracts, dispute resolution, and complex real estate matters — for businesses and individuals.</div>
+            <a href="#contact" class="sb-cta">Speak to a Lawyer →</a>
+          </div>
+          <div class="sb-services">
+            <div class="service-row featured"><span class="sn">Corporate Law &amp; Advisory</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">Civil &amp; Corporate Litigation</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">Real Estate Legal Advisory</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">HNI Real Estate Investment</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Contract Drafting &amp; Management</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Dispute Resolution &amp; Arbitration</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Legal Due Diligence</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Policy &amp; Framework Drafting</span><span class="sa">→</span></div>
+          </div>
+        </div>
+
+        <!-- REGULATORY -->
+        <div class="sector-block" data-sector="regulatory" id="sec-regulatory">
+          <div class="sb-left">
+            <div class="sb-roman">— II —</div>
+            <div class="sb-name">Regulatory &amp;<br>Compliance</div>
+            <div class="sb-desc">From day-zero registrations to IPO filings, we navigate SEBI, RBI, FEMA, GST and Companies Act requirements — keeping your business audit-ready and growth-ready.</div>
+            <a href="#contact" class="sb-cta">Discuss Compliance →</a>
+          </div>
+          <div class="sb-services">
+            <div class="service-row featured"><span class="sn">SEBI Compliance &amp; Filings</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">IPO Readiness Consultancy</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">AIF Setup &amp; Compliance</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">RBI &amp; FEMA Compliance</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Company Setup &amp; Registration</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Udyam (MSME) Registration</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">GST Compliance &amp; Filings</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Startup India / DPIIT Registration</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">ESG &amp; Governance Strategy</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Data Privacy Compliance (DPDP)</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Board &amp; Secretarial Compliance</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Corporate Governance Advisory</span><span class="sa">→</span></div>
+          </div>
+        </div>
+
+        <!-- FINANCIAL -->
+        <div class="sector-block" data-sector="financial" id="sec-financial">
+          <div class="sb-left">
+            <div class="sb-roman">— III —</div>
+            <div class="sb-name">Financial &amp;<br>Tax Consulting</div>
+            <div class="sb-desc">Strategic financial advisory for transactions, tax planning and capital structuring — combining legal rigour with commercial pragmatism for founders, CFOs and investors.</div>
+            <a href="#contact" class="sb-cta">Schedule a Strategy Call →</a>
+          </div>
+          <div class="sb-services">
+            <div class="service-row featured"><span class="sn">M&amp;A Deal Advisory &amp; Due Diligence</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">Tax Planning &amp; Optimisation</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">Capital Advisory &amp; Structuring</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">Alternate Investment Funds (AIF)</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Income Tax Returns &amp; ITR Filing</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">TDS Compliance</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Financial Restructuring</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Business Valuations</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Risk Management Advisory</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Real Estate Investment Structuring</span><span class="sa">→</span></div>
+          </div>
+        </div>
+
+        <!-- TECH AUDIT -->
+        <div class="sector-block" data-sector="tech" id="sec-tech">
+          <div class="sb-left">
+            <div class="sb-roman">— IV —</div>
+            <div class="sb-name">Technology<br>&amp; Audit</div>
+            <div class="sb-desc">Cyber audits, ISO/SOC certifications and forensic investigations — bridging the gap between legal compliance and IT controls in a regulated digital economy.</div>
+            <a href="#contact" class="sb-cta">Request an Audit →</a>
+          </div>
+          <div class="sb-services">
+            <div class="service-row featured"><span class="sn">Cyber Audit (ISO 27001)</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">SOC 1 &amp; SOC 2 Audits</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">ITGC (IT General Controls)</span><span class="sa">→</span></div>
+            <div class="service-row featured"><span class="sn">Forensic Audit</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">RBI IT Framework Compliance</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Data Privacy &amp; DPDP Audit</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Internal Audit Advisory</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Cybersecurity Risk Assessment</span><span class="sa">→</span></div>
+            <div class="service-row"><span class="sn">Information Security Policy Review</span><span class="sa">→</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MANIFESTO ── -->
+  <section id="manifesto">
+    <div class="manifesto-inner">
+      <div class="manifesto-eyebrow reveal">Our Belief</div>
+      <p class="manifesto-text reveal d1">
+        Most firms give you fragmented advice — a lawyer here, a CA there, a consultant somewhere else. We believe modern businesses deserve <em>one trusted partner</em> who understands the full picture — and takes responsibility for it.
+      </p>
+      <div class="manifesto-attr reveal d2">
+        <div class="ma-line"></div>
+        <div class="ma-text">Thinkspire Consultancy LLP</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── VALUES ── -->
+  <section id="values">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-eyebrow reveal">The Difference</div>
+          <h2 class="section-h2 reveal d1">Why discerning founders<br>choose <em>Thinkspire.</em></h2>
+        </div>
+        <p class="section-lead reveal d2">
+          Modern businesses don't need more advice — they need clearer answers, faster execution, and fewer moving parts. These six principles shape how we work.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="vc-num">— 01 —</div>
+          <div class="vc-title">Integrated<br>by Design</div>
+          <div class="vc-desc">Legal, compliance, financial and technology under one roof. No handoffs, no gaps, no lost-in-translation moments. One firm, one accountability.</div>
+        </div>
+        <div class="value-card reveal d1">
+          <div class="vc-num">— 02 —</div>
+          <div class="vc-title">Court-tested<br>Counsel</div>
+          <div class="vc-desc">Co-founded by a practicing Advocate at the Bombay High Court — we don't just advise on the law, we argue it. That depth informs every engagement.</div>
+        </div>
+        <div class="value-card reveal d2">
+          <div class="vc-num">— 03 —</div>
+          <div class="vc-title">Capital Markets<br>Ready</div>
+          <div class="vc-desc">From IPO readiness and SEBI filings to AIF setup and M&amp;A — we have the full capital markets stack, configured for Indian and cross-border deals.</div>
+        </div>
+        <div class="value-card reveal">
+          <div class="vc-num">— 04 —</div>
+          <div class="vc-title">Founder-First<br>Thinking</div>
+          <div class="vc-desc">We translate compliance jargon into commercial decisions. Every memo, every filing, every audit — written for clarity, not for the file cabinet.</div>
+        </div>
+        <div class="value-card reveal d1">
+          <div class="vc-num">— 05 —</div>
+          <div class="vc-title">Tech-savvy<br>Compliance</div>
+          <div class="vc-desc">Cyber audits, ITGC, forensic and RBI IT framework — our auditors speak both legal and technical fluently, which is rare and increasingly essential.</div>
+        </div>
+        <div class="value-card reveal d2">
+          <div class="vc-num">— 06 —</div>
+          <div class="vc-title">Confidential<br>by Default</div>
+          <div class="vc-desc">Every engagement is run with the same discretion as a sensitive M&amp;A. Privileged communication, watertight NDAs, and no exceptions — ever.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INSIGHTS ── -->
+  <section id="insights">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-eyebrow reveal">Insights &amp; Updates</div>
+          <h2 class="section-h2 reveal d1">Sharp commentary on<br>law, regulation &amp; <em>capital.</em></h2>
+        </div>
+        <p class="section-lead reveal d2">
+          Concise, practical writing on the regulatory and legal shifts shaping Indian businesses — written by our team for founders, CXOs and investors.
+        </p>
+      </div>
+
+      <div class="insights-grid">
+        <article class="article-card featured reveal">
+          <div class="ac-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #8C0A20 100%);">
+            <div class="ac-image-text">SEBI<br>Reforms<br><em>2025</em></div>
+          </div>
+          <div class="ac-meta">
+            <span class="ac-cat">Regulatory</span>
+            <span>·</span>
+            <span>8 min read</span>
+            <span>·</span>
+            <span>March 2025</span>
+          </div>
+          <h3 class="ac-title">SEBI's 2025 Disclosure Reforms: What every IPO-bound company needs to know</h3>
+          <p class="ac-excerpt">A clause-by-clause breakdown of the new disclosure requirements, the timeline for compliance, and the practical implications for companies preparing their DRHP filings this fiscal year.</p>
+        </article>
+
+        <article class="article-card reveal d1">
+          <div class="ac-image" style="background: linear-gradient(135deg, #2D2D2D 0%, #C8102E 100%);">
+            <div class="ac-image-text">M&amp;A<br>Diligence</div>
+          </div>
+          <div class="ac-meta">
+            <span class="ac-cat">M&amp;A</span>
+            <span>·</span>
+            <span>5 min</span>
+          </div>
+          <h3 class="ac-title">Five red flags we always check in mid-market M&amp;A due diligence</h3>
+          <p class="ac-excerpt">From shareholder agreements to ESOP overhangs, the issues that can quietly kill a deal — and how to surface them early.</p>
+        </article>
+
+        <article class="article-card reveal d2">
+          <div class="ac-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #6B6B6B 100%);">
+            <div class="ac-image-text">DPDP<br><em>Act</em></div>
+          </div>
+          <div class="ac-meta">
+            <span class="ac-cat">Compliance</span>
+            <span>·</span>
+            <span>6 min</span>
+          </div>
+          <h3 class="ac-title">DPDP Act compliance: The 90-day playbook for SMEs</h3>
+          <p class="ac-excerpt">A practical, prioritised checklist for businesses that need to get DPDP-ready without overhauling their entire data infrastructure.</p>
+        </article>
+
+        <article class="article-card reveal">
+          <div class="ac-image" style="background: linear-gradient(135deg, #C8102E 0%, #1a1a1a 100%);">
+            <div class="ac-image-text">AIF<br>Setup</div>
+          </div>
+          <div class="ac-meta">
+            <span class="ac-cat">Capital Markets</span>
+            <span>·</span>
+            <span>7 min</span>
+          </div>
+          <h3 class="ac-title">Setting up a Category II AIF: The end-to-end roadmap</h3>
+          <p class="ac-excerpt">Structuring options, capital commitments, sponsor obligations, and the SEBI registration timeline — explained for first-time fund managers.</p>
+        </article>
+
+        <article class="article-card reveal d1">
+          <div class="ac-image" style="background: linear-gradient(135deg, #2D2D2D 0%, #8C0A20 100%);">
+            <div class="ac-image-text">Cyber<br>Audit</div>
+          </div>
+          <div class="ac-meta">
+            <span class="ac-cat">Audit</span>
+            <span>·</span>
+            <span>4 min</span>
+          </div>
+          <h3 class="ac-title">ISO 27001 vs SOC 2: Which framework is right for your business?</h3>
+          <p class="ac-excerpt">A practical comparison of the two most-requested security frameworks — when each makes sense, what they cost, and how long they take.</p>
+        </article>
+
+        <article class="article-card reveal d2">
+          <div class="ac-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #C8102E 100%);">
+            <div class="ac-image-text">Real<br>Estate</div>
+          </div>
+          <div class="ac-meta">
+            <span class="ac-cat">Real Estate</span>
+            <span>·</span>
+            <span>5 min</span>
+          </div>
+          <h3 class="ac-title">RERA, FEMA &amp; the HNI: Structuring real estate investments cleanly</h3>
+          <p class="ac-excerpt">The regulatory considerations every high-net-worth investor should weigh before committing to commercial or pre-launch residential plays.</p>
+        </article>
+      </div>
+
+      <div class="insights-cta">
+        <a href="mailto:communication@thethinkspire.com?subject=Insights%20Subscription" class="btn-link">Subscribe for insights <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header-row">
+        <div>
+          <div class="section-eyebrow reveal">Begin a Conversation</div>
+          <h2 class="section-h2 reveal d1">Tell us what you're<br>up against. We'll <em>respond</em><br>within hours.</h2>
+        </div>
+        <p class="section-lead reveal d2">
+          Whether it's a complex litigation, an IPO-readiness sprint, or a quick GST query — there's a direct line for each.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-channels reveal">
+          <a href="https://wa.me/919819565341" target="_blank" rel="noopener noreferrer" class="channel">
+            <div class="channel-info">
+              <div class="label">WhatsApp · Fastest Response</div>
+              <div class="value">+91 98195 65341</div>
+            </div>
+            <div class="channel-arrow">→</div>
+          </a>
+          <a href="mailto:communication@thethinkspire.com" class="channel">
+            <div class="channel-info">
+              <div class="label">Email</div>
+              <div class="value">communication@thethinkspire.com</div>
+            </div>
+            <div class="channel-arrow">→</div>
+          </a>
+          <a href="tel:+919819565341" class="channel">
+            <div class="channel-info">
+              <div class="label">Direct Call</div>
+              <div class="value">+91 98195 65341</div>
+            </div>
+            <div class="channel-arrow">→</div>
+          </a>
+          <a href="mailto:communication@thethinkspire.com?subject=Office%20Visit%20Request" class="channel">
+            <div class="channel-info">
+              <div class="label">Office Visit · By appointment</div>
+              <div class="value">Mumbai, Maharashtra</div>
+            </div>
+            <div class="channel-arrow">→</div>
+          </a>
+          <a href="https://www.linkedin.com/company/thinkspire-consultancy-llp/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="channel">
+            <div class="channel-info">
+              <div class="label">LinkedIn</div>
+              <div class="value">/thinkspire-consultancy-llp</div>
+            </div>
+            <div class="channel-arrow">→</div>
+          </a>
+        </div>
+
+        <div class="contact-card reveal d2">
+          <div class="cc-eyebrow">Direct WhatsApp Routing</div>
+          <h3 class="cc-title">Skip the<br>switchboard.</h3>
+          <p class="cc-desc">Choose your practice area below and you'll be routed straight to the right specialist on WhatsApp — typical response within minutes.</p>
+
+          <div class="wa-routes">
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20legal%20advisory" target="_blank" rel="noopener noreferrer" class="wa-route">
+              <svg><use href="#wa"/></svg>
+              <div>
+                <div class="wn">Legal &amp; Litigation</div>
+                <div class="wd">Corporate, contracts, disputes, real estate</div>
+              </div>
+            </a>
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20regulatory%20help" target="_blank" rel="noopener noreferrer" class="wa-route">
+              <svg><use href="#wa"/></svg>
+              <div>
+                <div class="wn">Regulatory &amp; Compliance</div>
+                <div class="wd">SEBI, RBI, FEMA, GST, IPO, AIF</div>
+              </div>
+            </a>
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20financial%20advisory" target="_blank" rel="noopener noreferrer" class="wa-route">
+              <svg><use href="#wa"/></svg>
+              <div>
+                <div class="wn">Financial &amp; Tax</div>
+                <div class="wd">M&amp;A, tax, capital, AIF, valuations</div>
+              </div>
+            </a>
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20an%20audit" target="_blank" rel="noopener noreferrer" class="wa-route">
+              <svg><use href="#wa"/></svg>
+              <div>
+                <div class="wn">Technology &amp; Audit</div>
+                <div class="wd">ISO, SOC, ITGC, cyber, forensic</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="office-info">
+            <div class="oi-block">
+              <div class="label">Working Hours</div>
+              <div class="value">Monday – Saturday<br>10:00 AM – 7:00 PM IST</div>
+            </div>
+            <div class="oi-block">
+              <div class="label">Office</div>
+              <div class="value">Mumbai, Maharashtra<br>India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logo">
+          <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" onerror="this.style.display='none'" />
+          <div class="fb-logo-text">THINK<span>SPIRE</span></div>
+        </div>
+        <p class="fb-tagline">Integrated legal, regulatory, financial and audit advisory for the modern Indian business.</p>
+        <div class="fb-social">
+          <a href="https://www.linkedin.com/company/thinkspire-consultancy-llp/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="fbs" aria-label="LinkedIn">in</a>
+          <a href="https://wa.me/919819565341" target="_blank" rel="noopener noreferrer" class="fbs" aria-label="WhatsApp">W</a>
+          <a href="mailto:communication@thethinkspire.com" class="fbs" aria-label="Email">@</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fcol-title">Legal</div>
+        <div class="fcol-links">
+          <a href="#sec-legal">Corporate Law</a>
+          <a href="#sec-legal">Litigation</a>
+          <a href="#sec-legal">Real Estate</a>
+          <a href="#sec-legal">Contracts</a>
+          <a href="#sec-legal">Due Diligence</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fcol-title">Regulatory</div>
+        <div class="fcol-links">
+          <a href="#sec-regulatory">SEBI Filings</a>
+          <a href="#sec-regulatory">IPO Readiness</a>
+          <a href="#sec-regulatory">AIF Setup</a>
+          <a href="#sec-regulatory">RBI &amp; FEMA</a>
+          <a href="#sec-regulatory">Company Setup</a>
+          <a href="#sec-regulatory">GST &amp; Tax</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fcol-title">Financial</div>
+        <div class="fcol-links">
+          <a href="#sec-financial">M&amp;A Advisory</a>
+          <a href="#sec-financial">Tax Planning</a>
+          <a href="#sec-financial">Capital Advisory</a>
+          <a href="#sec-financial">Valuations</a>
+          <a href="#sec-financial">Risk Management</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="fcol-title">Audit &amp; Tech</div>
+        <div class="fcol-links">
+          <a href="#sec-tech">Cyber Audit</a>
+          <a href="#sec-tech">SOC 1 / SOC 2</a>
+          <a href="#sec-tech">ITGC</a>
+          <a href="#sec-tech">Forensic Audit</a>
+          <a href="#sec-tech">DPDP Compliance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Thinkspire Consultancy LLP · All rights reserved.</span>
+      <span>
+        <a href="mailto:communication@thethinkspire.com?subject=Privacy%20Policy%20Query">Privacy Policy</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:communication@thethinkspire.com?subject=Terms%20Query">Terms</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:communication@thethinkspire.com?subject=Legal%20Disclaimer">Disclaimer</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- WA FLOAT -->
+  <a href="https://wa.me/919819565341" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg><use href="#wa"/></svg>
+    <span class="text">WhatsApp Us</span>
+  </a>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }
+
+    // Sector tabs
+    const tabs = document.querySelectorAll('.stab');
+    const sectorBlocks = document.querySelectorAll('.sector-block');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const f = tab.dataset.filter;
+        sectorBlocks.forEach(b => {
+          b.classList.toggle('hidden', f !== 'all' && b.dataset.sector !== f);
+        });
+      });
+    });
+
+    // Audience pathway → jump to relevant sector
+    document.querySelectorAll('.audience-chip').forEach(chip => {
+      chip.addEventListener('click', (e) => {
+        const aud = chip.dataset.audience;
+        const map = {
+          startup: 'regulatory',
+          corporate: 'legal',
+          investor: 'financial',
+          ipo: 'regulatory'
+        };
+        const target = map[aud];
+        if (target) {
+          // Activate the right tab
+          tabs.forEach(t => t.classList.toggle('active', t.dataset.filter === target));
+          sectorBlocks.forEach(b => {
+            b.classList.toggle('hidden', b.dataset.sector !== target);
+          });
+        }
+      });
+    });
+
+    // Practice card → jump to specific sector
+    document.querySelectorAll('.practice-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        const target = card.dataset.jump;
+        if (target) {
+          tabs.forEach(t => t.classList.toggle('active', t.dataset.filter === target));
+          sectorBlocks.forEach(b => {
+            b.classList.toggle('hidden', b.dataset.sector !== target);
+          });
+        }
+      });
+    });
+
+    // Reveal animations
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => obs.observe(el));
+
+    // Service rows & article cards → scroll to contact
+    document.querySelectorAll('.service-row, .article-card').forEach(el => {
+      el.addEventListener('click', () => {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Nav scroll state
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  </script>
+</body>
+</html>
