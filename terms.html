@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Thinkspire Consultancy LLP</title>
+  <meta name="description" content="Terms of Use for the Thinkspire Consultancy LLP website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="ThinkSpire_New_Logo.png" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --red: #C8102E; --ink: #0A0A0A; --char: #2D2D2D; --white: #FFFFFF;
+      --off-white: #FAFAFA; --line: rgba(10,10,10,0.07); --line-strong: rgba(10,10,10,0.16);
+      --muted: #6B6B6B; --serif: 'Playfair Display', serif; --sans: 'Inter Tight', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--white); color: var(--ink); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.94); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--line);
+      padding: 0 5%; height: 80px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 14px; }
+    .nav-logo img { height: 46px; width: auto; }
+    .nav-logo-text { font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; line-height: 1; }
+    .nav-logo-text span { color: var(--red); }
+    .nav-logo-sub { font-family: var(--sans); font-size: 9px; color: var(--muted); letter-spacing: 2.5px; text-transform: uppercase; margin-top: 5px; font-weight: 500; }
+    .nav-back { font-size: 12.5px; font-weight: 500; color: var(--muted); display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--red); }
+
+    .page-hero {
+      background: var(--ink); color: var(--white);
+      padding: 90px 5% 80px;
+    }
+    .page-hero-inner { max-width: 860px; margin: 0 auto; }
+    .page-eyebrow {
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(200,16,46,0.9); font-weight: 600; margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--red); }
+    .page-h1 { font-family: var(--serif); font-size: clamp(38px, 5vw, 60px); font-weight: 600; line-height: 1.05; letter-spacing: -0.025em; color: var(--white); margin-bottom: 20px; }
+    .page-meta { font-size: 13px; color: rgba(255,255,255,0.45); letter-spacing: 0.5px; }
+
+    .doc-body { max-width: 860px; margin: 0 auto; padding: 80px 5% 120px; }
+
+    .doc-section { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid var(--line); }
+    .doc-section:last-child { border-bottom: none; margin-bottom: 0; }
+
+    .doc-h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; color: var(--ink); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 20px; }
+    .doc-h2 em { font-style: italic; color: var(--red); }
+    .doc-h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-top: 32px; margin-bottom: 12px; letter-spacing: -0.01em; }
+
+    .doc-body p { font-size: 15px; color: var(--char); line-height: 1.75; margin-bottom: 18px; }
+    .doc-body ul, .doc-body ol { padding-left: 22px; margin-bottom: 18px; }
+    .doc-body li { font-size: 15px; color: var(--char); line-height: 1.7; margin-bottom: 8px; }
+    .doc-body strong { color: var(--ink); font-weight: 600; }
+    .doc-body a { color: var(--red); border-bottom: 1px solid rgba(200,16,46,0.3); transition: border-color 0.2s; }
+    .doc-body a:hover { border-color: var(--red); }
+
+    .highlight-box {
+      background: #F7F7F7; border-left: 3px solid var(--red);
+      padding: 22px 28px; margin: 28px 0; border-radius: 0 4px 4px 0;
+    }
+    .highlight-box p { margin-bottom: 0; font-size: 14px; }
+
+    .contact-block {
+      background: var(--ink); color: var(--white);
+      padding: 36px 40px; margin-top: 50px;
+    }
+    .contact-block .label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(200,16,46,0.9); font-weight: 600; margin-bottom: 12px; }
+    .contact-block p { color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
+    .contact-block a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.3); }
+
+    footer {
+      background: var(--ink); color: var(--white);
+      padding: 40px 5%;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.4px;
+    }
+    footer a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    footer a:hover { color: var(--white); }
+    footer .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 12px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      .page-hero { padding: 60px 5% 50px; }
+      .doc-body { padding: 50px 5% 80px; }
+      .contact-block { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" />
+      <div>
+        <div class="nav-logo-text">THINK<span>SPIRE</span></div>
+        <div class="nav-logo-sub">Consultancy LLP</div>
+      </div>
+    </a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-eyebrow">Legal</div>
+      <h1 class="page-h1">Terms of Use</h1>
+      <p class="page-meta">Last updated: May 2025 &nbsp;·&nbsp; Thinkspire Consultancy LLP</p>
+    </div>
+  </div>
+
+  <div class="doc-body">
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Agreement to these terms</h2>
+      <p>These Terms of Use govern your access to and use of the website located at <strong>thethinkspire.com</strong> (the <strong>"Website"</strong>), operated by <strong>Thinkspire Consultancy LLP</strong>, a limited liability partnership registered in India with its principal office in Mumbai, Maharashtra (<strong>"Thinkspire"</strong>, <strong>"we"</strong>, <strong>"us"</strong>, or <strong>"our"</strong>).</p>
+      <p>By accessing or using this Website, you agree to be bound by these Terms of Use. If you do not agree, please do not use this Website.</p>
+      <div class="highlight-box">
+        <p><strong>Important:</strong> Nothing on this Website constitutes legal, financial, tax, or regulatory advice. Use of this Website does not create any professional relationship between you and Thinkspire. Please read our <a href="disclaimer.html">Disclaimer</a> carefully.</p>
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Use of the <em>Website</em></h2>
+      <h3 class="doc-h3">Permitted use</h3>
+      <p>You may access and use this Website for lawful personal or commercial purposes — to learn about our services, read our published insights, and contact us for professional enquiries.</p>
+      <h3 class="doc-h3">Prohibited use</h3>
+      <p>You must not:</p>
+      <ul>
+        <li>Use the Website in any way that violates applicable Indian or international law or regulation</li>
+        <li>Copy, reproduce, distribute, or exploit any content from the Website without our prior written consent</li>
+        <li>Use automated tools (scrapers, bots, crawlers) to extract content from the Website</li>
+        <li>Attempt to gain unauthorised access to any part of the Website or its underlying systems</li>
+        <li>Transmit any unsolicited promotional material (spam) via the Website's contact channels</li>
+        <li>Engage in any conduct that could damage, disable, or impair the Website or interfere with other users' access</li>
+        <li>Impersonate Thinkspire or any of its personnel in any communication</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Intellectual property</h2>
+      <p>All content on this Website — including text, articles, graphics, logos, layout, and design — is the intellectual property of Thinkspire Consultancy LLP or its licensors and is protected under Indian copyright law and international treaties.</p>
+      <p>You may print or download individual pages for your personal, non-commercial reference. You must not:</p>
+      <ul>
+        <li>Republish, reproduce, or redistribute any content without our written permission</li>
+        <li>Modify or create derivative works based on our content</li>
+        <li>Use our name, logo, or trademarks without prior written consent</li>
+        <li>Remove or alter any copyright, trademark, or other proprietary notices</li>
+      </ul>
+      <p>Requests for permission to reproduce or reference our content may be directed to <a href="mailto:communication@thethinkspire.com">communication@thethinkspire.com</a>.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Content and <em>accuracy</em></h2>
+      <p>We take care to ensure the content on this Website is accurate and current. However, legal and regulatory environments change frequently. We make no representations or warranties — express or implied — about the completeness, accuracy, reliability, suitability, or availability of any information on this Website for any purpose.</p>
+      <p>All articles, insights, and written content published on this Website reflect the state of law and regulation as of the date of publication. They should not be relied upon as current without independent verification. Law is fact-specific; what applies in one situation may not apply in another.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">No professional relationship</h2>
+      <p>Accessing this Website, reading our content, or contacting us through any channel listed on the Website does <strong>not</strong> create a lawyer-client, advisor-client, or any other professional relationship. No such relationship is formed until a formal engagement letter has been signed by both parties.</p>
+      <p>If you are facing an urgent legal, regulatory, or financial matter, please contact us directly and do not rely solely on information found on this Website.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Third-party links</h2>
+      <p>This Website may include links to third-party websites (including LinkedIn, WhatsApp, and other platforms). These links are provided for convenience only. Thinkspire does not endorse, control, or take responsibility for the content, privacy practices, or availability of any third-party website. Accessing such websites is at your own risk.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">WhatsApp communications</h2>
+      <p>This Website provides direct WhatsApp links for contacting our team. By initiating contact via WhatsApp, you acknowledge that WhatsApp is operated by Meta Platforms Inc. and is subject to its own terms of service and privacy policy. Thinkspire is not responsible for the security, reliability, or availability of the WhatsApp platform. For confidential matters, we recommend initiating contact by phone or encrypted email.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Limitation of liability</h2>
+      <p>To the fullest extent permitted by applicable law, Thinkspire Consultancy LLP, its partners, employees, and advisors shall not be liable for any direct, indirect, incidental, consequential, or punitive loss or damage arising from:</p>
+      <ul>
+        <li>Your use of, or inability to use, this Website</li>
+        <li>Any reliance placed on content or information published on this Website</li>
+        <li>Any interruption, error, or security breach affecting the Website</li>
+        <li>Any third-party content or services linked from this Website</li>
+      </ul>
+      <p>This limitation does not affect any liability that cannot be excluded under Indian law.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Governing law and jurisdiction</h2>
+      <p>These Terms of Use are governed by and construed in accordance with the laws of India. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts in Mumbai, Maharashtra, India.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Changes to these terms</h2>
+      <p>We reserve the right to modify these Terms of Use at any time. The revised terms will be posted on this page with an updated date. Continued use of the Website after any modification constitutes your acceptance of the revised terms. We encourage you to review this page periodically.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Contact</h2>
+      <p>Questions or concerns about these Terms of Use may be directed to:</p>
+      <div class="contact-block">
+        <div class="label">Thinkspire Consultancy LLP</div>
+        <p>Mumbai, Maharashtra, India</p>
+        <p>Email: <a href="mailto:communication@thethinkspire.com">communication@thethinkspire.com</a></p>
+        <p>Phone / WhatsApp: <a href="https://wa.me/919819565341">+91 98195 65341</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>© 2025 Thinkspire Consultancy LLP · All rights reserved.</span>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </footer>
+
+</body>
+</html>

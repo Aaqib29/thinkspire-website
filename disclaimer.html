@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disclaimer — Thinkspire Consultancy LLP</title>
+  <meta name="description" content="Professional disclaimer for Thinkspire Consultancy LLP — website content does not constitute legal, financial, or regulatory advice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="ThinkSpire_New_Logo.png" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --red: #C8102E; --ink: #0A0A0A; --char: #2D2D2D; --white: #FFFFFF;
+      --off-white: #FAFAFA; --line: rgba(10,10,10,0.07); --line-strong: rgba(10,10,10,0.16);
+      --muted: #6B6B6B; --serif: 'Playfair Display', serif; --sans: 'Inter Tight', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--white); color: var(--ink); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.94); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--line);
+      padding: 0 5%; height: 80px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 14px; }
+    .nav-logo img { height: 46px; width: auto; }
+    .nav-logo-text { font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; line-height: 1; }
+    .nav-logo-text span { color: var(--red); }
+    .nav-logo-sub { font-family: var(--sans); font-size: 9px; color: var(--muted); letter-spacing: 2.5px; text-transform: uppercase; margin-top: 5px; font-weight: 500; }
+    .nav-back { font-size: 12.5px; font-weight: 500; color: var(--muted); display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--red); }
+
+    .page-hero {
+      background: var(--ink); color: var(--white);
+      padding: 90px 5% 80px;
+    }
+    .page-hero-inner { max-width: 860px; margin: 0 auto; }
+    .page-eyebrow {
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(200,16,46,0.9); font-weight: 600; margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--red); }
+    .page-h1 { font-family: var(--serif); font-size: clamp(38px, 5vw, 60px); font-weight: 600; line-height: 1.05; letter-spacing: -0.025em; color: var(--white); margin-bottom: 20px; }
+    .page-meta { font-size: 13px; color: rgba(255,255,255,0.45); letter-spacing: 0.5px; }
+
+    .doc-body { max-width: 860px; margin: 0 auto; padding: 80px 5% 120px; }
+
+    .doc-section { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid var(--line); }
+    .doc-section:last-child { border-bottom: none; margin-bottom: 0; }
+
+    .doc-h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; color: var(--ink); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 20px; }
+    .doc-h2 em { font-style: italic; color: var(--red); }
+    .doc-h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-top: 32px; margin-bottom: 12px; letter-spacing: -0.01em; }
+
+    .doc-body p { font-size: 15px; color: var(--char); line-height: 1.75; margin-bottom: 18px; }
+    .doc-body ul, .doc-body ol { padding-left: 22px; margin-bottom: 18px; }
+    .doc-body li { font-size: 15px; color: var(--char); line-height: 1.7; margin-bottom: 8px; }
+    .doc-body strong { color: var(--ink); font-weight: 600; }
+    .doc-body a { color: var(--red); border-bottom: 1px solid rgba(200,16,46,0.3); transition: border-color 0.2s; }
+    .doc-body a:hover { border-color: var(--red); }
+
+    .highlight-box {
+      background: #F7F7F7; border-left: 3px solid var(--red);
+      padding: 22px 28px; margin: 28px 0; border-radius: 0 4px 4px 0;
+    }
+    .highlight-box p { margin-bottom: 0; font-size: 14px; }
+
+    .notice-block {
+      background: #FFF8F8; border: 1px solid rgba(200,16,46,0.2);
+      padding: 28px 32px; margin-bottom: 50px;
+    }
+    .notice-block .notice-label {
+      font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--red); font-weight: 600; margin-bottom: 12px;
+    }
+    .notice-block p { font-size: 14px; color: var(--char); line-height: 1.7; margin-bottom: 0; }
+
+    .contact-block {
+      background: var(--ink); color: var(--white);
+      padding: 36px 40px; margin-top: 50px;
+    }
+    .contact-block .label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(200,16,46,0.9); font-weight: 600; margin-bottom: 12px; }
+    .contact-block p { color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
+    .contact-block a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.3); }
+
+    footer {
+      background: var(--ink); color: var(--white);
+      padding: 40px 5%;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.4px;
+    }
+    footer a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    footer a:hover { color: var(--white); }
+    footer .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 12px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      .page-hero { padding: 60px 5% 50px; }
+      .doc-body { padding: 50px 5% 80px; }
+      .contact-block { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" />
+      <div>
+        <div class="nav-logo-text">THINK<span>SPIRE</span></div>
+        <div class="nav-logo-sub">Consultancy LLP</div>
+      </div>
+    </a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-eyebrow">Legal</div>
+      <h1 class="page-h1">Disclaimer</h1>
+      <p class="page-meta">Last updated: May 2025 &nbsp;·&nbsp; Thinkspire Consultancy LLP</p>
+    </div>
+  </div>
+
+  <div class="doc-body">
+
+    <div class="notice-block">
+      <div class="notice-label">Important Notice</div>
+      <p>The content on this website is published for general informational purposes only. It does not constitute legal, financial, tax, or regulatory advice, and must not be relied upon as such. Reading this website or contacting us does not create any professional relationship. Formal advice is only provided under a signed engagement letter.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">No legal or <em>professional advice</em></h2>
+      <p>Thinkspire Consultancy LLP (<strong>"Thinkspire"</strong>) is an integrated consultancy providing legal, regulatory, financial, and technology advisory services. The content published on this website — including articles, insights, service descriptions, and any other written material — is intended solely to provide general background information about legal, regulatory, financial, and compliance topics.</p>
+      <p>This content:</p>
+      <ul>
+        <li>Does <strong>not</strong> constitute legal advice, financial advice, tax advice, regulatory advice, or any other form of professional advice</li>
+        <li>Does <strong>not</strong> create a lawyer-client, advisor-client, or fiduciary relationship between you and Thinkspire</li>
+        <li>Should <strong>not</strong> be used as a substitute for advice from a qualified professional who is aware of your specific circumstances</li>
+        <li>May <strong>not</strong> be current, complete, or applicable to your jurisdiction or situation</li>
+      </ul>
+      <div class="highlight-box">
+        <p>If you have a specific legal, financial, regulatory, or tax matter, please contact us directly to discuss whether and how we can assist. Every situation is fact-specific, and general information published on a website is rarely sufficient to address a real-world problem.</p>
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Legal and regulatory information</h2>
+      <p>Indian law, regulatory guidance, and compliance requirements change frequently. While we make reasonable efforts to ensure the content on this website is accurate and up to date at the time of publication, we make no warranty — express or implied — as to its accuracy, completeness, or currency.</p>
+      <p>In particular:</p>
+      <ul>
+        <li>Laws referenced may have been amended, repealed, or supplemented since publication</li>
+        <li>SEBI, RBI, MCA, income-tax, and GST guidance evolves continuously — specific figures, thresholds, and procedures may differ from what is described</li>
+        <li>Court decisions may alter the legal landscape in ways not reflected in our published content</li>
+        <li>Regulatory practice and enforcement priorities shift over time</li>
+      </ul>
+      <p>Always verify information with a qualified professional and by reference to primary sources — official gazette notifications, SEBI circulars, RBI master directions, and the relevant statute — before taking any action.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Financial and tax information</h2>
+      <p>Any references to tax rates, financial thresholds, investment structures, market conditions, or financial outcomes on this website are illustrative only. They do not represent advice tailored to your financial position, risk appetite, or tax profile.</p>
+      <p>Financial decisions — particularly those involving capital markets, M&amp;A, fund structures, and tax planning — have significant consequences. They should only be made after consulting qualified professionals and conducting appropriate due diligence specific to your circumstances.</p>
+      <p>Past results described in any context on this website do not guarantee future outcomes.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Technology and audit information</h2>
+      <p>Information about cybersecurity frameworks, data protection laws, audit standards (ISO, SOC, ITGC), and technology compliance on this website reflects general practice and published standards. Specific compliance requirements vary by industry, regulatory category, company size, and the jurisdiction(s) in which you operate.</p>
+      <p>No cybersecurity assessment, vulnerability analysis, or compliance determination should be made solely on the basis of content published on this website.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Insights and articles</h2>
+      <p>The articles and insights published on this website represent the views of the Thinkspire editorial team as of their respective publication dates. They are designed to provide a general overview of legal and regulatory developments and are not comprehensive analyses of any topic.</p>
+      <p>These articles:</p>
+      <ul>
+        <li>Reflect the authors' general perspective and may not represent the full range of legal or regulatory positions on a topic</li>
+        <li>Are not updated continuously — the law may have changed since publication</li>
+        <li>Are not suitable as the sole basis for any professional, business, or personal decision</li>
+        <li>Do not constitute marketing communications or solicitations in any jurisdiction where such communications are regulated</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Bombay High Court practice</h2>
+      <p>References to Thinkspire's practice at the Bombay High Court and other tribunals describe the general scope of our legal team's practice. These references do not imply a guaranteed outcome in any litigation matter. Litigation is inherently unpredictable, and prior results in one matter do not predict the outcome of any future matter.</p>
+      <p>Engaging a legal practitioner does not guarantee any particular result. The decision to litigate or pursue any legal remedy should be made only after a thorough assessment of the specific facts, applicable law, and available evidence.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Bar Council of India rules</h2>
+      <p>Under the rules of the Bar Council of India, advocates are not permitted to advertise or solicit work. The content on this website is published strictly for informational purposes and does not constitute solicitation or advertisement of legal services.</p>
+      <p>By accessing this website and reading its content, you confirm that you are doing so of your own accord and for informational purposes only, and that no solicitation or inducement of any kind has been made to you by Thinkspire or any of its associates.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Limitation of liability</h2>
+      <p>Thinkspire Consultancy LLP, its partners, employees, and associates expressly disclaim all liability for any loss or damage — direct, indirect, incidental, consequential, or otherwise — arising from:</p>
+      <ul>
+        <li>Reliance on any content published on this website for any purpose</li>
+        <li>Any action or inaction taken on the basis of such content</li>
+        <li>Any inaccuracy, error, or omission in the content</li>
+        <li>Any interruption, unavailability, or security failure of the website</li>
+      </ul>
+      <p>This disclaimer does not exclude liability that cannot lawfully be excluded under Indian law.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Seek qualified advice</h2>
+      <p>If any content on this website has raised questions relevant to your personal or business situation, we encourage you to contact us or another qualified professional for advice specific to your circumstances. We are ready to help — and committed to providing the kind of clear, practical counsel that this website can only gesture at in general terms.</p>
+      <div class="contact-block">
+        <div class="label">Contact Thinkspire</div>
+        <p>Mumbai, Maharashtra, India</p>
+        <p>Email: <a href="mailto:communication@thethinkspire.com">communication@thethinkspire.com</a></p>
+        <p>Phone / WhatsApp: <a href="https://wa.me/919819565341">+91 98195 65341</a></p>
+        <p>Monday – Saturday &nbsp;·&nbsp; 10:00 AM – 7:00 PM IST</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>© 2025 Thinkspire Consultancy LLP · All rights reserved.</span>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </footer>
+
+</body>
+</html>

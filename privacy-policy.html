@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Thinkspire Consultancy LLP</title>
+  <meta name="description" content="Privacy Policy for Thinkspire Consultancy LLP — how we collect, use, and protect your personal information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="ThinkSpire_New_Logo.png" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --red: #C8102E; --ink: #0A0A0A; --char: #2D2D2D; --white: #FFFFFF;
+      --off-white: #FAFAFA; --line: rgba(10,10,10,0.07); --line-strong: rgba(10,10,10,0.16);
+      --muted: #6B6B6B; --serif: 'Playfair Display', serif; --sans: 'Inter Tight', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--white); color: var(--ink); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.94); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--line);
+      padding: 0 5%; height: 80px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 14px; }
+    .nav-logo img { height: 46px; width: auto; }
+    .nav-logo-text { font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; line-height: 1; }
+    .nav-logo-text span { color: var(--red); }
+    .nav-logo-sub { font-family: var(--sans); font-size: 9px; color: var(--muted); letter-spacing: 2.5px; text-transform: uppercase; margin-top: 5px; font-weight: 500; }
+    .nav-back { font-size: 12.5px; font-weight: 500; color: var(--muted); display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--red); }
+
+    .page-hero {
+      background: var(--ink); color: var(--white);
+      padding: 90px 5% 80px;
+    }
+    .page-hero-inner { max-width: 860px; margin: 0 auto; }
+    .page-eyebrow {
+      font-size: 11px; letter-spacing: 3px; text-transform: uppercase;
+      color: rgba(200,16,46,0.9); font-weight: 600; margin-bottom: 24px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .page-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--red); }
+    .page-h1 { font-family: var(--serif); font-size: clamp(38px, 5vw, 60px); font-weight: 600; line-height: 1.05; letter-spacing: -0.025em; color: var(--white); margin-bottom: 20px; }
+    .page-meta { font-size: 13px; color: rgba(255,255,255,0.45); letter-spacing: 0.5px; }
+
+    .doc-body { max-width: 860px; margin: 0 auto; padding: 80px 5% 120px; }
+
+    .doc-section { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid var(--line); }
+    .doc-section:last-child { border-bottom: none; margin-bottom: 0; }
+
+    .doc-h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; color: var(--ink); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 20px; }
+    .doc-h2 em { font-style: italic; color: var(--red); }
+    .doc-h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; color: var(--ink); margin-top: 32px; margin-bottom: 12px; letter-spacing: -0.01em; }
+
+    .doc-body p { font-size: 15px; color: var(--char); line-height: 1.75; margin-bottom: 18px; }
+    .doc-body ul, .doc-body ol { padding-left: 22px; margin-bottom: 18px; }
+    .doc-body li { font-size: 15px; color: var(--char); line-height: 1.7; margin-bottom: 8px; }
+    .doc-body strong { color: var(--ink); font-weight: 600; }
+    .doc-body a { color: var(--red); border-bottom: 1px solid rgba(200,16,46,0.3); transition: border-color 0.2s; }
+    .doc-body a:hover { border-color: var(--red); }
+
+    .highlight-box {
+      background: #F7F7F7; border-left: 3px solid var(--red);
+      padding: 22px 28px; margin: 28px 0; border-radius: 0 4px 4px 0;
+    }
+    .highlight-box p { margin-bottom: 0; font-size: 14px; }
+
+    .contact-block {
+      background: var(--ink); color: var(--white);
+      padding: 36px 40px; margin-top: 50px;
+    }
+    .contact-block .label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(200,16,46,0.9); font-weight: 600; margin-bottom: 12px; }
+    .contact-block p { color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
+    .contact-block a { color: var(--white); border-bottom: 1px solid rgba(255,255,255,0.3); }
+
+    footer {
+      background: var(--ink); color: var(--white);
+      padding: 40px 5%;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.4px;
+    }
+    footer a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    footer a:hover { color: var(--white); }
+    footer .footer-links { display: flex; justify-content: center; gap: 24px; margin-top: 12px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      .page-hero { padding: 60px 5% 50px; }
+      .doc-body { padding: 50px 5% 80px; }
+      .contact-block { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" />
+      <div>
+        <div class="nav-logo-text">THINK<span>SPIRE</span></div>
+        <div class="nav-logo-sub">Consultancy LLP</div>
+      </div>
+    </a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-eyebrow">Legal</div>
+      <h1 class="page-h1">Privacy Policy</h1>
+      <p class="page-meta">Last updated: May 2025 &nbsp;·&nbsp; Thinkspire Consultancy LLP</p>
+    </div>
+  </div>
+
+  <div class="doc-body">
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Who we are</h2>
+      <p>Thinkspire Consultancy LLP (<strong>"Thinkspire"</strong>, <strong>"we"</strong>, <strong>"us"</strong>, or <strong>"our"</strong>) is a limited liability partnership registered in India, providing integrated legal, regulatory, financial, and technology advisory services. Our registered office is in Mumbai, Maharashtra, India.</p>
+      <p>This Privacy Policy explains how we collect, use, share, and protect personal information when you visit our website at <strong>thethinkspire.com</strong>, contact us by any channel, or engage us for professional services.</p>
+      <div class="highlight-box">
+        <p>We are committed to protecting your privacy in accordance with India's <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong> and applicable rules. By using our website or contacting us, you consent to the practices described in this policy.</p>
+      </div>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Information we <em>collect</em></h2>
+      <h3 class="doc-h3">Information you provide directly</h3>
+      <ul>
+        <li><strong>Contact inquiries:</strong> When you reach out via WhatsApp, email, or phone — your name, phone number, email address, and the nature of your inquiry.</li>
+        <li><strong>Consultation requests:</strong> Business name, your role, and details about the matter you wish to discuss.</li>
+        <li><strong>Client engagements:</strong> Once you become a client, we collect additional information necessary to provide professional services, governed by our engagement letter and applicable professional obligations.</li>
+      </ul>
+      <h3 class="doc-h3">Information collected automatically</h3>
+      <ul>
+        <li><strong>Usage data:</strong> Pages visited, time spent, referring URL, browser type, and device information — collected via standard web server logs.</li>
+        <li><strong>Cookies:</strong> We use only essential cookies necessary for the website to function. We do not use tracking or advertising cookies.</li>
+      </ul>
+      <h3 class="doc-h3">Information we do not collect</h3>
+      <p>We do not collect sensitive personal data (such as health information, financial account numbers, or government ID numbers) through this website. Any such information required for a professional engagement is handled under separate confidentiality arrangements.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">How we use your information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li>To respond to your inquiry and determine whether we can assist you</li>
+        <li>To schedule and conduct consultations</li>
+        <li>To provide professional advisory services where engaged</li>
+        <li>To send you updates, alerts, or insights that are relevant to your matter or industry (only where you have indicated interest)</li>
+        <li>To comply with our legal and professional obligations, including conflict-of-interest checks</li>
+        <li>To improve our website and service quality</li>
+      </ul>
+      <p>We do not use your personal information for automated decision-making or profiling.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Sharing your information</h2>
+      <p>We treat all information shared with us as confidential. We do not sell, rent, or trade personal information. We may share information only in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Professional network:</strong> With barristers, co-counsel, or other professionals engaged specifically on your matter, and only to the extent necessary.</li>
+        <li><strong>Service providers:</strong> With technology vendors who help us operate (email, cloud storage, communication tools) — under confidentiality obligations and, where applicable, data processing agreements.</li>
+        <li><strong>Legal obligation:</strong> Where required by law, court order, or a regulatory authority with jurisdiction over us.</li>
+        <li><strong>With your consent:</strong> In any other circumstance, only with your explicit prior consent.</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Legal professional privilege</h2>
+      <p>Where you engage us for legal services, communications between you and our legal team may be protected by legal professional privilege (attorney-client privilege) under applicable Indian law. We are committed to preserving this privilege and will not disclose privileged communications without your consent, except as required by law or court order.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Data retention</h2>
+      <p>We retain personal information for as long as necessary to fulfil the purpose for which it was collected, or as required by applicable law and professional regulations:</p>
+      <ul>
+        <li><strong>Inquiry-only contacts:</strong> Up to 12 months from the last interaction if no engagement follows.</li>
+        <li><strong>Client records:</strong> For the duration of the engagement and thereafter as required by the Bar Council of India rules, the Companies Act, income-tax law, and other applicable professional regulations — typically 7–8 years.</li>
+        <li><strong>Website logs:</strong> Typically 90 days, unless required for a security investigation.</li>
+      </ul>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Your rights under the DPDP Act</h2>
+      <p>As a Data Principal under India's Digital Personal Data Protection Act, 2023, you have the following rights with respect to your personal data:</p>
+      <ul>
+        <li><strong>Right to access:</strong> Request a summary of the personal data we hold about you and how it is being used.</li>
+        <li><strong>Right to correction:</strong> Request correction of inaccurate or incomplete personal data.</li>
+        <li><strong>Right to erasure:</strong> Request deletion of your personal data, subject to legal and professional retention requirements.</li>
+        <li><strong>Right to grievance redressal:</strong> Raise a complaint with us regarding how your data is handled.</li>
+        <li><strong>Right to nominate:</strong> Nominate another individual to exercise your rights in the event of your death or incapacity.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:communication@thethinkspire.com">communication@thethinkspire.com</a>. We will respond within a reasonable time and in any event within the statutory period.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Security</h2>
+      <p>We apply reasonable technical and organisational measures to protect your personal information against unauthorised access, disclosure, alteration, or destruction. This includes encrypted communications, access controls, and confidentiality obligations on our staff and vendors.</p>
+      <p>However, no method of transmission over the internet or electronic storage is completely secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee its absolute security.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Third-party links</h2>
+      <p>Our website may contain links to third-party platforms (such as LinkedIn or WhatsApp). This Privacy Policy does not cover those platforms. We encourage you to review the privacy policies of any third-party service you access through our website.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Changes to this policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in law, our practices, or our services. The date of the most recent revision will be noted at the top of this page. Continued use of our website after any such changes constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="doc-section">
+      <h2 class="doc-h2">Contact us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+      <div class="contact-block">
+        <div class="label">Data Fiduciary Contact</div>
+        <p><strong style="color:#fff;">Thinkspire Consultancy LLP</strong></p>
+        <p>Mumbai, Maharashtra, India</p>
+        <p>Email: <a href="mailto:communication@thethinkspire.com">communication@thethinkspire.com</a></p>
+        <p>Phone / WhatsApp: <a href="https://wa.me/919819565341">+91 98195 65341</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>© 2025 Thinkspire Consultancy LLP · All rights reserved.</span>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+  </footer>
+
+</body>
+</html>
