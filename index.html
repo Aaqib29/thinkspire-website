@@ -4,24 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thinkspire Consultancy LLP — Legal, Regulatory, Financial & Audit Advisory</title>
-  <meta name="description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises. Co-founded by Adv. Shailendra Singh, Bombay High Court." />
+  <meta name="description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="ThinkSpire_New_Logo.png" />
-  <link rel="apple-touch-icon" href="ThinkSpire_New_Logo.png" />
-  <meta name="theme-color" content="#0A0A0A" />
-  <link rel="canonical" href="https://www.thethinkspire.com/" />
-  <!-- Open Graph / Social sharing -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.thethinkspire.com/" />
-  <meta property="og:title" content="Thinkspire Consultancy LLP — Legal, Regulatory, Financial & Audit Advisory" />
-  <meta property="og:description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises. Co-founded by Adv. Shailendra Singh, Bombay High Court." />
-  <meta property="og:image" content="https://www.thethinkspire.com/ThinkSpire_New_Logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Thinkspire Consultancy LLP" />
-  <meta name="twitter:description" content="Integrated legal, compliance, financial and audit advisory for founders, CXOs, HNIs and enterprises." />
-  <meta name="twitter:image" content="https://www.thethinkspire.com/ThinkSpire_New_Logo.png" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -33,100 +20,101 @@
       --ink: #0A0A0A;
       --ink-soft: #1A1A1A;
       --char: #2D2D2D;
-      --paper: #FAF7F2;
-      --paper-warm: #F4EFE6;
-      --line: rgba(10,10,10,0.08);
-      --line-strong: rgba(10,10,10,0.18);
-      --muted: #6B6B6B;
-      --muted-soft: #999;
       --white: #FFFFFF;
+      --off-white: #FAFAFA;
+      --bg-section: #F7F7F7;
+      --bg-warm: #F2F0EB;
+      --line: rgba(10,10,10,0.07);
+      --line-strong: rgba(10,10,10,0.16);
+      --muted: #6B6B6B;
+      --muted-soft: #A0A0A0;
       --green-wa: #25D366;
 
-      --serif: 'Cormorant Garamond', 'Times New Roman', serif;
-      --sans: 'Inter', -apple-system, sans-serif;
+      --serif: 'Playfair Display', 'Times New Roman', serif;
+      --sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
       font-family: var(--sans);
-      background: var(--paper);
+      background: var(--white);
       color: var(--ink);
       font-size: 15px;
       line-height: 1.6;
       overflow-x: hidden;
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
-    }
-
-    /* Subtle paper grain */
-    body::before {
-      content: '';
-      position: fixed; inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 1;
-      mix-blend-mode: multiply;
+      letter-spacing: -0.005em;
     }
 
     a { color: inherit; text-decoration: none; }
     img { display: block; max-width: 100%; }
     button { font-family: inherit; cursor: pointer; border: none; background: none; }
 
-    /* ── NAV ── */
+    /* ─────────────────────────────────────────────
+       NAVIGATION — white background, integrated logo
+    ──────────────────────────────────────────────── */
     nav {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(250,247,242,0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid var(--line);
       padding: 0 5%;
-      height: 76px;
+      height: 92px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: box-shadow 0.3s;
+      transition: box-shadow 0.3s, height 0.3s;
     }
     nav.scrolled {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 24px rgba(0,0,0,0.04);
+      height: 78px;
     }
 
     .nav-logo {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
     }
-    .nav-logo img { height: 44px; width: auto; }
+    .nav-logo img {
+      height: 52px;
+      width: auto;
+      transition: height 0.3s;
+    }
+    nav.scrolled .nav-logo img { height: 44px; }
     .nav-logo-text {
       font-family: var(--serif);
-      font-size: 21px;
+      font-size: 26px;
       font-weight: 700;
       color: var(--ink);
-      letter-spacing: 2.5px;
+      letter-spacing: -0.01em;
       line-height: 1;
     }
     .nav-logo-text span { color: var(--red); }
     .nav-logo-sub {
-      font-size: 9px;
+      font-family: var(--sans);
+      font-size: 9.5px;
       color: var(--muted);
-      letter-spacing: 2px;
+      letter-spacing: 2.5px;
       text-transform: uppercase;
-      margin-top: 3px;
+      margin-top: 6px;
       font-weight: 500;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 36px;
+      gap: 38px;
       list-style: none;
     }
     .nav-links a {
-      font-size: 12.5px;
+      font-size: 13px;
       color: var(--char);
-      letter-spacing: 0.5px;
+      letter-spacing: 0.2px;
       font-weight: 500;
       position: relative;
       transition: color 0.2s;
@@ -135,8 +123,8 @@
     .nav-links a::after {
       content: '';
       position: absolute;
-      bottom: -6px; left: 0;
-      width: 100%; height: 1px;
+      bottom: -7px; left: 0;
+      width: 100%; height: 1.5px;
       background: var(--red);
       transform: scaleX(0);
       transform-origin: left;
@@ -150,11 +138,11 @@
       gap: 8px;
       background: var(--ink);
       color: var(--white);
-      padding: 11px 22px;
+      padding: 12px 22px;
       border-radius: 2px;
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 500;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
       transition: background 0.2s, transform 0.2s;
     }
     .nav-cta:hover { background: var(--red); transform: translateY(-1px); }
@@ -177,12 +165,13 @@
       display: none;
       flex-direction: column;
       position: fixed;
-      top: 76px; left: 0; right: 0;
-      background: var(--paper);
+      top: 92px; left: 0; right: 0;
+      background: var(--white);
       border-bottom: 1px solid var(--line);
       z-index: 999;
       padding: 28px 5% 36px;
       gap: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
     .mobile-menu.open { display: flex; }
     .mobile-menu a {
@@ -197,63 +186,53 @@
       color: var(--white);
       padding: 14px 20px;
       text-align: center;
-      border: none;
       margin-top: 8px;
     }
 
     /* ─────────────────────────────────────────────
-       HERO — Editorial split layout
-       Left: Headline + lead + CTAs
-       Right: Live "deck" of the 4 practice areas
+       HERO
     ──────────────────────────────────────────────── */
     #hero {
       position: relative;
-      padding: 70px 5% 90px;
-      background: var(--paper);
+      padding: 80px 5% 100px;
+      background: var(--white);
       overflow: hidden;
-      z-index: 2;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 10%; right: -5%;
+      width: 380px; height: 380px;
+      background: var(--red);
+      border-radius: 50%;
+      opacity: 0.04;
+      filter: blur(60px);
+      pointer-events: none;
     }
 
     .hero-grid {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1.15fr 1fr;
       gap: 80px;
       align-items: center;
-    }
-
-    .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--red);
-      font-weight: 600;
-      margin-bottom: 28px;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 32px; height: 1px;
-      background: var(--red);
+      position: relative;
     }
 
     .hero-h1 {
       font-family: var(--serif);
-      font-size: clamp(44px, 6vw, 78px);
-      font-weight: 500;
+      font-size: clamp(46px, 6.2vw, 84px);
+      font-weight: 600;
       line-height: 1.02;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.025em;
       color: var(--ink);
-      margin-bottom: 28px;
+      margin-bottom: 32px;
     }
     .hero-h1 em {
       font-style: italic;
       color: var(--red);
-      font-weight: 500;
+      font-weight: 600;
     }
     .hero-h1 .underline {
       position: relative;
@@ -262,29 +241,29 @@
     .hero-h1 .underline::after {
       content: '';
       position: absolute;
-      bottom: 0.05em; left: 0; right: 0;
-      height: 0.18em;
-      background: rgba(200,16,46,0.18);
+      bottom: 0.06em; left: 0; right: 0;
+      height: 0.16em;
+      background: rgba(200,16,46,0.15);
       z-index: -1;
     }
 
     .hero-lead {
       font-family: var(--serif);
-      font-size: 19px;
+      font-size: 20px;
       font-weight: 400;
-      line-height: 1.6;
+      line-height: 1.55;
       color: var(--char);
-      max-width: 480px;
-      margin-bottom: 36px;
+      max-width: 500px;
+      margin-bottom: 40px;
       font-style: italic;
     }
 
     .hero-ctas {
       display: flex;
       align-items: center;
-      gap: 18px;
+      gap: 20px;
       flex-wrap: wrap;
-      margin-bottom: 56px;
+      margin-bottom: 60px;
     }
 
     .btn-primary {
@@ -293,10 +272,10 @@
       gap: 10px;
       background: var(--ink);
       color: var(--white);
-      padding: 16px 30px;
+      padding: 17px 32px;
       font-size: 13px;
       font-weight: 500;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.4px;
       transition: background 0.2s, transform 0.2s;
       border-radius: 2px;
     }
@@ -310,9 +289,9 @@
       color: var(--ink);
       font-size: 13px;
       font-weight: 500;
-      letter-spacing: 0.4px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--ink);
+      letter-spacing: 0.3px;
+      padding: 17px 0;
+      border-bottom: 1.5px solid var(--ink);
       transition: color 0.2s, border-color 0.2s;
     }
     .btn-link:hover { color: var(--red); border-color: var(--red); }
@@ -322,7 +301,6 @@
     }
     .btn-link:hover .arrow { transform: translateX(4px); }
 
-    /* Audience pathways */
     .audience-paths {
       display: flex;
       gap: 8px;
@@ -330,7 +308,7 @@
     }
     .audience-paths-label {
       width: 100%;
-      font-size: 10px;
+      font-size: 10.5px;
       letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--muted);
@@ -341,14 +319,14 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: 12px;
+      font-size: 12.5px;
       color: var(--char);
-      padding: 9px 16px;
+      padding: 10px 18px;
       border: 1px solid var(--line-strong);
-      border-radius: 30px;
+      border-radius: 40px;
       transition: all 0.2s;
       font-weight: 500;
-      background: var(--paper);
+      background: var(--white);
     }
     .audience-chip:hover {
       background: var(--ink);
@@ -361,21 +339,20 @@
     }
     .audience-chip:hover .arrow { transform: translateX(2px); }
 
-    /* RIGHT: Practice deck — 4 practice areas as "playing cards" */
+    /* Practice deck */
     .practice-deck {
       position: relative;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px;
-      align-self: stretch;
     }
 
     .practice-card {
       position: relative;
       background: var(--white);
       border: 1px solid var(--line);
-      padding: 28px 24px 26px;
-      min-height: 200px;
+      padding: 30px 26px;
+      min-height: 210px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -385,7 +362,7 @@
     }
     .practice-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 24px 50px rgba(0,0,0,0.07);
+      box-shadow: 0 28px 56px rgba(0,0,0,0.08);
       border-color: var(--red);
     }
     .practice-card::after {
@@ -398,17 +375,11 @@
     }
     .practice-card:hover::after { width: 100%; }
 
-    /* Tilt the cards slightly for editorial feel */
     .practice-card:nth-child(1) { transform: translateY(0) rotate(-0.5deg); }
     .practice-card:nth-child(2) { transform: translateY(20px) rotate(0.5deg); }
     .practice-card:nth-child(3) { transform: translateY(-10px) rotate(0.3deg); }
     .practice-card:nth-child(4) { transform: translateY(10px) rotate(-0.3deg); }
-    .practice-card:nth-child(1):hover,
-    .practice-card:nth-child(2):hover,
-    .practice-card:nth-child(3):hover,
-    .practice-card:nth-child(4):hover {
-      transform: translateY(-6px) rotate(0deg);
-    }
+    .practice-card:hover { transform: translateY(-6px) rotate(0deg) !important; }
 
     .pc-num {
       font-family: var(--serif);
@@ -417,7 +388,7 @@
       color: var(--red);
       font-weight: 500;
       letter-spacing: 1px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
     .pc-title {
       font-family: var(--serif);
@@ -426,16 +397,17 @@
       color: var(--ink);
       line-height: 1.2;
       margin-bottom: 10px;
+      letter-spacing: -0.01em;
     }
     .pc-desc {
-      font-size: 12px;
+      font-size: 12.5px;
       color: var(--muted);
       line-height: 1.5;
       flex: 1;
     }
     .pc-arrow {
       margin-top: 18px;
-      font-size: 16px;
+      font-size: 18px;
       color: var(--ink);
       transition: transform 0.25s, color 0.25s;
     }
@@ -444,7 +416,6 @@
       color: var(--red);
     }
 
-    /* Decorative corner triangle inspired by the logo */
     .practice-card::before {
       content: '';
       position: absolute;
@@ -452,18 +423,16 @@
       width: 0; height: 0;
       border-style: solid;
       border-width: 0 28px 28px 0;
-      border-color: transparent var(--paper-warm) transparent transparent;
+      border-color: transparent var(--bg-section) transparent transparent;
       transition: border-color 0.3s;
     }
-    .practice-card:hover::before {
-      border-right-color: var(--red);
-    }
+    .practice-card:hover::before { border-right-color: var(--red); }
 
-    /* ── LIVE TICKER (Hero foot) ── */
+    /* Hero ticker */
     .hero-ticker {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 80px auto 0;
-      padding-top: 28px;
+      padding-top: 30px;
       border-top: 1px solid var(--line-strong);
       display: flex;
       align-items: center;
@@ -473,14 +442,14 @@
     }
     .ticker-stat .v {
       font-family: var(--serif);
-      font-size: 32px;
-      font-weight: 600;
+      font-size: 34px;
+      font-weight: 500;
       color: var(--ink);
-      letter-spacing: -0.02em;
+      letter-spacing: -0.03em;
       line-height: 1;
     }
     .ticker-stat .v sub {
-      font-size: 18px;
+      font-size: 20px;
       color: var(--red);
       vertical-align: baseline;
       bottom: 0;
@@ -490,20 +459,17 @@
       color: var(--muted);
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      margin-top: 4px;
+      margin-top: 6px;
       font-weight: 500;
     }
 
-    /* ─────────────────────────────────────────────
-       MARQUEE STRIP
-    ──────────────────────────────────────────────── */
+    /* Marquee */
     .marquee {
       background: var(--ink);
       color: var(--white);
-      padding: 22px 0;
+      padding: 24px 0;
       overflow: hidden;
       position: relative;
-      z-index: 2;
       border-top: 1px solid var(--red-deep);
       border-bottom: 1px solid var(--red-deep);
     }
@@ -516,12 +482,13 @@
     }
     .marquee-item {
       font-family: var(--serif);
-      font-size: 22px;
+      font-size: 24px;
       font-style: italic;
       color: rgba(255,255,255,0.85);
       display: flex;
       align-items: center;
       gap: 60px;
+      font-weight: 400;
     }
     .marquee-item::after {
       content: '✦';
@@ -537,8 +504,8 @@
     /* ─────────────────────────────────────────────
        SECTION COMMON
     ──────────────────────────────────────────────── */
-    section { padding: 120px 5%; position: relative; z-index: 2; }
-    .container { max-width: 1280px; margin: 0 auto; }
+    section { padding: 130px 5%; position: relative; }
+    .container { max-width: 1320px; margin: 0 auto; }
 
     .section-eyebrow {
       display: inline-flex;
@@ -560,10 +527,10 @@
 
     .section-h2 {
       font-family: var(--serif);
-      font-size: clamp(36px, 4.5vw, 60px);
-      font-weight: 500;
-      line-height: 1.05;
-      letter-spacing: -0.02em;
+      font-size: clamp(38px, 4.8vw, 64px);
+      font-weight: 600;
+      line-height: 1.04;
+      letter-spacing: -0.025em;
       color: var(--ink);
       margin-bottom: 24px;
     }
@@ -571,10 +538,10 @@
 
     .section-lead {
       font-family: var(--serif);
-      font-size: 18px;
+      font-size: 19px;
       color: var(--char);
-      max-width: 620px;
-      line-height: 1.6;
+      max-width: 640px;
+      line-height: 1.55;
       font-style: italic;
     }
 
@@ -588,10 +555,10 @@
     }
 
     /* ─────────────────────────────────────────────
-       APPROACH (How We Work)
+       APPROACH
     ──────────────────────────────────────────────── */
     #approach {
-      background: var(--paper-warm);
+      background: var(--off-white);
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
@@ -603,56 +570,54 @@
       margin-top: 40px;
     }
     .approach-step {
-      padding: 40px 30px 36px 0;
+      padding: 44px 32px 40px 0;
       border-right: 1px solid var(--line);
       position: relative;
     }
     .approach-step:last-child { border-right: none; padding-right: 0; }
-    .approach-step + .approach-step { padding-left: 30px; }
+    .approach-step + .approach-step { padding-left: 32px; }
 
     .as-num {
       font-family: var(--serif);
-      font-size: 80px;
+      font-size: 88px;
       font-weight: 400;
       font-style: italic;
       color: var(--red);
       line-height: 1;
-      margin-bottom: 24px;
-      letter-spacing: -0.04em;
-      opacity: 0.9;
+      margin-bottom: 28px;
+      letter-spacing: -0.05em;
+      opacity: 0.85;
     }
     .as-title {
       font-family: var(--serif);
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 600;
       color: var(--ink);
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       line-height: 1.2;
+      letter-spacing: -0.01em;
     }
     .as-desc {
-      font-size: 13px;
+      font-size: 13.5px;
       color: var(--muted);
       line-height: 1.65;
     }
 
     /* ─────────────────────────────────────────────
-       SERVICES — Editorial table layout
+       SERVICES
     ──────────────────────────────────────────────── */
-    #services {
-      background: var(--paper);
-    }
+    #services { background: var(--white); }
 
     .sector-tabs {
       display: flex;
       gap: 2px;
       flex-wrap: wrap;
-      margin-bottom: 0;
       border-bottom: 1px solid var(--line-strong);
     }
     .stab {
       font-family: var(--sans);
       font-size: 12px;
-      padding: 16px 22px;
+      padding: 18px 24px;
       color: var(--muted);
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -667,28 +632,20 @@
       border-bottom-color: var(--red);
     }
 
-    .sectors-stack {
-      margin-top: 50px;
-    }
+    .sectors-stack { margin-top: 50px; }
 
     .sector-block {
       display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 60px;
-      padding: 48px 0;
+      grid-template-columns: 340px 1fr;
+      gap: 70px;
+      padding: 52px 0;
       border-bottom: 1px solid var(--line);
       align-items: start;
-      transition: opacity 0.3s;
     }
-    .sector-block.hidden {
-      display: none;
-    }
+    .sector-block.hidden { display: none; }
     .sector-block:last-child { border-bottom: none; }
 
-    .sb-left {
-      position: sticky;
-      top: 100px;
-    }
+    .sb-left { position: sticky; top: 110px; }
 
     .sb-roman {
       font-family: var(--serif);
@@ -696,33 +653,33 @@
       font-style: italic;
       color: var(--red);
       letter-spacing: 2px;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-weight: 500;
     }
     .sb-name {
       font-family: var(--serif);
-      font-size: 38px;
-      font-weight: 500;
+      font-size: 42px;
+      font-weight: 600;
       color: var(--ink);
       line-height: 1.05;
-      letter-spacing: -0.02em;
-      margin-bottom: 16px;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
     }
     .sb-desc {
-      font-size: 13.5px;
+      font-size: 14px;
       color: var(--muted);
       line-height: 1.7;
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
     .sb-cta {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: 12px;
+      font-size: 12.5px;
       font-weight: 500;
       color: var(--ink);
       letter-spacing: 0.5px;
-      border-bottom: 1px solid var(--ink);
+      border-bottom: 1.5px solid var(--ink);
       padding-bottom: 4px;
       transition: color 0.2s, border-color 0.2s;
     }
@@ -738,7 +695,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 16px 0;
+      padding: 18px 0;
       border-bottom: 1px solid var(--line);
       transition: padding 0.25s;
       cursor: pointer;
@@ -748,14 +705,12 @@
       padding-left: 14px;
       border-bottom-color: var(--red);
     }
-    .service-row .sn {
-      color: var(--ink);
-      font-weight: 500;
-    }
+    .service-row .sn { color: var(--ink); font-weight: 500; }
     .service-row .sa {
       font-family: var(--serif);
       color: var(--muted);
       transition: transform 0.25s, color 0.25s;
+      font-size: 18px;
     }
     .service-row:hover .sa {
       color: var(--red);
@@ -770,22 +725,22 @@
     }
 
     /* ─────────────────────────────────────────────
-       MANIFESTO — Pull quote style
+       MANIFESTO
     ──────────────────────────────────────────────── */
     #manifesto {
       background: var(--ink);
       color: var(--white);
-      padding: 140px 5%;
+      padding: 150px 5%;
       position: relative;
       overflow: hidden;
     }
     #manifesto::before {
       content: '"';
       position: absolute;
-      top: -40px; left: 4%;
+      top: -50px; left: 4%;
       font-family: var(--serif);
-      font-size: 380px;
-      color: rgba(200,16,46,0.12);
+      font-size: 400px;
+      color: rgba(200,16,46,0.13);
       line-height: 1;
       font-weight: 400;
     }
@@ -806,11 +761,11 @@
     }
     .manifesto-text {
       font-family: var(--serif);
-      font-size: clamp(28px, 3.5vw, 44px);
+      font-size: clamp(30px, 3.5vw, 46px);
       font-weight: 400;
       line-height: 1.35;
       color: var(--white);
-      letter-spacing: -0.01em;
+      letter-spacing: -0.015em;
     }
     .manifesto-text em {
       font-style: italic;
@@ -820,7 +775,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      margin-top: 48px;
+      margin-top: 50px;
       padding-top: 32px;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
@@ -834,11 +789,9 @@
     }
 
     /* ─────────────────────────────────────────────
-       VALUES (Why Us) — Asymmetric grid
+       VALUES
     ──────────────────────────────────────────────── */
-    #values {
-      background: var(--paper);
-    }
+    #values { background: var(--white); }
 
     .values-grid {
       display: grid;
@@ -847,18 +800,16 @@
       border-top: 1px solid var(--line-strong);
     }
     .value-card {
-      padding: 50px 36px 50px 0;
+      padding: 54px 38px 54px 0;
       border-right: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
       transition: background 0.3s;
-      position: relative;
     }
     .value-card:nth-child(3n) { border-right: none; }
     .value-card:nth-last-child(-n+3) { border-bottom: none; }
-    .value-card + .value-card { padding-left: 36px; }
+    .value-card + .value-card { padding-left: 38px; }
     .value-card:nth-child(3n+1) { padding-left: 0; }
-
-    .value-card:hover { background: var(--paper-warm); }
+    .value-card:hover { background: var(--off-white); }
 
     .vc-num {
       font-family: var(--serif);
@@ -866,17 +817,17 @@
       font-style: italic;
       color: var(--red);
       letter-spacing: 1.5px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
       font-weight: 500;
     }
     .vc-title {
       font-family: var(--serif);
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 600;
       color: var(--ink);
       line-height: 1.15;
-      margin-bottom: 14px;
-      letter-spacing: -0.01em;
+      margin-bottom: 16px;
+      letter-spacing: -0.015em;
     }
     .vc-desc {
       font-size: 13.5px;
@@ -885,18 +836,38 @@
     }
 
     /* ─────────────────────────────────────────────
-       INSIGHTS (Blog Preview)
+       INSIGHTS
     ──────────────────────────────────────────────── */
     #insights {
-      background: var(--paper-warm);
+      background: var(--off-white);
       border-top: 1px solid var(--line);
     }
+
+    .insights-filter {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    .ifilter {
+      font-size: 11.5px;
+      padding: 10px 18px;
+      color: var(--muted);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: all 0.2s;
+    }
+    .ifilter:hover { color: var(--ink); }
+    .ifilter.active { background: var(--ink); color: var(--white); }
 
     .insights-grid {
       display: grid;
       grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 30px;
-      margin-top: 30px;
+      gap: 32px;
     }
 
     .article-card {
@@ -905,12 +876,11 @@
       cursor: pointer;
       transition: transform 0.3s;
     }
-    .article-card:hover { transform: translateY(-4px); }
-    .article-card.featured { grid-row: span 1; }
+    .article-card.hidden { display: none; }
+    .article-card:hover { transform: translateY(-6px); }
 
     .ac-image {
       aspect-ratio: 16 / 10;
-      background: var(--ink);
       margin-bottom: 22px;
       position: relative;
       overflow: hidden;
@@ -921,25 +891,26 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, transparent 0%, rgba(200,16,46,0.7) 100%);
-      opacity: 0.5;
+      background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(200,16,46,0.7) 100%);
+      opacity: 0.55;
       transition: opacity 0.3s;
     }
-    .article-card:hover .ac-image::after { opacity: 0.8; }
+    .article-card:hover .ac-image::after { opacity: 0.78; }
 
     .ac-image-text {
       position: absolute;
-      bottom: 24px; left: 24px;
+      bottom: 26px; left: 26px;
+      right: 26px;
       font-family: var(--serif);
       font-size: 38px;
-      font-weight: 500;
+      font-weight: 600;
       font-style: italic;
       color: var(--white);
       line-height: 1;
       z-index: 1;
       letter-spacing: -0.02em;
     }
-    .article-card.featured .ac-image-text { font-size: 56px; }
+    .article-card.featured .ac-image-text { font-size: 60px; }
 
     .ac-meta {
       display: flex;
@@ -952,22 +923,19 @@
       font-weight: 500;
       margin-bottom: 14px;
     }
-    .ac-cat {
-      color: var(--red);
-      font-weight: 600;
-    }
+    .ac-cat { color: var(--red); font-weight: 600; }
     .ac-title {
       font-family: var(--serif);
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 600;
       color: var(--ink);
       line-height: 1.25;
-      margin-bottom: 12px;
-      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+      letter-spacing: -0.015em;
       transition: color 0.25s;
     }
     .article-card.featured .ac-title {
-      font-size: 30px;
+      font-size: 32px;
       line-height: 1.15;
     }
     .article-card:hover .ac-title { color: var(--red); }
@@ -985,12 +953,292 @@
     }
 
     /* ─────────────────────────────────────────────
-       CONTACT — Editorial layout
+       ARTICLE VIEWER (slide-up modal)
+    ──────────────────────────────────────────────── */
+    .article-viewer {
+      position: fixed;
+      inset: 0;
+      z-index: 1200;
+      background: var(--white);
+      transform: translateY(100%);
+      transition: transform 0.55s cubic-bezier(0.2, 0.85, 0.25, 1);
+      overflow-y: auto;
+      visibility: hidden;
+    }
+    .article-viewer.open {
+      transform: translateY(0);
+      visibility: visible;
+    }
+    .av-header {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    .av-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .av-brand img { height: 40px; }
+    .av-brand-text {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .av-brand-text span { color: var(--red); }
+    .av-close {
+      width: 42px; height: 42px;
+      border: 1px solid var(--line-strong);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      transition: all 0.2s;
+    }
+    .av-close:hover {
+      background: var(--ink);
+      color: var(--white);
+      border-color: var(--ink);
+      transform: rotate(90deg);
+    }
+
+    .av-hero {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 70px 5% 40px;
+      text-align: center;
+    }
+    .av-cat {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 24px;
+      padding: 6px 14px;
+      border: 1px solid var(--red);
+      border-radius: 30px;
+    }
+    .av-title {
+      font-family: var(--serif);
+      font-size: clamp(34px, 5vw, 56px);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+    .av-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .av-meta-dot {
+      width: 4px; height: 4px;
+      background: var(--muted);
+      border-radius: 50%;
+    }
+
+    .av-banner {
+      max-width: 1080px;
+      margin: 40px auto 0;
+      aspect-ratio: 2.4 / 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .av-banner::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,0,0,0.15) 0%, rgba(200,16,46,0.55) 100%);
+    }
+    .av-banner-text {
+      position: absolute;
+      bottom: 40px; left: 40px;
+      right: 40px;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(36px, 5vw, 64px);
+      color: var(--white);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      z-index: 1;
+    }
+
+    .av-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 70px 5% 100px;
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--char);
+    }
+    .av-content p { margin-bottom: 24px; }
+    .av-content h2 {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-top: 50px;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+    .av-content h3 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-top: 36px;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .av-content ul, .av-content ol {
+      margin-bottom: 24px;
+      padding-left: 24px;
+    }
+    .av-content li { margin-bottom: 10px; }
+    .av-content strong { color: var(--ink); font-weight: 600; }
+    .av-content em {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink);
+      font-size: 1.05em;
+    }
+    .av-content blockquote {
+      border-left: 3px solid var(--red);
+      padding: 20px 28px;
+      margin: 36px 0;
+      background: var(--off-white);
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 21px;
+      color: var(--ink);
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+    }
+    .av-content .key-takeaway {
+      background: var(--bg-warm);
+      border: 1px solid var(--line-strong);
+      padding: 28px 32px;
+      margin: 40px 0;
+      border-radius: 4px;
+    }
+    .av-content .key-takeaway-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .av-content .key-takeaway p { margin-bottom: 0; }
+
+    .av-cta-block {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 50px 5%;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+    .av-cta-eyebrow {
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .av-cta-h {
+      font-family: var(--serif);
+      font-size: 30px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .av-cta-h em { font-style: italic; color: var(--red); }
+    .av-cta-text {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+    .av-cta-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .av-cta-wa {
+      background: var(--green-wa);
+      color: var(--white);
+      padding: 14px 26px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .av-cta-wa svg { width: 16px; height: 16px; fill: white; }
+
+    .av-related {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 70px 5% 100px;
+    }
+    .av-related-label {
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .av-related-label::before {
+      content: '';
+      display: block;
+      width: 24px; height: 1px;
+      background: var(--red);
+    }
+    .av-related-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    /* ─────────────────────────────────────────────
+       CONTACT
     ──────────────────────────────────────────────── */
     #contact {
       background: var(--ink);
       color: var(--white);
-      padding: 140px 5%;
+      padding: 150px 5%;
     }
     #contact .section-eyebrow { color: var(--red-light); }
     #contact .section-eyebrow::before { background: var(--red-light); }
@@ -1005,38 +1253,34 @@
       margin-top: 60px;
     }
 
-    .contact-channels {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-
+    .contact-channels { display: flex; flex-direction: column; }
     .channel {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 26px 0;
+      padding: 28px 0;
       border-bottom: 1px solid rgba(255,255,255,0.1);
       transition: padding 0.25s;
     }
-    .channel:hover { padding-left: 12px; }
+    .channel:hover { padding-left: 14px; }
     .channel-info .label {
       font-size: 11px;
       color: rgba(255,255,255,0.45);
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       font-weight: 500;
     }
     .channel-info .value {
       font-family: var(--serif);
-      font-size: 22px;
+      font-size: 24px;
       color: var(--white);
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: -0.01em;
     }
     .channel-arrow {
       font-family: var(--serif);
-      font-size: 24px;
+      font-size: 26px;
       color: var(--red-light);
       transition: transform 0.25s;
     }
@@ -1045,7 +1289,7 @@
     .contact-card {
       background: var(--ink-soft);
       border: 1px solid rgba(255,255,255,0.08);
-      padding: 48px 42px;
+      padding: 50px 44px;
       position: relative;
     }
     .contact-card::before {
@@ -1055,7 +1299,6 @@
       width: 80px; height: 1px;
       background: var(--red);
     }
-
     .cc-eyebrow {
       font-size: 10px;
       letter-spacing: 2.5px;
@@ -1066,25 +1309,25 @@
     }
     .cc-title {
       font-family: var(--serif);
-      font-size: 32px;
-      font-weight: 500;
+      font-size: 34px;
+      font-weight: 600;
       color: var(--white);
       line-height: 1.15;
-      margin-bottom: 12px;
-      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
     }
     .cc-desc {
-      font-size: 13px;
+      font-size: 13.5px;
       color: rgba(255,255,255,0.55);
       line-height: 1.65;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
 
     .wa-routes {
       display: flex;
       flex-direction: column;
       gap: 8px;
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
     .wa-route {
       display: flex;
@@ -1092,7 +1335,7 @@
       gap: 14px;
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.06);
-      padding: 14px 18px;
+      padding: 15px 18px;
       transition: all 0.2s;
       color: var(--white);
     }
@@ -1100,24 +1343,12 @@
       background: rgba(37,211,102,0.08);
       border-color: rgba(37,211,102,0.3);
     }
-    .wa-route svg {
-      width: 18px; height: 18px;
-      fill: var(--green-wa);
-      flex-shrink: 0;
-    }
-    .wa-route .wn {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--white);
-    }
-    .wa-route .wd {
-      font-size: 11px;
-      color: rgba(255,255,255,0.4);
-      margin-top: 2px;
-    }
+    .wa-route svg { width: 18px; height: 18px; fill: var(--green-wa); flex-shrink: 0; }
+    .wa-route .wn { font-size: 13.5px; font-weight: 500; color: var(--white); }
+    .wa-route .wd { font-size: 11px; color: rgba(255,255,255,0.4); margin-top: 2px; }
 
     .office-info {
-      padding-top: 24px;
+      padding-top: 26px;
       border-top: 1px solid rgba(255,255,255,0.08);
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1134,7 +1365,7 @@
     .oi-block .value {
       font-size: 13px;
       color: var(--white);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     /* ─────────────────────────────────────────────
@@ -1143,13 +1374,11 @@
     footer {
       background: var(--ink);
       color: var(--white);
-      padding: 80px 5% 36px;
+      padding: 90px 5% 40px;
       border-top: 1px solid rgba(255,255,255,0.08);
-      position: relative;
-      z-index: 2;
     }
     .footer-grid {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
@@ -1157,50 +1386,28 @@
       padding-bottom: 50px;
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
-    .footer-brand {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .fb-brand-card {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      background: var(--paper);
-      border-radius: 8px;
-      padding: 12px 18px;
-      align-self: flex-start;
-    }
-    .fb-brand-card img { height: 46px; width: auto; }
-    .fb-brand-card-text { display: flex; flex-direction: column; gap: 2px; }
-    .fb-logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .fb-logo img { height: 36px; }
+    .footer-brand { display: flex; flex-direction: column; gap: 18px; }
+    .fb-logo { display: flex; align-items: center; gap: 14px; }
+    .fb-logo img { height: 46px; }
     .fb-logo-text {
       font-family: var(--serif);
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: -0.01em;
     }
     .fb-logo-text span { color: var(--red-light); }
     .fb-tagline {
       font-family: var(--serif);
-      font-size: 16px;
+      font-size: 17px;
       font-style: italic;
       color: rgba(255,255,255,0.6);
       line-height: 1.5;
-      max-width: 280px;
+      max-width: 290px;
+      letter-spacing: -0.01em;
     }
-    .fb-social {
-      display: flex;
-      gap: 10px;
-      margin-top: 8px;
-    }
+    .fb-social { display: flex; gap: 10px; margin-top: 6px; }
     .fbs {
-      width: 36px; height: 36px;
+      width: 38px; height: 38px;
       border: 1px solid rgba(255,255,255,0.15);
       display: flex;
       align-items: center;
@@ -1217,13 +1424,9 @@
       text-transform: uppercase;
       color: var(--red-light);
       font-weight: 600;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
-    .fcol-links {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+    .fcol-links { display: flex; flex-direction: column; gap: 12px; }
     .fcol-links a {
       font-size: 13px;
       color: rgba(255,255,255,0.55);
@@ -1232,7 +1435,7 @@
     .fcol-links a:hover { color: var(--white); padding-left: 4px; }
 
     .footer-bottom {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 24px auto 0;
       display: flex;
       align-items: center;
@@ -1264,11 +1467,195 @@
       font-weight: 500;
       transition: transform 0.25s, box-shadow 0.25s;
     }
-    .wa-float:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 40px rgba(37,211,102,0.5);
-    }
+    .wa-float:hover { transform: translateY(-3px); box-shadow: 0 18px 40px rgba(37,211,102,0.5); }
     .wa-float svg { width: 22px; height: 22px; fill: white; }
+
+    /* ─────────────────────────────────────────────
+       SERVICE PANEL
+    ──────────────────────────────────────────────── */
+    .panel-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(10,10,10,0.55);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s, visibility 0.35s;
+      z-index: 1100;
+    }
+    .panel-overlay.open { opacity: 1; visibility: visible; }
+
+    .service-panel {
+      position: fixed;
+      top: 0; right: 0;
+      width: min(560px, 100%);
+      height: 100vh;
+      background: var(--white);
+      box-shadow: -30px 0 80px rgba(0,0,0,0.18);
+      transform: translateX(100%);
+      transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+      z-index: 1101;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .service-panel.open { transform: translateX(0); }
+    .sp-header {
+      padding: 34px 46px 26px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      flex-shrink: 0;
+    }
+    .sp-vertical {
+      font-family: var(--serif);
+      font-size: 12px;
+      font-style: italic;
+      color: var(--red);
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .sp-title {
+      font-family: var(--serif);
+      font-size: 38px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .sp-close {
+      width: 42px; height: 42px;
+      border: 1px solid var(--line-strong);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: var(--ink);
+      background: var(--white);
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+    .sp-close:hover {
+      background: var(--ink); color: var(--white); border-color: var(--ink); transform: rotate(90deg);
+    }
+    .sp-body { flex: 1; overflow-y: auto; padding: 32px 46px 40px; }
+    .sp-body::-webkit-scrollbar { width: 6px; }
+    .sp-body::-webkit-scrollbar-thumb { background: var(--line-strong); border-radius: 3px; }
+    .sp-desc {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-style: italic;
+      color: var(--char);
+      line-height: 1.55;
+      margin-bottom: 38px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
+      letter-spacing: -0.01em;
+    }
+    .sp-section-label {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sp-section-label::before {
+      content: '';
+      display: block;
+      width: 24px; height: 1px;
+      background: var(--red);
+    }
+    .sp-includes { list-style: none; margin-bottom: 38px; }
+    .sp-includes li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    .sp-includes li::before {
+      content: '';
+      display: block;
+      width: 6px; height: 6px;
+      background: var(--red);
+      border-radius: 50%;
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+    .sp-includes li:last-child { border-bottom: none; }
+    .sp-ideal {
+      background: var(--bg-warm);
+      border-left: 3px solid var(--red);
+      padding: 24px 28px;
+      margin-bottom: 36px;
+    }
+    .sp-ideal-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--red);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .sp-ideal-text {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 17px;
+      color: var(--char);
+      line-height: 1.65;
+      letter-spacing: -0.01em;
+    }
+    .sp-footer {
+      padding: 30px 46px;
+      border-top: 1px solid var(--line);
+      background: var(--off-white);
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .sp-cta-primary {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--green-wa);
+      color: var(--white);
+      padding: 16px 24px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .sp-cta-primary:hover { opacity: 0.92; transform: translateY(-2px); }
+    .sp-cta-primary svg { width: 18px; height: 18px; fill: white; }
+    .sp-cta-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--ink);
+      color: var(--white);
+      padding: 16px 24px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .sp-cta-secondary:hover { background: var(--red); transform: translateY(-2px); }
 
     /* ─────────────────────────────────────────────
        ANIMATIONS
@@ -1291,13 +1678,13 @@
       .hero-grid { grid-template-columns: 1fr; gap: 60px; }
       .practice-deck { max-width: 540px; }
       .approach-grid { grid-template-columns: repeat(2, 1fr); }
-      .approach-step { border-bottom: 1px solid var(--line); padding: 32px 24px 32px 0; }
+      .approach-step { border-bottom: 1px solid var(--line); padding: 34px 24px 34px 0; }
       .approach-step:nth-child(2n) { border-right: none; padding-right: 0; }
       .approach-step + .approach-step { padding-left: 24px; }
       .approach-step:nth-child(2n+1) { padding-left: 0; }
       .sector-block { grid-template-columns: 1fr; gap: 30px; }
       .sb-left { position: static; }
-      .sb-name { font-size: 30px; }
+      .sb-name { font-size: 32px; }
       .insights-grid { grid-template-columns: 1fr 1fr; }
       .article-card.featured { grid-column: span 2; }
       .contact-grid { grid-template-columns: 1fr; gap: 50px; }
@@ -1307,51 +1694,50 @@
       .value-card:nth-child(3n) { border-right: 1px solid var(--line); }
       .value-card:nth-child(2n) { border-right: none; padding-right: 0; }
       .value-card + .value-card { padding-left: 0; }
-      .value-card:nth-child(2n+1) { padding-right: 36px; }
-      .value-card:nth-child(2n) { padding-left: 36px; }
+      .value-card:nth-child(2n+1) { padding-right: 38px; }
+      .value-card:nth-child(2n) { padding-left: 38px; }
+      .av-related-grid { grid-template-columns: 1fr 1fr; }
     }
-
     @media (max-width: 760px) {
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
-      .nav-logo-text { font-size: 18px; }
-      .nav-logo img { height: 34px; }
+      .nav-logo-text { font-size: 22px; }
+      .nav-logo img { height: 44px; }
       section { padding: 80px 5%; }
       #manifesto { padding: 100px 5%; }
       .hero-h1 { font-size: 42px; }
       .practice-deck { grid-template-columns: 1fr 1fr; gap: 10px; }
-      .practice-card { min-height: 160px; padding: 22px 18px; }
+      .practice-card { min-height: 170px; padding: 22px 18px; }
       .pc-title { font-size: 17px; }
-      .pc-desc { font-size: 11px; }
+      .pc-desc { font-size: 11.5px; }
       .approach-grid { grid-template-columns: 1fr; }
-      .approach-step { padding: 28px 0 !important; border-right: none; }
+      .approach-step { padding: 30px 0 !important; border-right: none; }
       .sb-services { grid-template-columns: 1fr; }
       .insights-grid { grid-template-columns: 1fr; }
       .article-card.featured { grid-column: span 1; }
       .footer-grid { grid-template-columns: 1fr; }
       .footer-brand { grid-column: span 1; }
       .values-grid { grid-template-columns: 1fr; }
-      .value-card {
-        border-right: none !important;
-        padding: 36px 0 !important;
-      }
+      .value-card { border-right: none !important; padding: 38px 0 !important; }
       .office-info { grid-template-columns: 1fr; }
-      .marquee-item { font-size: 16px; gap: 40px; }
+      .marquee-item { font-size: 18px; gap: 40px; }
       .marquee-track { gap: 40px; }
       .wa-float span.text { display: none; }
       .wa-float { padding: 16px; border-radius: 50%; }
+      .av-related-grid { grid-template-columns: 1fr; }
+      .sp-header, .sp-body, .sp-footer { padding-left: 24px; padding-right: 24px; }
+      .sp-title { font-size: 30px; }
+      .sp-footer { flex-direction: column; }
     }
-
     @media (max-width: 420px) {
-      .hero-h1 { font-size: 36px; }
-      .section-h2 { font-size: 30px; }
-      .ticker-stat .v { font-size: 24px; }
+      .hero-h1 { font-size: 38px; }
+      .section-h2 { font-size: 32px; }
+      .ticker-stat .v { font-size: 26px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- WhatsApp icon -->
   <svg style="display:none">
     <symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
     <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -1360,7 +1746,7 @@
   <!-- ── NAV ── -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire logo" />
+      <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" />
       <div>
         <div class="nav-logo-text">THINK<span>SPIRE</span></div>
         <div class="nav-logo-sub">Consultancy LLP</div>
@@ -1383,13 +1769,12 @@
     <a href="#values" onclick="closeMobile()">Why Us</a>
     <a href="#insights" onclick="closeMobile()">Insights</a>
     <a href="#contact" onclick="closeMobile()">Contact</a>
-    <a href="https://wa.me/919819565341" class="mob-cta" target="_blank" rel="noopener noreferrer">WhatsApp Us Now</a>
+    <a href="https://wa.me/919819565341" class="mob-cta" target="_blank">WhatsApp Us Now</a>
   </div>
 
   <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-grid">
-      <!-- LEFT — Headline & CTAs -->
       <div class="hero-left">
         <h1 class="hero-h1 reveal d1">
           Legal, regulatory, financial &amp;<br>
@@ -1418,7 +1803,6 @@
         </div>
       </div>
 
-      <!-- RIGHT — 4-card practice deck -->
       <div class="practice-deck reveal d2">
         <a href="#services" class="practice-card" data-jump="legal">
           <div>
@@ -1455,24 +1839,11 @@
       </div>
     </div>
 
-    <!-- TICKER -->
     <div class="hero-ticker reveal">
-      <div class="ticker-stat">
-        <div class="v">200<sub>+</sub></div>
-        <div class="l">Clients served</div>
-      </div>
-      <div class="ticker-stat">
-        <div class="v">04</div>
-        <div class="l">Practice verticals</div>
-      </div>
-      <div class="ticker-stat">
-        <div class="v">01</div>
-        <div class="l">Integrated firm</div>
-      </div>
-      <div class="ticker-stat">
-        <div class="v">100<sub>%</sub></div>
-        <div class="l">Confidentiality</div>
-      </div>
+      <div class="ticker-stat"><div class="v">200<sub>+</sub></div><div class="l">Clients served</div></div>
+      <div class="ticker-stat"><div class="v">04</div><div class="l">Practice verticals</div></div>
+      <div class="ticker-stat"><div class="v">01</div><div class="l">Integrated firm</div></div>
+      <div class="ticker-stat"><div class="v">100<sub>%</sub></div><div class="l">Confidentiality</div></div>
     </div>
   </section>
 
@@ -1512,7 +1883,6 @@
           Whether it's an IPO, an M&amp;A deal, or a routine compliance audit — we follow the same disciplined method that turns complexity into a clear path forward.
         </p>
       </div>
-
       <div class="approach-grid">
         <div class="approach-step reveal">
           <div class="as-num">01</div>
@@ -1561,7 +1931,6 @@
 
       <div class="sectors-stack">
 
-        <!-- LEGAL -->
         <div class="sector-block" data-sector="legal" id="sec-legal">
           <div class="sb-left">
             <div class="sb-roman">— I —</div>
@@ -1570,18 +1939,17 @@
             <a href="#contact" class="sb-cta">Speak to a Lawyer →</a>
           </div>
           <div class="sb-services">
-            <div class="service-row featured"><span class="sn">Corporate Law &amp; Advisory</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">Civil &amp; Corporate Litigation</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">Real Estate Legal Advisory</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">HNI Real Estate Investment</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Contract Drafting &amp; Management</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Dispute Resolution &amp; Arbitration</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Legal Due Diligence</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Policy &amp; Framework Drafting</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="corp-law"><span class="sn">Corporate Law &amp; Advisory</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="litigation"><span class="sn">Civil &amp; Corporate Litigation</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="re-legal"><span class="sn">Real Estate Legal Advisory</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="hni-re"><span class="sn">HNI Real Estate Investment</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="contracts"><span class="sn">Contract Drafting &amp; Management</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="arbitration"><span class="sn">Dispute Resolution &amp; Arbitration</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="dd-legal"><span class="sn">Legal Due Diligence</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="policy"><span class="sn">Policy &amp; Framework Drafting</span><span class="sa">→</span></div>
           </div>
         </div>
 
-        <!-- REGULATORY -->
         <div class="sector-block" data-sector="regulatory" id="sec-regulatory">
           <div class="sb-left">
             <div class="sb-roman">— II —</div>
@@ -1590,22 +1958,21 @@
             <a href="#contact" class="sb-cta">Discuss Compliance →</a>
           </div>
           <div class="sb-services">
-            <div class="service-row featured"><span class="sn">SEBI Compliance &amp; Filings</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">IPO Readiness Consultancy</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">AIF Setup &amp; Compliance</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">RBI &amp; FEMA Compliance</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Company Setup &amp; Registration</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Udyam (MSME) Registration</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">GST Compliance &amp; Filings</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Startup India / DPIIT Registration</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">ESG &amp; Governance Strategy</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Data Privacy Compliance (DPDP)</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Board &amp; Secretarial Compliance</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Corporate Governance Advisory</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="sebi"><span class="sn">SEBI Compliance &amp; Filings</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="ipo"><span class="sn">IPO Readiness Consultancy</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="aif"><span class="sn">AIF Setup &amp; Compliance</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="rbi-fema"><span class="sn">RBI &amp; FEMA Compliance</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="incorp"><span class="sn">Company Setup &amp; Registration</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="udyam"><span class="sn">Udyam (MSME) Registration</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="gst"><span class="sn">GST Compliance &amp; Filings</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="dpiit"><span class="sn">Startup India / DPIIT Registration</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="esg"><span class="sn">ESG &amp; Governance Strategy</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="dpdp"><span class="sn">Data Privacy Compliance (DPDP)</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="secretarial"><span class="sn">Board &amp; Secretarial Compliance</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="governance"><span class="sn">Corporate Governance Advisory</span><span class="sa">→</span></div>
           </div>
         </div>
 
-        <!-- FINANCIAL -->
         <div class="sector-block" data-sector="financial" id="sec-financial">
           <div class="sb-left">
             <div class="sb-roman">— III —</div>
@@ -1614,20 +1981,19 @@
             <a href="#contact" class="sb-cta">Schedule a Strategy Call →</a>
           </div>
           <div class="sb-services">
-            <div class="service-row featured"><span class="sn">M&amp;A Deal Advisory &amp; Due Diligence</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">Tax Planning &amp; Optimisation</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">Capital Advisory &amp; Structuring</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">Alternate Investment Funds (AIF)</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Income Tax Returns &amp; ITR Filing</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">TDS Compliance</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Financial Restructuring</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Business Valuations</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Risk Management Advisory</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Real Estate Investment Structuring</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="ma"><span class="sn">M&amp;A Deal Advisory &amp; Due Diligence</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="tax-plan"><span class="sn">Tax Planning &amp; Optimisation</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="capital"><span class="sn">Capital Advisory &amp; Structuring</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="aif-fin"><span class="sn">Alternate Investment Funds (AIF)</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="itr"><span class="sn">Income Tax Returns &amp; ITR Filing</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="tds"><span class="sn">TDS Compliance</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="restructure"><span class="sn">Financial Restructuring</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="valuation"><span class="sn">Business Valuations</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="risk"><span class="sn">Risk Management Advisory</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="re-structure"><span class="sn">Real Estate Investment Structuring</span><span class="sa">→</span></div>
           </div>
         </div>
 
-        <!-- TECH AUDIT -->
         <div class="sector-block" data-sector="tech" id="sec-tech">
           <div class="sb-left">
             <div class="sb-roman">— IV —</div>
@@ -1636,15 +2002,15 @@
             <a href="#contact" class="sb-cta">Request an Audit →</a>
           </div>
           <div class="sb-services">
-            <div class="service-row featured"><span class="sn">Cyber Audit (ISO 27001)</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">SOC 1 &amp; SOC 2 Audits</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">ITGC (IT General Controls)</span><span class="sa">→</span></div>
-            <div class="service-row featured"><span class="sn">Forensic Audit</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">RBI IT Framework Compliance</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Data Privacy &amp; DPDP Audit</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Internal Audit Advisory</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Cybersecurity Risk Assessment</span><span class="sa">→</span></div>
-            <div class="service-row"><span class="sn">Information Security Policy Review</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="iso27001"><span class="sn">Cyber Audit (ISO 27001)</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="soc"><span class="sn">SOC 1 &amp; SOC 2 Audits</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="itgc"><span class="sn">ITGC (IT General Controls)</span><span class="sa">→</span></div>
+            <div class="service-row featured" data-service="forensic"><span class="sn">Forensic Audit</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="rbi-it"><span class="sn">RBI IT Framework Compliance</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="dpdp-audit"><span class="sn">Data Privacy &amp; DPDP Audit</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="internal"><span class="sn">Internal Audit Advisory</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="cyber-risk"><span class="sn">Cybersecurity Risk Assessment</span><span class="sa">→</span></div>
+            <div class="service-row" data-service="infosec"><span class="sn">Information Security Policy Review</span><span class="sa">→</span></div>
           </div>
         </div>
 
@@ -1723,94 +2089,78 @@
           <h2 class="section-h2 reveal d1">Sharp commentary on<br>law, regulation &amp; <em>capital.</em></h2>
         </div>
         <p class="section-lead reveal d2">
-          Concise, practical writing on the regulatory and legal shifts shaping Indian businesses — written by our team for founders, CXOs and investors.
+          Concise, practical writing on the regulatory and legal shifts shaping Indian businesses — written for founders, CXOs and investors.
         </p>
       </div>
 
+      <div class="insights-filter reveal">
+        <button class="ifilter active" data-cat="all">All Topics</button>
+        <button class="ifilter" data-cat="legal">Legal</button>
+        <button class="ifilter" data-cat="regulatory">Regulatory</button>
+        <button class="ifilter" data-cat="financial">Financial</button>
+        <button class="ifilter" data-cat="audit">Audit &amp; Tech</button>
+      </div>
+
       <div class="insights-grid">
-        <article class="article-card featured reveal">
+        <article class="article-card featured reveal" data-article="sebi-reforms" data-cat="regulatory">
           <div class="ac-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #8C0A20 100%);">
             <div class="ac-image-text">SEBI<br>Reforms<br><em>2025</em></div>
           </div>
           <div class="ac-meta">
-            <span class="ac-cat">Regulatory</span>
-            <span>·</span>
-            <span>8 min read</span>
-            <span>·</span>
-            <span>March 2025</span>
+            <span class="ac-cat">Regulatory</span><span>·</span><span>8 min read</span>
           </div>
           <h3 class="ac-title">SEBI's 2025 Disclosure Reforms: What every IPO-bound company needs to know</h3>
-          <p class="ac-excerpt">A clause-by-clause breakdown of the new disclosure requirements, the timeline for compliance, and the practical implications for companies preparing their DRHP filings this fiscal year.</p>
+          <p class="ac-excerpt">A clause-by-clause breakdown of the new disclosure requirements, the timeline for compliance, and the practical implications for companies preparing DRHP filings this fiscal year.</p>
         </article>
 
-        <article class="article-card reveal d1">
+        <article class="article-card reveal d1" data-article="ma-diligence" data-cat="financial">
           <div class="ac-image" style="background: linear-gradient(135deg, #2D2D2D 0%, #C8102E 100%);">
             <div class="ac-image-text">M&amp;A<br>Diligence</div>
           </div>
-          <div class="ac-meta">
-            <span class="ac-cat">M&amp;A</span>
-            <span>·</span>
-            <span>5 min</span>
-          </div>
+          <div class="ac-meta"><span class="ac-cat">Financial</span><span>·</span><span>6 min</span></div>
           <h3 class="ac-title">Five red flags we always check in mid-market M&amp;A due diligence</h3>
           <p class="ac-excerpt">From shareholder agreements to ESOP overhangs, the issues that can quietly kill a deal — and how to surface them early.</p>
         </article>
 
-        <article class="article-card reveal d2">
+        <article class="article-card reveal d2" data-article="dpdp-playbook" data-cat="regulatory">
           <div class="ac-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #6B6B6B 100%);">
             <div class="ac-image-text">DPDP<br><em>Act</em></div>
           </div>
-          <div class="ac-meta">
-            <span class="ac-cat">Compliance</span>
-            <span>·</span>
-            <span>6 min</span>
-          </div>
+          <div class="ac-meta"><span class="ac-cat">Regulatory</span><span>·</span><span>7 min</span></div>
           <h3 class="ac-title">DPDP Act compliance: The 90-day playbook for SMEs</h3>
           <p class="ac-excerpt">A practical, prioritised checklist for businesses that need to get DPDP-ready without overhauling their entire data infrastructure.</p>
         </article>
 
-        <article class="article-card reveal">
+        <article class="article-card reveal" data-article="aif-setup" data-cat="regulatory">
           <div class="ac-image" style="background: linear-gradient(135deg, #C8102E 0%, #1a1a1a 100%);">
             <div class="ac-image-text">AIF<br>Setup</div>
           </div>
-          <div class="ac-meta">
-            <span class="ac-cat">Capital Markets</span>
-            <span>·</span>
-            <span>7 min</span>
-          </div>
+          <div class="ac-meta"><span class="ac-cat">Regulatory</span><span>·</span><span>9 min</span></div>
           <h3 class="ac-title">Setting up a Category II AIF: The end-to-end roadmap</h3>
           <p class="ac-excerpt">Structuring options, capital commitments, sponsor obligations, and the SEBI registration timeline — explained for first-time fund managers.</p>
         </article>
 
-        <article class="article-card reveal d1">
+        <article class="article-card reveal d1" data-article="iso-vs-soc" data-cat="audit">
           <div class="ac-image" style="background: linear-gradient(135deg, #2D2D2D 0%, #8C0A20 100%);">
-            <div class="ac-image-text">Cyber<br>Audit</div>
+            <div class="ac-image-text">ISO vs<br>SOC 2</div>
           </div>
-          <div class="ac-meta">
-            <span class="ac-cat">Audit</span>
-            <span>·</span>
-            <span>4 min</span>
-          </div>
+          <div class="ac-meta"><span class="ac-cat">Audit &amp; Tech</span><span>·</span><span>5 min</span></div>
           <h3 class="ac-title">ISO 27001 vs SOC 2: Which framework is right for your business?</h3>
           <p class="ac-excerpt">A practical comparison of the two most-requested security frameworks — when each makes sense, what they cost, and how long they take.</p>
         </article>
 
-        <article class="article-card reveal d2">
+        <article class="article-card reveal d2" data-article="hni-real-estate" data-cat="legal">
           <div class="ac-image" style="background: linear-gradient(135deg, #1a1a1a 0%, #C8102E 100%);">
-            <div class="ac-image-text">Real<br>Estate</div>
+            <div class="ac-image-text">RERA &amp;<br>FEMA</div>
           </div>
-          <div class="ac-meta">
-            <span class="ac-cat">Real Estate</span>
-            <span>·</span>
-            <span>5 min</span>
-          </div>
+          <div class="ac-meta"><span class="ac-cat">Legal</span><span>·</span><span>6 min</span></div>
           <h3 class="ac-title">RERA, FEMA &amp; the HNI: Structuring real estate investments cleanly</h3>
           <p class="ac-excerpt">The regulatory considerations every high-net-worth investor should weigh before committing to commercial or pre-launch residential plays.</p>
         </article>
       </div>
 
       <div class="insights-cta">
-        <a href="mailto:communication@thethinkspire.com?subject=Insights%20Subscription" class="btn-link">Subscribe for insights <span class="arrow">→</span></a>
+        <a href="#" class="btn-link">Read all insights <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -1830,7 +2180,7 @@
 
       <div class="contact-grid">
         <div class="contact-channels reveal">
-          <a href="https://wa.me/919819565341" target="_blank" rel="noopener noreferrer" class="channel">
+          <a href="https://wa.me/919819565341" target="_blank" class="channel">
             <div class="channel-info">
               <div class="label">WhatsApp · Fastest Response</div>
               <div class="value">+91 98195 65341</div>
@@ -1851,14 +2201,14 @@
             </div>
             <div class="channel-arrow">→</div>
           </a>
-          <a href="mailto:communication@thethinkspire.com?subject=Office%20Visit%20Request" class="channel">
+          <a href="#" class="channel">
             <div class="channel-info">
               <div class="label">Office Visit · By appointment</div>
               <div class="value">Mumbai, Maharashtra</div>
             </div>
             <div class="channel-arrow">→</div>
           </a>
-          <a href="https://www.linkedin.com/company/thinkspire-consultancy-llp/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="channel">
+          <a href="https://www.linkedin.com/company/thinkspire-consultancy-llp/?viewAsMember=true" target="_blank" class="channel">
             <div class="channel-info">
               <div class="label">LinkedIn</div>
               <div class="value">/thinkspire-consultancy-llp</div>
@@ -1871,47 +2221,27 @@
           <div class="cc-eyebrow">Direct WhatsApp Routing</div>
           <h3 class="cc-title">Skip the<br>switchboard.</h3>
           <p class="cc-desc">Choose your practice area below and you'll be routed straight to the right specialist on WhatsApp — typical response within minutes.</p>
-
           <div class="wa-routes">
-            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20legal%20advisory" target="_blank" rel="noopener noreferrer" class="wa-route">
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20legal%20advisory" target="_blank" class="wa-route">
               <svg><use href="#wa"/></svg>
-              <div>
-                <div class="wn">Legal &amp; Litigation</div>
-                <div class="wd">Corporate, contracts, disputes, real estate</div>
-              </div>
+              <div><div class="wn">Legal &amp; Litigation</div><div class="wd">Corporate, contracts, disputes, real estate</div></div>
             </a>
-            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20regulatory%20help" target="_blank" rel="noopener noreferrer" class="wa-route">
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20regulatory%20help" target="_blank" class="wa-route">
               <svg><use href="#wa"/></svg>
-              <div>
-                <div class="wn">Regulatory &amp; Compliance</div>
-                <div class="wd">SEBI, RBI, FEMA, GST, IPO, AIF</div>
-              </div>
+              <div><div class="wn">Regulatory &amp; Compliance</div><div class="wd">SEBI, RBI, FEMA, GST, IPO, AIF</div></div>
             </a>
-            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20financial%20advisory" target="_blank" rel="noopener noreferrer" class="wa-route">
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20financial%20advisory" target="_blank" class="wa-route">
               <svg><use href="#wa"/></svg>
-              <div>
-                <div class="wn">Financial &amp; Tax</div>
-                <div class="wd">M&amp;A, tax, capital, AIF, valuations</div>
-              </div>
+              <div><div class="wn">Financial &amp; Tax</div><div class="wd">M&amp;A, tax, capital, AIF, valuations</div></div>
             </a>
-            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20an%20audit" target="_blank" rel="noopener noreferrer" class="wa-route">
+            <a href="https://wa.me/919819565341?text=Hi%20Thinkspire%2C%20I%20need%20an%20audit" target="_blank" class="wa-route">
               <svg><use href="#wa"/></svg>
-              <div>
-                <div class="wn">Technology &amp; Audit</div>
-                <div class="wd">ISO, SOC, ITGC, cyber, forensic</div>
-              </div>
+              <div><div class="wn">Technology &amp; Audit</div><div class="wd">ISO, SOC, ITGC, cyber, forensic</div></div>
             </a>
           </div>
-
           <div class="office-info">
-            <div class="oi-block">
-              <div class="label">Working Hours</div>
-              <div class="value">Monday – Saturday<br>10:00 AM – 7:00 PM IST</div>
-            </div>
-            <div class="oi-block">
-              <div class="label">Office</div>
-              <div class="value">Mumbai, Maharashtra<br>India</div>
-            </div>
+            <div class="oi-block"><div class="label">Working Hours</div><div class="value">Monday – Saturday<br>10:00 AM – 7:00 PM IST</div></div>
+            <div class="oi-block"><div class="label">Office</div><div class="value">Mumbai, Maharashtra<br>India</div></div>
           </div>
         </div>
       </div>
@@ -1922,80 +2252,120 @@
   <footer>
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="fb-brand-card">
-          <img src="ThinkSpire_New_Logo.png" alt="Thinkspire logo" />
-          <div class="fb-brand-card-text">
-            <div style="font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:2px;color:var(--ink);">THINK<span style="color:var(--red);">SPIRE</span></div>
-            <div style="font-size:9px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;font-weight:500;">Consultancy LLP</div>
-          </div>
+        <div class="fb-logo">
+          <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" />
+          <div class="fb-logo-text">THINK<span>SPIRE</span></div>
         </div>
         <p class="fb-tagline">Integrated legal, regulatory, financial and audit advisory for the modern Indian business.</p>
         <div class="fb-social">
-          <a href="https://www.linkedin.com/company/thinkspire-consultancy-llp/?viewAsMember=true" target="_blank" rel="noopener noreferrer" class="fbs" aria-label="LinkedIn">in</a>
-          <a href="https://wa.me/919819565341" target="_blank" rel="noopener noreferrer" class="fbs" aria-label="WhatsApp">W</a>
+          <a href="https://www.linkedin.com/company/thinkspire-consultancy-llp/?viewAsMember=true" target="_blank" class="fbs" aria-label="LinkedIn">in</a>
+          <a href="https://wa.me/919819565341" target="_blank" class="fbs" aria-label="WhatsApp">W</a>
           <a href="mailto:communication@thethinkspire.com" class="fbs" aria-label="Email">@</a>
         </div>
       </div>
-
       <div>
         <div class="fcol-title">Legal</div>
         <div class="fcol-links">
-          <a href="#sec-legal">Corporate Law</a>
-          <a href="#sec-legal">Litigation</a>
-          <a href="#sec-legal">Real Estate</a>
-          <a href="#sec-legal">Contracts</a>
-          <a href="#sec-legal">Due Diligence</a>
+          <a href="#sec-legal">Corporate Law</a><a href="#sec-legal">Litigation</a><a href="#sec-legal">Real Estate</a><a href="#sec-legal">Contracts</a><a href="#sec-legal">Due Diligence</a>
         </div>
       </div>
-
       <div>
         <div class="fcol-title">Regulatory</div>
         <div class="fcol-links">
-          <a href="#sec-regulatory">SEBI Filings</a>
-          <a href="#sec-regulatory">IPO Readiness</a>
-          <a href="#sec-regulatory">AIF Setup</a>
-          <a href="#sec-regulatory">RBI &amp; FEMA</a>
-          <a href="#sec-regulatory">Company Setup</a>
-          <a href="#sec-regulatory">GST &amp; Tax</a>
+          <a href="#sec-regulatory">SEBI Filings</a><a href="#sec-regulatory">IPO Readiness</a><a href="#sec-regulatory">AIF Setup</a><a href="#sec-regulatory">RBI &amp; FEMA</a><a href="#sec-regulatory">Company Setup</a><a href="#sec-regulatory">GST &amp; Tax</a>
         </div>
       </div>
-
       <div>
         <div class="fcol-title">Financial</div>
         <div class="fcol-links">
-          <a href="#sec-financial">M&amp;A Advisory</a>
-          <a href="#sec-financial">Tax Planning</a>
-          <a href="#sec-financial">Capital Advisory</a>
-          <a href="#sec-financial">Valuations</a>
-          <a href="#sec-financial">Risk Management</a>
+          <a href="#sec-financial">M&amp;A Advisory</a><a href="#sec-financial">Tax Planning</a><a href="#sec-financial">Capital Advisory</a><a href="#sec-financial">Valuations</a><a href="#sec-financial">Risk Management</a>
         </div>
       </div>
-
       <div>
         <div class="fcol-title">Audit &amp; Tech</div>
         <div class="fcol-links">
-          <a href="#sec-tech">Cyber Audit</a>
-          <a href="#sec-tech">SOC 1 / SOC 2</a>
-          <a href="#sec-tech">ITGC</a>
-          <a href="#sec-tech">Forensic Audit</a>
-          <a href="#sec-tech">DPDP Compliance</a>
+          <a href="#sec-tech">Cyber Audit</a><a href="#sec-tech">SOC 1 / SOC 2</a><a href="#sec-tech">ITGC</a><a href="#sec-tech">Forensic Audit</a><a href="#sec-tech">DPDP Compliance</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2025 Thinkspire Consultancy LLP · All rights reserved.</span>
-      <span>
-        <a href="mailto:communication@thethinkspire.com?subject=Privacy%20Policy%20Query">Privacy Policy</a>
-        &nbsp;·&nbsp;
-        <a href="mailto:communication@thethinkspire.com?subject=Terms%20Query">Terms</a>
-        &nbsp;·&nbsp;
-        <a href="mailto:communication@thethinkspire.com?subject=Legal%20Disclaimer">Disclaimer</a>
-      </span>
+      <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms</a> &nbsp;·&nbsp; <a href="#">Disclaimer</a></span>
     </div>
   </footer>
 
+  <!-- ── SERVICE DETAIL PANEL ── -->
+  <div class="panel-overlay" id="panelOverlay"></div>
+  <aside class="service-panel" id="servicePanel" role="dialog" aria-modal="true">
+    <div class="sp-header">
+      <div>
+        <div class="sp-vertical" id="spVertical">Legal &amp; Litigation</div>
+        <h2 class="sp-title" id="spTitle">Service Title</h2>
+      </div>
+      <button class="sp-close" id="spClose" aria-label="Close">✕</button>
+    </div>
+    <div class="sp-body">
+      <p class="sp-desc" id="spDesc"></p>
+      <div class="sp-section-label">What's Included</div>
+      <ul class="sp-includes" id="spIncludes"></ul>
+      <div class="sp-ideal">
+        <div class="sp-ideal-label">Ideal For</div>
+        <div class="sp-ideal-text" id="spIdeal"></div>
+      </div>
+    </div>
+    <div class="sp-footer">
+      <a id="spWa" href="#" target="_blank" class="sp-cta-primary">
+        <svg><use href="#wa"/></svg>
+        Discuss on WhatsApp
+      </a>
+      <a id="spEmail" href="mailto:communication@thethinkspire.com" class="sp-cta-secondary">Email Us</a>
+    </div>
+  </aside>
+
+  <!-- ── ARTICLE VIEWER ── -->
+  <div class="article-viewer" id="articleViewer">
+    <div class="av-header">
+      <a href="#" class="av-brand" onclick="event.preventDefault(); closeArticle();">
+        <img src="ThinkSpire_New_Logo.png" alt="Thinkspire" />
+        <div class="av-brand-text">THINK<span>SPIRE</span></div>
+      </a>
+      <button class="av-close" id="avClose" aria-label="Close">✕</button>
+    </div>
+    <div class="av-hero">
+      <div class="av-cat" id="avCat">Regulatory</div>
+      <h1 class="av-title" id="avTitle">Article Title</h1>
+      <div class="av-meta">
+        <span id="avDate">March 2025</span>
+        <span class="av-meta-dot"></span>
+        <span id="avRead">8 min read</span>
+        <span class="av-meta-dot"></span>
+        <span>Thinkspire Editorial</span>
+      </div>
+    </div>
+    <div class="av-banner" id="avBanner">
+      <div class="av-banner-text" id="avBannerText">Insight</div>
+    </div>
+    <div class="av-content" id="avContent"></div>
+    <div class="av-cta-block">
+      <div class="av-cta-eyebrow">Need Tailored Advice?</div>
+      <h3 class="av-cta-h">Talk to a <em>specialist</em></h3>
+      <p class="av-cta-text">Every business situation is different. If this article raised questions specific to your context, reach out — we typically respond within hours.</p>
+      <div class="av-cta-btns">
+        <a id="avCtaWa" href="#" target="_blank" class="av-cta-wa">
+          <svg><use href="#wa"/></svg>
+          WhatsApp Us
+        </a>
+        <a href="mailto:communication@thethinkspire.com" class="sp-cta-secondary">Email Us</a>
+      </div>
+    </div>
+    <div class="av-related">
+      <div class="av-related-label">Related Reading</div>
+      <div class="av-related-grid" id="avRelated"></div>
+    </div>
+  </div>
+
   <!-- WA FLOAT -->
-  <a href="https://wa.me/919819565341" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <a href="https://wa.me/919819565341" class="wa-float" target="_blank" aria-label="WhatsApp">
     <svg><use href="#wa"/></svg>
     <span class="text">WhatsApp Us</span>
   </a>
@@ -2008,10 +2378,7 @@
       hamburger.classList.toggle('open');
       mobileMenu.classList.toggle('open');
     });
-    function closeMobile() {
-      hamburger.classList.remove('open');
-      mobileMenu.classList.remove('open');
-    }
+    function closeMobile() { hamburger.classList.remove('open'); mobileMenu.classList.remove('open'); }
 
     // Sector tabs
     const tabs = document.querySelectorAll('.stab');
@@ -2021,70 +2388,568 @@
         tabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         const f = tab.dataset.filter;
-        sectorBlocks.forEach(b => {
-          b.classList.toggle('hidden', f !== 'all' && b.dataset.sector !== f);
-        });
+        sectorBlocks.forEach(b => b.classList.toggle('hidden', f !== 'all' && b.dataset.sector !== f));
       });
     });
 
-    // Audience pathway → jump to relevant sector
     document.querySelectorAll('.audience-chip').forEach(chip => {
-      chip.addEventListener('click', (e) => {
-        const aud = chip.dataset.audience;
-        const map = {
-          startup: 'regulatory',
-          corporate: 'legal',
-          investor: 'financial',
-          ipo: 'regulatory'
-        };
-        const target = map[aud];
+      chip.addEventListener('click', () => {
+        const map = { startup: 'regulatory', corporate: 'legal', investor: 'financial', ipo: 'regulatory' };
+        const target = map[chip.dataset.audience];
         if (target) {
-          // Activate the right tab
           tabs.forEach(t => t.classList.toggle('active', t.dataset.filter === target));
-          sectorBlocks.forEach(b => {
-            b.classList.toggle('hidden', b.dataset.sector !== target);
-          });
+          sectorBlocks.forEach(b => b.classList.toggle('hidden', b.dataset.sector !== target));
         }
       });
     });
 
-    // Practice card → jump to specific sector
     document.querySelectorAll('.practice-card').forEach(card => {
-      card.addEventListener('click', (e) => {
+      card.addEventListener('click', () => {
         const target = card.dataset.jump;
         if (target) {
           tabs.forEach(t => t.classList.toggle('active', t.dataset.filter === target));
-          sectorBlocks.forEach(b => {
-            b.classList.toggle('hidden', b.dataset.sector !== target);
-          });
+          sectorBlocks.forEach(b => b.classList.toggle('hidden', b.dataset.sector !== target));
         }
+      });
+    });
+
+    // Insights filter
+    const ifilters = document.querySelectorAll('.ifilter');
+    const allArticles = document.querySelectorAll('.article-card');
+    ifilters.forEach(btn => {
+      btn.addEventListener('click', () => {
+        ifilters.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        allArticles.forEach(a => a.classList.toggle('hidden', cat !== 'all' && a.dataset.cat !== cat));
       });
     });
 
     // Reveal animations
     const reveals = document.querySelectorAll('.reveal');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          obs.unobserve(e.target);
-        }
-      });
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
     }, { threshold: 0.12 });
     reveals.forEach(el => obs.observe(el));
 
-    // Service rows & article cards → scroll to contact
-    document.querySelectorAll('.service-row, .article-card').forEach(el => {
-      el.addEventListener('click', () => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Nav scroll state
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
+
+    // ─────────────────────────────────────────────
+    // SERVICE DATA
+    // ─────────────────────────────────────────────
+    const serviceData = {
+      'corp-law': { vertical: 'Legal & Litigation', title: 'Corporate Law & Advisory', desc: 'End-to-end corporate legal counsel — from incorporation and structuring through governance, transactions, and exit. We act as your outsourced general counsel.', includes: ['Company structuring &amp; restructuring advice','Drafting &amp; review of shareholder, founder &amp; investor agreements','Board resolutions, minutes &amp; statutory registers','Mergers, acquisitions &amp; joint venture advisory','Corporate governance &amp; compliance frameworks','Director duties &amp; insider trading advisory','Capital restructuring, ESOPs &amp; share allotments','Liquidation, winding-up &amp; exit strategy advisory'], ideal: 'Founders, CEOs and CFOs of private companies, startups raising capital, family businesses planning succession, and groups undergoing restructuring.' },
+      'litigation': { vertical: 'Legal & Litigation', title: 'Civil & Corporate Litigation', desc: 'Representation in commercial, civil and corporate disputes before the Bombay High Court, NCLT, NCLAT, consumer fora, and other tribunals across India.', includes: ['Commercial &amp; contractual disputes','Shareholder, partnership &amp; joint venture disputes','Oppression &amp; mismanagement petitions (NCLT)','Insolvency &amp; bankruptcy proceedings (IBC)','Property, tenancy &amp; real estate litigation','Recovery suits &amp; enforcement actions','Cheque bounce &amp; negotiable instrument matters','Writs &amp; constitutional matters before High Court','Appeals before appellate tribunals &amp; courts'], ideal: 'Companies facing commercial disputes, shareholders in deadlock, creditors pursuing recovery, and parties needing assertive court representation.' },
+      're-legal': { vertical: 'Legal & Litigation', title: 'Real Estate Legal Advisory', desc: 'Comprehensive legal support across the entire real estate lifecycle — for developers, buyers, lenders and institutional investors.', includes: ['Title due diligence &amp; search reports','Drafting &amp; vetting of sale deeds, lease deeds &amp; development agreements','RERA compliance &amp; project registration','Conveyance, society formation &amp; deemed conveyance','Joint development &amp; redevelopment agreements','Power of attorney drafting &amp; review','Litigation related to title, possession &amp; specific performance','NOCs, occupancy certificates &amp; municipal approvals advisory'], ideal: 'Developers, builders, real estate funds, individual buyers acquiring premium property, and housing societies undergoing redevelopment.' },
+      'hni-re': { vertical: 'Legal & Litigation', title: 'HNI Real Estate Investment Advisory', desc: 'Bespoke legal and structural advisory for high-net-worth individuals making significant real estate investments — residential, commercial or pre-launch.', includes: ['Pre-investment legal &amp; title due diligence','Structuring through individual, HUF, trust or LLP vehicles','Tax-efficient acquisition &amp; holding structures','Negotiation of price, terms &amp; payment milestones','Drafting of allotment letters, MOUs &amp; tripartite agreements','FEMA compliance for NRI investments','Estate planning &amp; succession integration','Exit strategy &amp; reinvestment advisory'], ideal: 'HNIs, NRIs, family offices and private investors deploying significant capital into premium real estate or pre-launch projects.' },
+      'contracts': { vertical: 'Legal & Litigation', title: 'Contract Drafting & Management', desc: 'Contracts that protect your interests, anticipate risk, and stand up in court when tested. We draft, vet, and manage contracts at scale.', includes: ['Master service agreements &amp; SOWs','Vendor, supplier &amp; distribution agreements','Employment, consultant &amp; NDA agreements','Technology &amp; SaaS licensing agreements','Franchise, agency &amp; partnership agreements','Intellectual property assignment &amp; licensing','International commercial contracts &amp; cross-border deals','Contract lifecycle management &amp; templates'], ideal: 'Companies entering new commercial relationships, scaling vendor networks, expanding internationally, or building contract templates.' },
+      'arbitration': { vertical: 'Legal & Litigation', title: 'Dispute Resolution & Arbitration', desc: 'Resolving disputes efficiently — through negotiation, mediation, or arbitration — to protect commercial relationships and minimise litigation cost.', includes: ['Domestic &amp; international commercial arbitration','Institutional arbitration (MCIA, ICA, ICC, SIAC)','Ad-hoc arbitration under the Arbitration &amp; Conciliation Act','Enforcement &amp; setting-aside of arbitral awards','Mediation &amp; pre-litigation negotiation','Drafting of arbitration clauses &amp; dispute resolution mechanisms','Cross-border enforcement under New York Convention','Strategic dispute resolution counsel'], ideal: 'Parties to commercial contracts seeking faster, confidential resolution outside court, and companies enforcing or contesting awards.' },
+      'dd-legal': { vertical: 'Legal & Litigation', title: 'Legal Due Diligence', desc: 'Forensic legal review of a target company\'s contracts, litigation, IP, regulatory standing and corporate records — for investors, acquirers and lenders.', includes: ['Buy-side &amp; sell-side legal due diligence','Corporate &amp; secretarial records review','Contract &amp; commercial obligations mapping','Litigation &amp; contingent liability assessment','IP, employment &amp; regulatory compliance review','Title &amp; asset verification for real estate &amp; immovables','Red-flag reports &amp; risk-weighted findings','Negotiation support during deal structuring'], ideal: 'Private equity firms, strategic acquirers, lenders before disbursement, and sellers preparing for transaction readiness.' },
+      'policy': { vertical: 'Legal & Litigation', title: 'Policy & Framework Drafting', desc: 'Internal policies and governance frameworks that protect the company legally, satisfy regulators, and align with global best practice.', includes: ['POSH (Prevention of Sexual Harassment) policy &amp; committees','Whistleblower &amp; vigil mechanism policies','Code of conduct &amp; ethics framework','Insider trading &amp; prevention of fraudulent practices code','Data privacy, IT &amp; acceptable use policies','Anti-bribery, anti-money-laundering &amp; KYC frameworks','HR, leave &amp; employment handbook policies','Board governance &amp; committee charters'], ideal: 'Companies scaling rapidly, preparing for IPO, expanding workforce, or seeking ISO/SOC certifications that require documented governance.' },
+      'sebi': { vertical: 'Regulatory & Compliance', title: 'SEBI Compliance & Filings', desc: 'End-to-end SEBI compliance support for listed companies, intermediaries, fund managers, and companies preparing to list — across all major SEBI regulations.', includes: ['SEBI LODR (Listing Obligations &amp; Disclosure Requirements) compliance','SEBI ICDR (Issue of Capital &amp; Disclosure Requirements) advisory','PIT (Prohibition of Insider Trading) regulations &amp; structured digital database','SEBI PFUTP &amp; takeover code (SAST) compliance','Quarterly, half-yearly &amp; annual SEBI filings','Material event disclosures &amp; corporate announcements','Investor grievance &amp; SCORES handling','Representation before SEBI &amp; adjudication proceedings'], ideal: 'Listed companies, merchant bankers, AIFs, portfolio managers, investment advisors, and IPO-bound companies.' },
+      'ipo': { vertical: 'Regulatory & Compliance', title: 'IPO Readiness Consultancy', desc: 'A structured, multi-phase programme to prepare your company for a successful public listing on BSE, NSE, or SME platforms — typically 12-18 months ahead of filing.', includes: ['IPO readiness diagnostic &amp; gap assessment','Corporate restructuring &amp; capital structure optimisation','DRHP / RHP drafting support &amp; legal vetting','SEBI ICDR compliance &amp; eligibility advisory','Coordination with merchant bankers, auditors &amp; registrars','Conversion to public company &amp; required board changes','Internal financial controls &amp; ICOFR readiness','Post-listing LODR &amp; compliance framework setup','Investor relations &amp; disclosure policy design'], ideal: 'Profitable companies planning IPO on Main Board or SME platforms within the next 12-24 months, including family businesses preparing for first dilution.' },
+      'aif': { vertical: 'Regulatory & Compliance', title: 'AIF Setup & Compliance', desc: 'Setup, registration and ongoing compliance for Alternate Investment Funds across all three categories — including PPM drafting, structuring, and SEBI representation.', includes: ['Category I, II &amp; III AIF registration with SEBI','Fund structuring (trust, LLP or company form)','PPM (Private Placement Memorandum) drafting','Contribution agreements &amp; investor onboarding documentation','Sponsor &amp; manager licensing requirements','Investment manager &amp; trustee agreements','Ongoing AIF compliance, reporting &amp; quarterly returns','Valuation policy &amp; investor reporting frameworks','GIFT-IFSC AIF setup for international capital'], ideal: 'Asset managers, family offices, single-strategy fund managers, and PE/VC firms launching India-focused funds.' },
+      'rbi-fema': { vertical: 'Regulatory & Compliance', title: 'RBI & FEMA Compliance', desc: 'Foreign exchange and cross-border transaction compliance — FDI, ODI, ECB, NRI investments, and routine RBI reporting under FEMA.', includes: ['FDI inflow &amp; FC-GPR / FC-TRS filings','Overseas Direct Investment (ODI) advisory &amp; ODI filings','External Commercial Borrowings (ECB) approval &amp; reporting','NRI investment structuring &amp; repatriation advisory','Liberalised Remittance Scheme (LRS) compliance','Compounding applications for FEMA contraventions','Annual FLA &amp; APR returns','Branch / liaison / project office setup','GIFT-IFSC entity setup &amp; advisory'], ideal: 'Indian companies receiving foreign investment, Indian companies investing abroad, NRIs managing India investments, and businesses borrowing offshore.' },
+      'incorp': { vertical: 'Regulatory & Compliance', title: 'Company Setup & Registration', desc: 'End-to-end company incorporation — choosing the right structure, completing MCA filings, and getting all post-incorporation registrations in place.', includes: ['Private Limited Company incorporation','LLP (Limited Liability Partnership) registration','OPC (One Person Company) setup','Public Limited Company incorporation','Section 8 (Not-for-Profit) company setup','Branch, liaison &amp; project office of foreign companies','Post-incorporation: PAN, TAN, GST, bank account &amp; ESI/PF','Drafting of MOA, AOA &amp; LLP agreements','Name reservation, DSC &amp; DIN procurement'], ideal: 'First-time founders, foreign companies entering India, professionals setting up consultancies, and groups restructuring entities.' },
+      'udyam': { vertical: 'Regulatory & Compliance', title: 'Udyam (MSME) Registration', desc: 'Quick, hassle-free registration under Udyam to unlock MSME benefits — including priority lending, tax benefits, and government scheme eligibility.', includes: ['Eligibility assessment under micro / small / medium classification','Udyam registration on the MSME portal','Documentation: PAN, Aadhaar &amp; investment-turnover certification','Re-classification &amp; updation as business grows','Advisory on MSME benefits, schemes &amp; subsidies','MSME Samadhaan delayed payment recovery support','MSME bank loan &amp; CGTMSE scheme advisory','Integration with GeM portal for government tenders'], ideal: 'Startups, small businesses, manufacturers, traders and service providers eligible under the MSME definition.' },
+      'gst': { vertical: 'Regulatory & Compliance', title: 'GST Compliance & Filings', desc: 'Full-spectrum GST advisory and compliance — registration, monthly filings, audits, refunds, and litigation representation before GST authorities.', includes: ['GST registration (regular, composition, casual)','Monthly GSTR-1, GSTR-3B &amp; annual GSTR-9 filings','Input Tax Credit (ITC) reconciliation &amp; optimisation','GST audit &amp; GSTR-9C certification','E-invoicing &amp; e-way bill compliance','GST refund applications (exports, inverted duty)','Show-cause notice replies &amp; appellate representation','GST advisory on classification, place of supply &amp; rate'], ideal: 'Every business with GST registration — from startups filing monthly returns to large enterprises managing multi-state operations.' },
+      'dpiit': { vertical: 'Regulatory & Compliance', title: 'Startup India / DPIIT Registration', desc: 'Recognition under DPIIT (Startup India) unlocks tax holidays, easier compliance, government tenders and angel-tax exemption — we handle the full application.', includes: ['Eligibility assessment for DPIIT recognition','Pitch deck &amp; business case preparation','DPIIT recognition application &amp; certificate','Section 80-IAC tax exemption application (3-year tax holiday)','Section 56(2)(viib) angel tax exemption certification','Self-certification under labour &amp; environmental laws','IPR fast-track &amp; rebate advisory','Startup India seed fund &amp; scheme advisory'], ideal: 'Early to growth-stage startups (typically under 10 years old) seeking tax benefits, regulatory simplification, and ecosystem access.' },
+      'esg': { vertical: 'Regulatory & Compliance', title: 'ESG & Governance Strategy', desc: 'Build an ESG framework that satisfies regulators (BRSR), attracts ESG-conscious capital, and creates measurable sustainability outcomes.', includes: ['BRSR (Business Responsibility &amp; Sustainability Report) preparation','ESG materiality assessment &amp; baseline reporting','Climate &amp; carbon disclosure framework (TCFD-aligned)','Social impact &amp; CSR strategy integration','Governance benchmarking &amp; board ESG charter','ESG policy framework &amp; implementation','Stakeholder engagement &amp; reporting structure','Pre-IPO ESG readiness for listed peer benchmarking'], ideal: 'Listed companies (top 1000), companies raising ESG-linked debt, IPO-bound entities, and businesses targeting global supply chains.' },
+      'dpdp': { vertical: 'Regulatory & Compliance', title: 'Data Privacy Compliance (DPDP)', desc: 'India\'s Digital Personal Data Protection Act compliance — gap assessment, policy framework, consent architecture, and ongoing data fiduciary obligations.', includes: ['DPDP applicability &amp; gap assessment','Privacy policy &amp; notice drafting','Consent management framework design','Data Protection Officer (DPO) advisory &amp; appointment','Data Principal rights handling mechanisms','Breach notification protocols','Cross-border data transfer compliance','Data fiduciary &amp; significant data fiduciary obligations','Vendor &amp; processor agreements (data processing addenda)'], ideal: 'Any business that collects personal data — particularly fintech, healthtech, edtech, e-commerce, SaaS and consumer-facing platforms.' },
+      'secretarial': { vertical: 'Regulatory & Compliance', title: 'Board & Secretarial Compliance', desc: 'Companies Act 2013 secretarial compliance — board meetings, statutory registers, ROC filings, and annual compliance calendar management.', includes: ['Board, committee &amp; AGM meeting management','Minutes drafting &amp; statutory registers maintenance','Annual return filings (MGT-7, AOC-4, DPT-3, MSME-1)','Event-based ROC filings (DIR-12, SH-7, INC-22, etc.)','Secretarial audit under Section 204','Director appointment, KYC &amp; DIN compliance','Charge creation, modification &amp; satisfaction filings','Annual compliance calendar &amp; monitoring'], ideal: 'Private limited companies, OPCs, LLPs and public companies needing dedicated secretarial support without hiring a full-time CS.' },
+      'governance': { vertical: 'Regulatory & Compliance', title: 'Corporate Governance Advisory', desc: 'Build a governance architecture that satisfies regulators, attracts institutional capital, and provides clear accountability across leadership.', includes: ['Board composition, evaluation &amp; succession planning','Committee charters (Audit, NRC, Stakeholder, Risk)','Related party transaction framework','Internal financial controls (IFC) design &amp; testing','Risk management policy &amp; risk register','Whistleblower &amp; vigil mechanism implementation','Subsidiary monitoring &amp; oversight framework','Governance scorecards &amp; benchmarking','Board-readiness for IPO &amp; institutional investors'], ideal: 'Companies preparing for IPO, businesses raising institutional capital, listed entities seeking governance uplift, and family businesses formalising governance.' },
+      'ma': { vertical: 'Financial & Tax', title: 'M&A Deal Advisory & Due Diligence', desc: 'End-to-end deal advisory for mid-market M&A — from target identification and valuation to diligence, negotiation, structuring, and post-merger integration.', includes: ['Buy-side &amp; sell-side advisory','Target screening &amp; valuation analysis','Commercial, financial, tax &amp; legal due diligence','Deal structuring (share purchase, asset purchase, slump sale, merger)','SPA, SHA &amp; transaction document negotiation','Tax-efficient deal structuring &amp; stamp duty optimisation','Regulatory approvals (CCI, RBI, SEBI, sectoral regulators)','Post-merger integration support','Cross-border deal advisory'], ideal: 'Promoters considering exits, strategic acquirers, PE / VC firms, and mid-market companies pursuing inorganic growth.' },
+      'tax-plan': { vertical: 'Financial & Tax', title: 'Tax Planning & Optimisation', desc: 'Strategic tax planning that reduces effective tax rates legally — for corporates, promoters, family offices and high-net-worth individuals.', includes: ['Corporate tax planning &amp; effective tax rate optimisation','Personal tax planning for promoters &amp; HNIs','Capital gains optimisation &amp; reinvestment strategy','International tax &amp; treaty advisory (DTAA)','Transfer pricing planning &amp; documentation','Tax-efficient remuneration &amp; ESOP structuring','Group restructuring for tax efficiency','Succession planning &amp; estate tax mitigation','Tax representation &amp; appellate advisory'], ideal: 'Profitable promoters, HNIs with multiple income streams, expanding corporates, and families planning intergenerational wealth transfer.' },
+      'capital': { vertical: 'Financial & Tax', title: 'Capital Advisory & Structuring', desc: 'Raise the right capital at the right cost — equity, debt, hybrid or structured — from the right investors, with terms that protect long-term flexibility.', includes: ['Capital structure design (debt-equity mix optimisation)','Equity fund-raise advisory (seed to growth stage)','Debt advisory (term loans, working capital, NCDs)','Mezzanine &amp; structured finance arrangements','Convertible instruments (CCD, CCPS, SAFE) structuring','Term sheet negotiation &amp; investor agreements','Pre-IPO capital planning','Refinancing &amp; balance-sheet optimisation','Investor presentations &amp; financial modelling'], ideal: 'Founders raising institutional rounds, CFOs optimising capital structure, family businesses bringing in outside investors, and pre-IPO companies.' },
+      'aif-fin': { vertical: 'Financial & Tax', title: 'Alternate Investment Funds (AIF)', desc: 'Financial and tax advisory for AIF managers, sponsors and investors — covering fund accounting, taxation, distributions, and investor reporting.', includes: ['AIF taxation advisory (pass-through, business income, capital gains)','Investor taxation &amp; TDS compliance','Carried interest &amp; performance fee structuring','Fund accounting &amp; NAV computation','Quarterly investor reporting','Distribution waterfall modelling','GIFT-IFSC AIF tax advisory','Audit support &amp; trustee coordination'], ideal: 'AIF managers, sponsors, GP entities, and institutional / HNI investors in AIFs.' },
+      'itr': { vertical: 'Financial & Tax', title: 'Income Tax Returns & ITR Filing', desc: 'Accurate, optimised income tax return filing for individuals, HUFs, partnerships, companies, and NRIs — with proactive advisory on deductions and notices.', includes: ['Salaried, business, capital gains &amp; multiple-source ITR filing','NRI / Resident-but-not-ordinarily-resident return filing','Capital gains computation (equity, property, crypto)','Advance tax computation &amp; payment','Deduction &amp; rebate optimisation','Notice replies (Section 143, 148, 245)','Tax refund follow-up &amp; representation','Revised &amp; updated return filings'], ideal: 'Individuals, HNIs, NRIs, professionals, partnerships, and small businesses needing reliable annual tax filing.' },
+      'tds': { vertical: 'Financial & Tax', title: 'TDS Compliance', desc: 'Complete tax-deduction-at-source compliance for employers, businesses and individuals — quarterly returns, certificates, and reconciliation.', includes: ['TDS deduction &amp; deposit advisory','Quarterly TDS return filing (24Q, 26Q, 27Q, 27EQ)','TDS certificate (Form 16, 16A) generation','TDS on property transactions (Section 194-IA)','TDS on rent &amp; professional fees (194-I, 194-J)','Lower / nil deduction certificates (Section 197)','TDS reconciliation with 26AS &amp; AIS','Default notice replies &amp; rectification'], ideal: 'Employers, contractors, real estate buyers, and any entity making payments requiring TDS deduction.' },
+      'restructure': { vertical: 'Financial & Tax', title: 'Financial Restructuring', desc: 'Restructure debt, equity, operations, or the entire group structure to unlock value, reduce cost, or recover from financial stress.', includes: ['Debt restructuring &amp; OTS negotiations with lenders','Group restructuring (mergers, demergers, spin-offs)','Holding company / promoter structure optimisation','NCLT-approved schemes of arrangement','Capital reduction &amp; buy-back advisory','Working capital &amp; cash flow restructuring','Pre-pack &amp; IBC resolution support','Tax-neutral reorganisation strategies'], ideal: 'Companies under financial stress, groups simplifying structure, promoters consolidating holdings, and businesses preparing for transactions or IPO.' },
+      'valuation': { vertical: 'Financial & Tax', title: 'Business Valuations', desc: 'Defensible, methodology-driven valuations for transactions, regulatory filings, ESOPs, disputes, and reporting — under Indian and international standards.', includes: ['Valuation under Income Tax Act (Rule 11UA, 11UB)','Valuation under Companies Act &amp; FEMA','SEBI ICDR / takeover code valuations','ESOP valuation under Black-Scholes','Purchase price allocation (PPA) for M&amp;A','Brand, IP &amp; intangible asset valuation','Real estate &amp; share valuations','IBBI-registered valuer reports (for IBC, NCLT)'], ideal: 'Companies issuing shares, transferring stakes, granting ESOPs, doing M&amp;A, or going through NCLT / regulatory processes.' },
+      'risk': { vertical: 'Financial & Tax', title: 'Risk Management Advisory', desc: 'Identify, measure, and mitigate the financial, operational, regulatory and strategic risks that could materially impact your business.', includes: ['Enterprise Risk Management (ERM) framework design','Risk register, heat-map &amp; appetite statement','Internal financial controls (IFC) &amp; ICOFR design','Fraud risk assessment &amp; prevention','Regulatory &amp; compliance risk monitoring','Business continuity &amp; crisis management planning','Risk-based internal audit support','Board &amp; risk committee reporting structures'], ideal: 'Listed companies, regulated entities (NBFCs, AIFs, brokers), companies with large operations, and IPO-bound businesses.' },
+      're-structure': { vertical: 'Financial & Tax', title: 'Real Estate Investment Structuring', desc: 'Structure real estate investments and holdings tax-efficiently — through individuals, HUFs, LLPs, trusts or REITs — for HNIs, family offices and developers.', includes: ['Acquisition vehicle selection &amp; comparative analysis','Tax-efficient holding through trusts, LLPs &amp; HUFs','Joint venture &amp; co-investment structuring','REIT &amp; InvIT investment advisory','Capital gains roll-over &amp; reinvestment planning','Cross-border real estate investment (FEMA + tax)','Estate planning integration with real estate assets','Exit &amp; liquidity event structuring'], ideal: 'HNIs and family offices building real estate portfolios, NRIs investing in Indian property, and developers structuring projects with co-investors.' },
+      'iso27001': { vertical: 'Technology & Audit', title: 'Cyber Audit (ISO 27001)', desc: 'ISO/IEC 27001 readiness, gap assessment, implementation support, and certification audit — the international gold standard for information security management.', includes: ['ISO 27001 gap assessment &amp; scoping','Information Security Management System (ISMS) design','Risk assessment &amp; risk treatment plan','Statement of Applicability (SoA) &amp; control mapping','Policy &amp; procedure documentation (Annex A controls)','Internal audit &amp; management review','Pre-certification audit &amp; corrective actions','Certification body coordination &amp; surveillance support'], ideal: 'SaaS companies, IT services firms, fintech, healthtech, BPOs, and any business handling sensitive client data or bidding on enterprise contracts.' },
+      'soc': { vertical: 'Technology & Audit', title: 'SOC 1 & SOC 2 Audits', desc: 'SOC 1 (financial reporting) and SOC 2 (security, availability, confidentiality, processing integrity, privacy) audits — readiness and full attestation support.', includes: ['SOC 1 / SOC 2 scoping &amp; trust services criteria selection','Type I (point-in-time) &amp; Type II (period) audit preparation','Control framework design &amp; implementation','Evidence collection &amp; control testing support','Gap remediation &amp; readiness assessment','Coordination with CPA / attestation firm','Bridge letter preparation between audit periods','Sub-service organisation considerations'], ideal: 'B2B SaaS companies, payment processors, data centres, and any service provider whose clients require SOC reports for vendor risk management.' },
+      'itgc': { vertical: 'Technology & Audit', title: 'ITGC (IT General Controls)', desc: 'Design and audit of IT general controls covering access management, change management, computer operations, and program development — the foundation of any IT audit.', includes: ['ITGC framework design &amp; control library','Access management &amp; user provisioning controls','Change management &amp; release controls','Backup, recovery &amp; business continuity controls','Program development &amp; SDLC controls','Logical &amp; physical access reviews','Segregation of duties analysis','ITGC audit support (for SOX, ICOFR, statutory audits)'], ideal: 'Listed companies (ICOFR), subsidiaries of US-listed entities (SOX), regulated entities, and companies with material IT-dependent processes.' },
+      'forensic': { vertical: 'Technology & Audit', title: 'Forensic Audit', desc: 'Independent forensic investigation into suspected fraud, financial misstatement, employee misconduct, or regulatory breach — with court-admissible findings.', includes: ['Fraud risk assessment &amp; preliminary investigation','Financial statement &amp; transaction forensics','Digital forensics &amp; e-discovery','Employee misconduct &amp; whistleblower investigation','Asset tracing &amp; recovery support','Money laundering &amp; suspicious transaction review','Forensic report drafting (court-admissible)','Expert witness &amp; testimony support'], ideal: 'Boards investigating suspected fraud, companies facing whistleblower complaints, parties to disputes, and regulators / law enforcement coordination.' },
+      'rbi-it': { vertical: 'Technology & Audit', title: 'RBI IT Framework Compliance', desc: 'Compliance with RBI\'s Master Directions on IT governance, cybersecurity, outsourcing of IT services, and digital lending — for banks, NBFCs and payment entities.', includes: ['RBI cybersecurity framework gap assessment','IT governance &amp; board IT strategy committee setup','Vulnerability assessment &amp; penetration testing (VAPT)','Cyber incident reporting &amp; CSITE compliance','Outsourcing of IT services compliance','Digital lending guidelines compliance','Master Direction on IT Governance compliance','Annual cybersecurity audit &amp; reporting'], ideal: 'NBFCs, banks, payment aggregators, PPI issuers, digital lending platforms, and other RBI-regulated entities.' },
+      'dpdp-audit': { vertical: 'Technology & Audit', title: 'Data Privacy & DPDP Audit', desc: 'Independent audit of your data privacy posture against the DPDP Act, GDPR (where applicable), and industry best practice — with prioritised remediation.', includes: ['Data inventory &amp; data flow mapping','Consent &amp; notice compliance audit','Data subject rights handling assessment','Cross-border data transfer review','Vendor &amp; processor compliance audit','Breach response readiness assessment','DPDP &amp; GDPR gap analysis','Privacy impact assessment (PIA / DPIA)'], ideal: 'Companies handling significant personal data — fintech, healthtech, edtech, e-commerce, SaaS, marketing tech, and consumer platforms.' },
+      'internal': { vertical: 'Technology & Audit', title: 'Internal Audit Advisory', desc: 'Outsourced or co-sourced internal audit covering operational, financial, compliance and IT risks — risk-based, value-adding, and board-reportable.', includes: ['Internal audit charter &amp; framework design','Risk-based internal audit plan','Process &amp; control audits across functions','IT-enabled internal audits','Statutory internal audit (Section 138, Companies Act)','Audit committee reporting &amp; briefings','Concurrent / continuous audit support','Fraud, ethics &amp; compliance audits'], ideal: 'Companies required to have internal audit under Companies Act, listed entities, large private companies, and businesses without in-house audit teams.' },
+      'cyber-risk': { vertical: 'Technology & Audit', title: 'Cybersecurity Risk Assessment', desc: 'Comprehensive assessment of your cyber threat landscape, control maturity, and residual risk — mapped to industry frameworks (NIST, ISO, CIS).', includes: ['Cyber threat &amp; risk profiling','Vulnerability assessment &amp; penetration testing (VAPT)','Network &amp; application security assessment','Cloud security posture review (AWS, Azure, GCP)','Endpoint &amp; identity risk assessment','Third-party / supply chain cyber risk review','NIST CSF / ISO 27001 / CIS maturity benchmarking','Cyber risk dashboard &amp; board reporting'], ideal: 'Any business with material IT operations, regulated entities, businesses seeking cyber insurance, and companies preparing for certifications.' },
+      'infosec': { vertical: 'Technology & Audit', title: 'Information Security Policy Review', desc: 'Drafting, review and refresh of your full information security policy stack — aligned to ISO 27001, NIST, RBI / SEBI mandates, and DPDP.', includes: ['Information security policy &amp; standards drafting','Acceptable use, access &amp; password policies','Data classification &amp; handling policy','Incident response &amp; breach notification policy','Business continuity &amp; disaster recovery policy','Third-party &amp; vendor security policy','Remote work &amp; BYOD policy','Annual policy refresh &amp; framework mapping'], ideal: 'Companies pursuing ISO / SOC certifications, regulated entities, businesses scaling their security programme, and companies after a security incident.' }
+    };
+
+    // Panel logic
+    const panel = document.getElementById('servicePanel');
+    const overlay = document.getElementById('panelOverlay');
+    const spClose = document.getElementById('spClose');
+    function openPanel(key) {
+      const data = serviceData[key];
+      if (!data) return;
+      document.getElementById('spVertical').innerHTML = data.vertical;
+      document.getElementById('spTitle').innerHTML = data.title;
+      document.getElementById('spDesc').innerHTML = data.desc;
+      document.getElementById('spIncludes').innerHTML = data.includes.map(i => '<li>' + i + '</li>').join('');
+      document.getElementById('spIdeal').innerHTML = data.ideal;
+      const waMsg = encodeURIComponent('Hi Thinkspire, I would like to know more about your "' + data.title.replace(/&amp;/g, '&') + '" service.');
+      document.getElementById('spWa').href = 'https://wa.me/919819565341?text=' + waMsg;
+      panel.classList.add('open');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closePanel() {
+      panel.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.service-row[data-service]').forEach(row => {
+      row.addEventListener('click', () => openPanel(row.dataset.service));
     });
+    spClose.addEventListener('click', closePanel);
+    overlay.addEventListener('click', closePanel);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closePanel(); closeArticle(); } });
+
+
+    // ─────────────────────────────────────────────
+    // ARTICLE CONTENT
+    // ─────────────────────────────────────────────
+    const articleData = {
+      'sebi-reforms': {
+        cat: 'Regulatory',
+        title: 'SEBI\'s 2025 Disclosure Reforms: What every IPO-bound company needs to know',
+        date: 'March 2025',
+        read: '8 min read',
+        bannerText: 'SEBI Reforms <em>2025</em>',
+        bannerStyle: 'background: linear-gradient(135deg, #1a1a1a 0%, #8C0A20 100%);',
+        relatedKeys: ['aif-setup', 'ma-diligence', 'dpdp-playbook'],
+        content: `
+          <p>SEBI's 2025 disclosure reforms mark one of the most significant updates to India's listing framework in recent years. For companies preparing to file a DRHP, the changes are not cosmetic — they materially alter what must be disclosed, when, and at what level of granularity. This article distils what every IPO-bound company should be doing right now.</p>
+
+          <h2>The headline changes</h2>
+          <p>The reforms tighten three areas in particular: <strong>pre-IPO transactions</strong>, <strong>related-party disclosures</strong>, and <strong>litigation reporting</strong>. Each of these has historically been a soft area in DRHPs — and SEBI has now made them substantially harder to gloss over.</p>
+
+          <h3>1. Pre-IPO share issuances under scrutiny</h3>
+          <p>Companies that have issued shares to selectively chosen investors in the 12 months prior to filing must now provide expanded disclosures on the rationale, pricing methodology, and the relationship between the issuer and the allottees. The bar for justifying differential pricing has risen significantly.</p>
+
+          <h3>2. Related-party transactions: thresholds tightened</h3>
+          <p>The materiality threshold for related-party disclosures has been reduced, and the look-back period extended. Promoter loans, group-company transactions, and arrangements with key managerial personnel that may have previously sat below the disclosure threshold will now likely require detailed disclosure.</p>
+
+          <h3>3. Litigation: not just material, but contextual</h3>
+          <p>Beyond listing pending litigation, issuers must now provide a contextual assessment of the impact each material case could have on the company's financial position, operations, or reputation — going substantially beyond the previous boilerplate approach.</p>
+
+          <blockquote>For companies that are 6-12 months out from filing, the most useful thing to do today is run an internal disclosure stress-test against the new framework — and discover the gaps before merchant bankers do.</blockquote>
+
+          <h2>What this means for your IPO timeline</h2>
+          <p>If your DRHP is being prepared right now, the practical implications are immediate:</p>
+          <ul>
+            <li><strong>Add 4-6 weeks</strong> to your pre-filing timeline to accommodate expanded due diligence and disclosure drafting.</li>
+            <li><strong>Re-paper related-party transactions</strong> that may now fall within disclosure thresholds — making sure the underlying documentation matches what gets disclosed.</li>
+            <li><strong>Revisit your litigation register</strong> — and build in a partner-level assessment of materiality and impact for each case.</li>
+            <li><strong>Stress-test your pre-IPO cap table</strong> for any share issuances in the look-back period, ensuring valuation methodology is well-documented.</li>
+          </ul>
+
+          <h2>Where companies typically get it wrong</h2>
+          <p>The most common failure mode we see is treating the disclosure exercise as a documentation task rather than a governance one. The new framework rewards companies that have <em>actually</em> tightened their internal controls — not just those that disclose more eloquently. Auditors and merchant bankers are increasingly asking for evidence of how the company arrived at its disclosures, not just the disclosures themselves.</p>
+
+          <p>This shift — from "what do we say?" to "what can we evidence?" — is the single biggest mindset adjustment IPO-bound companies need to make in 2025.</p>
+
+          <div class="key-takeaway">
+            <div class="key-takeaway-label">Key Takeaway</div>
+            <p>The 2025 SEBI reforms aren't just a disclosure update — they're a governance test. Companies that treat them as a drafting exercise will struggle. Those that use them as an opportunity to tighten internal controls will find filing materially smoother.</p>
+          </div>
+
+          <h2>The road ahead</h2>
+          <p>SEBI has signalled that this is the beginning, not the end, of disclosure reform. ESG, climate risk, and digital infrastructure-related disclosures are next in the pipeline. Companies that build robust internal disclosure processes now will be far better positioned to absorb future changes without disrupting their filing timeline.</p>
+        `
+      },
+      'ma-diligence': {
+        cat: 'Financial',
+        title: 'Five red flags we always check in mid-market M&A due diligence',
+        date: 'February 2025',
+        read: '6 min read',
+        bannerText: 'M&amp;A <em>Diligence</em>',
+        bannerStyle: 'background: linear-gradient(135deg, #2D2D2D 0%, #C8102E 100%);',
+        relatedKeys: ['sebi-reforms', 'aif-setup', 'hni-real-estate'],
+        content: `
+          <p>Mid-market M&amp;A in India is a different beast from large-cap deal-making. Targets are typically founder-led, capital-constrained, and have grown faster than their governance frameworks. The result: due diligence in this segment surfaces a fairly predictable set of issues — most of which are manageable, provided they are surfaced early.</p>
+
+          <p>Here are the five red flags we check for in every mid-market deal we work on, and why each one matters.</p>
+
+          <h2>1. The shareholder agreement no one reread</h2>
+          <p>Founders frequently sign their first SHA at the seed stage and never look at it again. Over the next several rounds, terms accumulate — drag-along, tag-along, anti-dilution, liquidation preferences — and rarely does anyone reconcile them. A well-intentioned promoter can find themselves contractually unable to consummate the deal they thought they were selling.</p>
+
+          <p>What we check: every SHA in the cap table history, every consent right that may be triggered, and every clause that could materially alter economic outcomes for the selling promoter.</p>
+
+          <h3>The ESOP question</h3>
+          <p>Closely related: ESOP pools that have grown organically without clear documentation, vesting cliffs that align awkwardly with the deal timeline, and option-holders who may need to be brought into the transaction.</p>
+
+          <h2>2. Related-party transactions that aren't quite arm's-length</h2>
+          <p>Group companies, founder-controlled vendors, and cousin-run intermediaries are common in Indian mid-market businesses. They aren't inherently problematic — but they need to be priced at arm's length, documented properly, and capable of being unwound or repriced post-acquisition.</p>
+
+          <blockquote>The cleanest mid-market deals have the most boring related-party schedules. Long, complex schedules with thin documentation are where deals slow down — and sometimes die.</blockquote>
+
+          <h2>3. Working capital that has been quietly engineered</h2>
+          <p>The difference between EBITDA and cash flow is usually working capital — and working capital is one of the easiest line items to optimise just before a sale process. Stretched payables, accelerated receivables, and inventory drawn down can flatter the last few months of performance.</p>
+
+          <p>We look for: trend reversals in DSO/DPO, unusual inventory dynamics, and any indication that "normalised" working capital differs materially from the period being shown.</p>
+
+          <h2>4. IP that doesn't sit where you think it does</h2>
+          <p>In tech-adjacent businesses especially, intellectual property is often developed by founders, consultants, and early employees who never signed proper assignment agreements. The result: critical software, brand assets, or trade secrets may legally still belong to individuals rather than the company.</p>
+
+          <p>This is fixable, but the fix needs to happen <em>before</em> closing — once the deal is signed, the leverage to obtain clean assignments evaporates.</p>
+
+          <h2>5. The litigation register that excludes the inconvenient cases</h2>
+          <p>Promoter disclosures of pending litigation are usually accurate for the obvious cases — vendor disputes, employment matters, tax assessments. Less commonly disclosed: regulatory show-cause notices, personal litigation involving promoters, and cases against group entities that could have indemnity implications.</p>
+
+          <p>Our standard practice is to run independent litigation searches in every jurisdiction the company operates in — and to ask explicitly about regulatory correspondence that may not yet have crystallised into litigation.</p>
+
+          <div class="key-takeaway">
+            <div class="key-takeaway-label">Key Takeaway</div>
+            <p>Most deals that fail in mid-market M&amp;A don't fail because of these five issues themselves — they fail because the issues surface too late in the process. Surfacing them early, before the LOI, almost always results in a better deal for both sides.</p>
+          </div>
+
+          <h2>Designing diligence around what matters</h2>
+          <p>A good diligence process is not exhaustive — it is intelligently scoped. The five flags above account for the majority of deal-breakers we encounter. Resources spent here generate more value than equal effort spread thinly across every line item in a checklist.</p>
+        `
+      },
+      'dpdp-playbook': {
+        cat: 'Regulatory',
+        title: 'DPDP Act compliance: The 90-day playbook for SMEs',
+        date: 'January 2025',
+        read: '7 min read',
+        bannerText: 'DPDP <em>Act</em>',
+        bannerStyle: 'background: linear-gradient(135deg, #1a1a1a 0%, #6B6B6B 100%);',
+        relatedKeys: ['sebi-reforms', 'iso-vs-soc', 'aif-setup'],
+        content: `
+          <p>India's Digital Personal Data Protection Act has been positioned as a sweeping reform — and it is. But for most SMEs, the practical compliance journey is more manageable than the legislative weight suggests. This is a 90-day playbook for businesses that need to get DPDP-ready without overhauling their entire data infrastructure.</p>
+
+          <h2>Phase 1: Days 1-30 — Discovery</h2>
+          <p>You cannot comply with DPDP until you know what data you actually process. The first phase is entirely about discovery and inventory.</p>
+
+          <h3>Build your data inventory</h3>
+          <p>Map every category of personal data you handle: employee data, customer data, vendor data, prospect data, marketing data. For each category, capture: what data is collected, why, where it's stored, who has access, and how long it's retained.</p>
+
+          <ul>
+            <li><strong>Employee data:</strong> HRMS, payroll, performance, leaves, biometric</li>
+            <li><strong>Customer data:</strong> CRM, sales, support, contracts</li>
+            <li><strong>Marketing data:</strong> email lists, web analytics, lead-gen forms</li>
+            <li><strong>Vendor data:</strong> KYC, contracts, banking</li>
+            <li><strong>Third-party shared data:</strong> processors, sub-processors, integrations</li>
+          </ul>
+
+          <h3>Identify your data fiduciary status</h3>
+          <p>Are you a Data Fiduciary (you decide why and how data is processed) or a Data Processor (you process on behalf of someone else)? Most SMEs are both — fiduciaries for their customers and employees, processors for their B2B clients.</p>
+
+          <h2>Phase 2: Days 31-60 — Architecture</h2>
+          <p>Once you know what you have, you design the controls. This phase produces three deliverables.</p>
+
+          <h3>1. Updated privacy notice</h3>
+          <p>Your existing privacy policy is almost certainly inadequate under DPDP. The new notice must be in plain language, must specify each purpose of data use, and must be presented at or before the point of collection.</p>
+
+          <h3>2. Consent management framework</h3>
+          <p>DPDP requires specific, informed, free, and unambiguous consent — and an equally easy way to withdraw it. For most SMEs, this means re-papering existing user accounts, marketing lists, and customer agreements.</p>
+
+          <blockquote>The most common DPDP mistake is treating consent as a one-time checkbox. The Act treats consent as a living relationship — and your systems need to reflect that.</blockquote>
+
+          <h3>3. Data subject rights handling</h3>
+          <p>Build a clear, documented process for handling requests from data principals: access, correction, erasure, and grievance redressal. For SMEs, this can often be a simple shared inbox with a documented response workflow — but it must exist and be functional.</p>
+
+          <h2>Phase 3: Days 61-90 — Operationalisation</h2>
+          <p>The final phase is about embedding compliance into how the business actually runs.</p>
+
+          <h3>Train the front line</h3>
+          <p>Sales reps, customer support, HR — everyone who handles personal data needs basic DPDP literacy. The Act doesn't expect everyone to be a lawyer; it expects everyone to recognise when something might need to be escalated.</p>
+
+          <h3>Re-paper vendor relationships</h3>
+          <p>Every vendor that processes personal data on your behalf needs an updated data processing agreement (DPA). Cloud providers, payroll vendors, CRM vendors, marketing tools — go through the list.</p>
+
+          <h3>Breach response plan</h3>
+          <p>You need a documented incident response process that can identify, assess, escalate, and report personal data breaches within the statutory timelines. Even a simple plan is better than no plan.</p>
+
+          <div class="key-takeaway">
+            <div class="key-takeaway-label">Key Takeaway</div>
+            <p>DPDP compliance is achievable in 90 days for most SMEs — provided you treat it as a sequenced project, not a documentation exercise. Discovery → Architecture → Operationalisation is the right order. Skip any phase, and you'll find yourself with policies that don't reflect reality.</p>
+          </div>
+
+          <h2>The cost of getting it wrong</h2>
+          <p>Penalties under DPDP can reach significant levels for non-compliance, but the more pressing risk for most SMEs is reputational. Enterprise customers are increasingly making DPDP compliance a procurement requirement — non-compliance can quietly shut you out of opportunities long before any regulator gets involved.</p>
+        `
+      },
+      'aif-setup': {
+        cat: 'Regulatory',
+        title: 'Setting up a Category II AIF: The end-to-end roadmap',
+        date: 'December 2024',
+        read: '9 min read',
+        bannerText: 'AIF <em>Setup</em>',
+        bannerStyle: 'background: linear-gradient(135deg, #C8102E 0%, #1a1a1a 100%);',
+        relatedKeys: ['sebi-reforms', 'ma-diligence', 'iso-vs-soc'],
+        content: `
+          <p>Category II Alternate Investment Funds have become the vehicle of choice for India-focused private capital. They offer flexibility on strategy, sponsor commitment is modest, and the SEBI registration pathway is well-established. But the setup process has more moving parts than first-time fund managers usually expect.</p>
+
+          <p>This is an end-to-end roadmap — what to do, in what order, and what to watch for at each step.</p>
+
+          <h2>Before you start: deciding on the structure</h2>
+          <p>Category II AIFs can be set up as a Trust, an LLP, or a Company. In practice, more than 90% of Category II AIFs use the Trust structure — and for good reason. Trusts offer the cleanest pass-through tax treatment, the most flexible governance, and the most well-understood SEBI engagement model.</p>
+
+          <h3>The minimum corpus question</h3>
+          <p>SEBI requires Category II AIFs to have a minimum corpus of ₹20 crore. The first close must achieve this, and most fund managers aim for a first close of ₹50-100 crore to build credibility for subsequent closes.</p>
+
+          <h2>Step 1: Sponsor and Manager entities</h2>
+          <p>Before the AIF itself exists, you need a Sponsor (which provides skin-in-the-game commitment) and an Investment Manager (which actually runs the fund). These can be the same group, but they need to be separate legal entities.</p>
+
+          <ul>
+            <li><strong>Sponsor commitment:</strong> Lower of 2.5% of the corpus or ₹5 crore — to be invested alongside other LPs</li>
+            <li><strong>Manager entity:</strong> Typically a private limited company that earns the management fee and carried interest</li>
+            <li><strong>Net worth requirements:</strong> The Investment Manager must demonstrate adequate net worth and operational capability</li>
+          </ul>
+
+          <h2>Step 2: Trust establishment</h2>
+          <p>Set up the Trust deed naming the Sponsor as the Settlor and a licensed Trustee (typically a SEBI-registered debenture trustee). The Trust deed governs the relationship between Settlor, Trustee, Manager, and beneficiaries.</p>
+
+          <h3>The trustee question</h3>
+          <p>Choose your trustee carefully. They are not a rubber stamp — they have fiduciary obligations to LPs and will scrutinise your investment decisions, valuations, and conflicts of interest. A good trustee is a partner; a difficult one can slow your fund materially.</p>
+
+          <h2>Step 3: The PPM</h2>
+          <p>The Private Placement Memorandum (PPM) is the foundational document of the fund. SEBI prescribes a standard PPM template that must be substantially followed. Beyond the template, focus on:</p>
+
+          <ul>
+            <li><strong>Investment strategy clarity:</strong> What you'll invest in, what you won't, and why</li>
+            <li><strong>Track record presentation:</strong> Honest, attributable, and verifiable</li>
+            <li><strong>Fee and waterfall disclosures:</strong> Crystal clear — LPs will model these aggressively</li>
+            <li><strong>Conflict-of-interest framework:</strong> How you'll handle parallel deals, related-party investments, and key-person events</li>
+          </ul>
+
+          <blockquote>The PPM is not just a marketing document — it is the contract that governs every LP relationship for the life of the fund. Treat it accordingly.</blockquote>
+
+          <h2>Step 4: SEBI registration</h2>
+          <p>The SEBI application is the critical-path item. Typical timelines from filing to receipt of registration are 3-5 months, assuming the application is well-prepared.</p>
+
+          <h3>Common reasons for delay</h3>
+          <ul>
+            <li>Inadequate disclosure of past activity by Sponsor / Manager principals</li>
+            <li>Unclear conflict-of-interest framework</li>
+            <li>Inadequate documentation of investment team experience</li>
+            <li>Trust deed not aligned with PPM</li>
+          </ul>
+
+          <h2>Step 5: First close mechanics</h2>
+          <p>Once SEBI registration is in hand, you can begin formal LP commitments. The first close requires:</p>
+
+          <ul>
+            <li>Minimum 2 LPs (other than Sponsor)</li>
+            <li>Minimum corpus of ₹20 crore</li>
+            <li>Contribution agreements with each LP</li>
+            <li>Bank account, custodian, and fund administrator in place</li>
+          </ul>
+
+          <h2>Step 6: Operationalisation</h2>
+          <p>Post first close, the fund moves into operational mode. The compliance calendar includes quarterly LP reports, annual SEBI filings, NAV computations, and ongoing governance touchpoints with the trustee.</p>
+
+          <div class="key-takeaway">
+            <div class="key-takeaway-label">Key Takeaway</div>
+            <p>From decision-to-launch, a well-prepared Category II AIF setup takes 6-9 months. Rushing it produces a fund with weak foundations. Done right, the fund infrastructure becomes a competitive advantage in raising the next vintage.</p>
+          </div>
+
+          <h2>What we typically see go wrong</h2>
+          <p>First-time managers most often underestimate three things: the time SEBI takes for clarifications, the complexity of LP-by-LP negotiation on side letters, and the operational burden of running an AIF post-launch. Build slack into your timeline for each of these.</p>
+        `
+      },
+      'iso-vs-soc': {
+        cat: 'Audit &amp; Tech',
+        title: 'ISO 27001 vs SOC 2: Which framework is right for your business?',
+        date: 'November 2024',
+        read: '5 min read',
+        bannerText: 'ISO vs <em>SOC 2</em>',
+        bannerStyle: 'background: linear-gradient(135deg, #2D2D2D 0%, #8C0A20 100%);',
+        relatedKeys: ['dpdp-playbook', 'sebi-reforms', 'ma-diligence'],
+        content: `
+          <p>Walk into any B2B software company in India today and you'll hear the same conversation: "Should we go for ISO 27001 or SOC 2?" Both are widely recognised, both are credible, and both serve as procurement-unblocking certifications. But they are not interchangeable.</p>
+
+          <p>This is a practical, no-jargon comparison of the two frameworks — designed for founders and CTOs making the call.</p>
+
+          <h2>The short answer</h2>
+          <p>ISO 27001 if your customer base is global and includes Europe, Asia-Pacific, and government clients. SOC 2 if your customer base is heavily US-centric. Both, if you sell enterprise software to large clients across geographies.</p>
+
+          <h2>Origins and philosophy</h2>
+          <p><strong>ISO 27001</strong> is an international standard, maintained by the International Organisation for Standardisation. It is a management system standard — you implement an Information Security Management System (ISMS), and the certification confirms that the system exists and functions as designed.</p>
+
+          <p><strong>SOC 2</strong> is an attestation framework, governed by the AICPA in the United States. It is a controls-based framework — you define and document controls against the Trust Services Criteria, and an independent CPA firm attests to how those controls operated.</p>
+
+          <h2>The cost and timeline reality</h2>
+
+          <h3>ISO 27001</h3>
+          <ul>
+            <li><strong>Initial implementation:</strong> 4-6 months for most mid-size businesses</li>
+            <li><strong>Certification audit:</strong> 1-2 months (Stage 1 + Stage 2)</li>
+            <li><strong>Certificate validity:</strong> 3 years, with annual surveillance audits</li>
+            <li><strong>Total first-year cost:</strong> Varies by scope and consultant rates — but well within reach for most VC-backed startups</li>
+          </ul>
+
+          <h3>SOC 2</h3>
+          <ul>
+            <li><strong>Type I (point-in-time):</strong> 2-3 months to prepare, 1 month for audit</li>
+            <li><strong>Type II (period coverage):</strong> Minimum 3-month observation period, often 6 months for first attempt</li>
+            <li><strong>Validity:</strong> Reports are typically refreshed annually</li>
+            <li><strong>Cost:</strong> Audit fees tend to be higher than ISO 27001 surveillance audits, particularly for Type II reports</li>
+          </ul>
+
+          <blockquote>The single biggest variable in either framework's cost is how mature your existing controls are. Companies starting from scratch spend significantly more than those formalising controls they already have.</blockquote>
+
+          <h2>What gets audited</h2>
+
+          <h3>ISO 27001 — Annex A controls</h3>
+          <p>ISO 27001:2022 has 93 controls across four themes: organisational, people, physical, and technological. You select which controls apply, document why others don't (via the Statement of Applicability), and demonstrate operation.</p>
+
+          <h3>SOC 2 — Trust Services Criteria</h3>
+          <p>SOC 2 is built around five Trust Services Criteria: Security (always required), Availability, Processing Integrity, Confidentiality, and Privacy. You choose which apply, and the auditor tests your controls against each.</p>
+
+          <h2>Which one do your customers ask for?</h2>
+          <p>This is the most pragmatic test. If your enterprise sales conversations end with "we'll need to see your ISO certificate", get ISO. If they end with "send over your SOC 2 report", get SOC 2.</p>
+
+          <p>In India today, the dominant pattern is:</p>
+          <ul>
+            <li><strong>Enterprise SaaS targeting US:</strong> SOC 2 Type II</li>
+            <li><strong>Enterprise SaaS targeting Europe / global:</strong> ISO 27001</li>
+            <li><strong>BFSI vendors:</strong> ISO 27001 (often alongside RBI cybersecurity framework)</li>
+            <li><strong>BPO / KPO services:</strong> Both, increasingly</li>
+            <li><strong>Healthcare / fintech:</strong> Both, plus sector-specific requirements</li>
+          </ul>
+
+          <div class="key-takeaway">
+            <div class="key-takeaway-label">Key Takeaway</div>
+            <p>ISO 27001 is broader and more globally recognised — better for international growth. SOC 2 is more US-centric, more controls-prescriptive, and often demanded faster by US procurement teams. If you can only do one, choose based on where your largest deals come from.</p>
+          </div>
+
+          <h2>Can you do both?</h2>
+          <p>Yes — and many companies do. Approximately 70% of ISO 27001 controls overlap with SOC 2 Common Criteria, so the incremental cost of adding the second framework after implementing the first is significantly lower than starting both fresh.</p>
+
+          <p>The typical sequence we recommend: get ISO 27001 first (it's broader and provides a stronger foundation), then layer SOC 2 on top within 12-18 months. This sequence is materially more cost-effective than the reverse.</p>
+        `
+      },
+      'hni-real-estate': {
+        cat: 'Legal',
+        title: 'RERA, FEMA &amp; the HNI: Structuring real estate investments cleanly',
+        date: 'October 2024',
+        read: '6 min read',
+        bannerText: 'RERA &amp; <em>FEMA</em>',
+        bannerStyle: 'background: linear-gradient(135deg, #1a1a1a 0%, #C8102E 100%);',
+        relatedKeys: ['ma-diligence', 'aif-setup', 'sebi-reforms'],
+        content: `
+          <p>For high-net-worth individuals investing in Indian real estate, the regulatory landscape has matured considerably over the past five years. RERA has brought transparency to project delivery; FEMA has clarified the rules for NRI investments; and tax positions on capital gains and reinvestments have firmed up. The net result: cleaner structuring is now both more important and more achievable.</p>
+
+          <p>This article covers the structural choices HNIs and NRIs should weigh before signing the next allotment letter.</p>
+
+          <h2>Why the holding vehicle matters more than the property</h2>
+          <p>Most HNI real estate investments are made in personal capacity by default — the buyer is named individually, and the property sits on the individual's balance sheet. This is rarely the most efficient structure.</p>
+
+          <p>Consider the trade-offs across four common vehicles:</p>
+
+          <h3>Individual ownership</h3>
+          <ul>
+            <li><strong>Pros:</strong> Simplest, no entity-level compliance, full control</li>
+            <li><strong>Cons:</strong> Limited estate planning flexibility, no asset segregation, taxed at slab rates</li>
+          </ul>
+
+          <h3>HUF ownership</h3>
+          <ul>
+            <li><strong>Pros:</strong> Separate tax slab, useful for family wealth pooling</li>
+            <li><strong>Cons:</strong> Rigid governance, succession complexities, declining utility post-Hindu Succession Act amendments</li>
+          </ul>
+
+          <h3>LLP ownership</h3>
+          <ul>
+            <li><strong>Pros:</strong> Asset segregation, partnership-style flexibility, easier succession planning</li>
+            <li><strong>Cons:</strong> Compliance overhead, partner-level taxation complexities, restrictions on FDI in real estate</li>
+          </ul>
+
+          <h3>Private trust</h3>
+          <ul>
+            <li><strong>Pros:</strong> Best for multi-generational planning, creditor protection, estate management</li>
+            <li><strong>Cons:</strong> Higher setup cost, ongoing trustee relationship, taxation depends on trust type</li>
+          </ul>
+
+          <blockquote>The right vehicle depends less on the property and more on what you intend the property to do for you over the next 20 years. Income? Capital appreciation? Family wealth transfer? Each goal favours a different structure.</blockquote>
+
+          <h2>The NRI dimension</h2>
+          <p>For NRI investors, the FEMA overlay adds critical constraints. NRIs can purchase residential and commercial property in India, but agricultural land, plantation property, and farmhouses are off-limits. Repatriation of sale proceeds is subject to specific FEMA rules around timing, source of funds, and maximum repatriable amounts.</p>
+
+          <h3>The source-of-funds question</h3>
+          <p>This is the single most common area of confusion. Funds for property purchase by NRIs must come through normal banking channels — NRE, NRO, or FCNR accounts — and the source must be traceable. Cash-component arrangements that may have been informal in earlier eras now create significant repatriation problems years later.</p>
+
+          <h2>RERA: what hasn't changed enough</h2>
+          <p>RERA was a step change for project transparency, but enforcement remains uneven across states. For HNI buyers, RERA registration is a necessary but not sufficient check. We additionally insist on:</p>
+
+          <ul>
+            <li>Title chain verification independent of the developer's submitted documents</li>
+            <li>Encumbrance certificate covering the full title period</li>
+            <li>NOCs from all relevant authorities (municipal, environmental, fire, water)</li>
+            <li>Verification of the developer's other projects and their delivery track record</li>
+            <li>Confirmation that the project's RERA registration covers the specific phase / tower being purchased</li>
+          </ul>
+
+          <h2>The capital gains piece</h2>
+          <p>Capital gains structuring is the financial flip side of the legal structuring. Long-term capital gains on property can be rolled over into specified investments (other property, bonds), but the windows are narrow and the conditions are technical. Planning this in advance — not at the time of sale — generates significantly better outcomes.</p>
+
+          <div class="key-takeaway">
+            <div class="key-takeaway-label">Key Takeaway</div>
+            <p>Clean HNI real estate structuring is not about finding loopholes — it is about aligning the legal vehicle, the source of funds, and the eventual exit plan from day one. Retrofitting structure later is always harder, more expensive, and less efficient than getting it right at acquisition.</p>
+          </div>
+
+          <h2>One last point on documentation</h2>
+          <p>Across every case where an HNI real estate investment has gone wrong in our experience, the issue has been documentation — not the underlying transaction. Allotment letters that didn't match agreements to sell, payment trails that didn't reconcile with banking records, and side arrangements that were never papered. Spend disproportionately on getting the paperwork right.</p>
+        `
+      }
+    };
+
+    // Article viewer
+    const articleViewer = document.getElementById('articleViewer');
+    const avClose = document.getElementById('avClose');
+
+    function openArticle(key) {
+      const data = articleData[key];
+      if (!data) return;
+
+      document.getElementById('avCat').innerHTML = data.cat;
+      document.getElementById('avTitle').innerHTML = data.title;
+      document.getElementById('avDate').textContent = data.date;
+      document.getElementById('avRead').textContent = data.read;
+      document.getElementById('avBannerText').innerHTML = data.bannerText;
+      document.getElementById('avBanner').setAttribute('style', data.bannerStyle);
+      document.getElementById('avContent').innerHTML = data.content;
+
+      const waMsg = encodeURIComponent('Hi Thinkspire, I read your article "' + data.title.replace(/<[^>]+>/g, '').replace(/&amp;/g,'&') + '" and have a question.');
+      document.getElementById('avCtaWa').href = 'https://wa.me/919819565341?text=' + waMsg;
+
+      // Related articles
+      const relatedHtml = data.relatedKeys.map(k => {
+        const r = articleData[k];
+        if (!r) return '';
+        return '<article class="article-card" onclick="openArticle(\'' + k + '\')">' +
+               '<div class="ac-image" style="' + r.bannerStyle + '">' +
+               '<div class="ac-image-text">' + r.bannerText + '</div>' +
+               '</div>' +
+               '<div class="ac-meta"><span class="ac-cat">' + r.cat + '</span><span>·</span><span>' + r.read + '</span></div>' +
+               '<h3 class="ac-title">' + r.title + '</h3>' +
+               '</article>';
+      }).join('');
+      document.getElementById('avRelated').innerHTML = relatedHtml;
+
+      articleViewer.classList.add('open');
+      articleViewer.scrollTop = 0;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeArticle() {
+      articleViewer.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.article-card[data-article]').forEach(card => {
+      card.addEventListener('click', () => openArticle(card.dataset.article));
+    });
+    avClose.addEventListener('click', closeArticle);
+
   </script>
 </body>
 </html>
