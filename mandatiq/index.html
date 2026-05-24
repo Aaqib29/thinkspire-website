@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ══ PRIMARY SEO ══ -->
+  <title>Mandatiq — IPO Deal Management Platform for SEBI Merchant Bankers</title>
+  <meta name="description" content="Mandatiq is the end-to-end IPO deal management CRM for SEBI-registered Merchant Bankers. Track mandates, DRHP filings, regulatory milestones, client portals and team workflows — from mandate to market listing.">
+  <meta name="keywords" content="merchant banker CRM, IPO deal management software, SEBI compliance software, IPO management platform India, DRHP management, investment banking CRM India, IPO workflow management, merchant banking software, SEBI merchant banker tool, IPO tracking software">
+  <link rel="canonical" href="https://mandatiq.thethinkspire.com/">
+
+  <!-- ══ OPEN GRAPH ══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mandatiq.thethinkspire.com/">
+  <meta property="og:title" content="Mandatiq — IPO Deal Management Platform for SEBI Merchant Bankers">
+  <meta property="og:description" content="The end-to-end IPO deal management CRM built for SEBI-registered Merchant Bankers. Replace spreadsheets and email chains with a structured platform — from mandate intake to listing day.">
+  <meta property="og:image" content="https://mandatiq.thethinkspire.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Mandatiq">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- ══ TWITTER CARD ══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mandatiq — IPO Deal Management for Merchant Bankers">
+  <meta name="twitter:description" content="SEBI-compliant IPO mandate management. Track deals, documents, regulatory milestones and client portals — one platform, from mandate to market.">
+  <meta name="twitter:image" content="https://mandatiq.thethinkspire.com/assets/og-image.png">
+
+  <!-- ══ ADDITIONAL META ══ -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Thinkspire Consultancy LLP">
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="language" content="English">
+  <meta name="theme-color" content="#6366F1">
+
+  <!-- ══ FAVICON (inline SVG) ══ -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 30'><polyline points='2,28 2,16 9,22 18,5 27,22 34,16 34,28' stroke='%236366F1' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='18' cy='5' r='2.8' fill='%236366F1'/></svg>">
+
+  <!-- ══ FONTS ══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ══ STYLES ══ -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- ══ STRUCTURED DATA ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Mandatiq",
+    "description": "End-to-end IPO deal management CRM for SEBI-registered Merchant Bankers. Manages mandate lifecycle from DRHP filing to listing day.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://mandatiq.thethinkspire.com",
+    "author": {
+      "@type": "Organization",
+      "name": "Thinkspire Consultancy LLP",
+      "url": "https://thethinkspire.com",
+      "email": "crm@thethinkspire.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": [
+      "IPO mandate pipeline management",
+      "DRHP document tracking",
+      "SEBI regulatory calendar",
+      "Issuer client portal",
+      "SEBI observation register",
+      "Due diligence issues tracker",
+      "Team role-based access",
+      "Bulk follow-up emails",
+      "Cap table with lock-in tracking",
+      "Export to CSV and PDF"
+    ],
+    "screenshot": "https://mandatiq.thethinkspire.com/assets/screenshot-dashboard.png",
+    "inLanguage": "en-IN",
+    "keywords": "IPO deal management, merchant banker CRM, SEBI compliance software, DRHP management"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Thinkspire Consultancy LLP",
+    "url": "https://thethinkspire.com",
+    "email": "crm@thethinkspire.com",
+    "foundingLocation": "India",
+    "knowsAbout": ["IPO management", "SEBI compliance", "Merchant banking software", "Capital markets technology"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question","name": "Is Mandatiq compliant with SEBI ICDR regulations?","acceptedAnswer": {"@type": "Answer","text": "Yes. Mandatiq is built from the ground up around SEBI ICDR regulations — including Reg 14-18 cap table tracking, SEBI observation register with 30-day Reg 25(3) response tracking, and regulatory calendar milestones aligned to SEBI timelines."}},
+      {"@type": "Question","name": "What types of IPOs does Mandatiq support?","acceptedAnswer": {"@type": "Answer","text": "Mandatiq supports SME IPOs and mainboard IPOs on NSE and BSE. It handles both Category I and Category II SEBI-registered Merchant Bankers, and supports Co-BRLM and syndicate structures."}},
+      {"@type": "Question","name": "How does the issuer client portal work?","acceptedAnswer": {"@type": "Answer","text": "Issuers receive a secure portal link where they can track document status, phase progress, regulatory milestones, and communicate with the deal team — without needing a full user account."}},
+      {"@type": "Question","name": "Can multiple team members access the same mandate?","acceptedAnswer": {"@type": "Answer","text": "Yes. Mandatiq supports role-based access — Org Admin, Admin, and Employee roles — with granular deal-level team assignment. Each team member sees only what they need."}},
+      {"@type": "Question","name": "Where is data stored? Is Mandatiq DPDP Act compliant?","acceptedAnswer": {"@type": "Answer","text": "All data is stored in India on encrypted cloud infrastructure compliant with the Digital Personal Data Protection (DPDP) Act 2023. Deal data, document metadata, and communications are encrypted at rest and in transit. No deal data is transmitted outside Indian jurisdiction."}},
+      {"@type": "Question","name": "How long does onboarding take?","acceptedAnswer": {"@type": "Answer","text": "Most teams are live within one business day. Phase templates, regulatory calendars, and document checklists are pre-configured for standard IPO workflows — you only need to input your deal specifics."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="Mandatiq home">
+    <svg class="nav-mark" viewBox="0 0 36 30" fill="none" aria-hidden="true">
+      <polyline points="2,28 2,16 9,22 18,5 27,22 34,16 34,28"
+        stroke="url(#g1)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="18" cy="5" r="2.8" fill="url(#g1)"/>
+      <defs><linearGradient id="g1" x1="2" y1="5" x2="34" y2="28" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/>
+      </linearGradient></defs>
+    </svg>
+    <span class="nav-word">mandatiq</span>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#workflow">How It Works</a></li>
+    <li><a href="#compliance">Compliance</a></li>
+    <li><a href="#who">Who It's For</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-r">
+    <span class="ts-badge">By Thinkspire</span>
+    <a href="mailto:crm@thethinkspire.com?subject=Mandatiq%20Demo%20Request" class="btn btn-pri btn-sm">Get a Live Demo</a>
+  </div>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav -->
+<div id="mobile-nav" style="display:none;position:fixed;top:64px;left:0;right:0;z-index:499;
+  background:rgba(18,23,43,.98);border-bottom:1px solid rgba(255,255,255,.07);padding:1.5rem 6%">
+  <ul style="list-style:none;display:flex;flex-direction:column;gap:1rem;margin-bottom:1.5rem">
+    <li><a href="#features" style="color:#94A3B8;font-weight:500">Features</a></li>
+    <li><a href="#workflow" style="color:#94A3B8;font-weight:500">How It Works</a></li>
+    <li><a href="#compliance" style="color:#94A3B8;font-weight:500">Compliance</a></li>
+    <li><a href="#who" style="color:#94A3B8;font-weight:500">Who It's For</a></li>
+    <li><a href="#faq" style="color:#94A3B8;font-weight:500">FAQ</a></li>
+  </ul>
+  <a href="mailto:crm@thethinkspire.com?subject=Mandatiq%20Demo%20Request" class="btn btn-pri" style="width:100%;justify-content:center">Get a Live Demo</a>
+</div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<main>
+<section class="hero grid-bg" aria-label="Hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-eyebrow" role="note">
+        <span class="dot" aria-hidden="true"></span>
+        Built for SEBI-Registered Merchant Bankers · India
+      </div>
+      <h1 class="hero-h1">
+        The <span class="grad-text">IPO Deal Management</span><br>Platform for Merchant Bankers.
+      </h1>
+      <p class="hero-sub">
+        Replace spreadsheets and WhatsApp chains with a structured platform
+        that tracks every phase, document, SEBI milestone, and client interaction
+        — from mandate intake to listing day on NSE or BSE.
+      </p>
+      <div class="hero-ctas">
+        <a href="mailto:crm@thethinkspire.com?subject=Mandatiq%20Demo%20Request"
+           class="btn btn-pri btn-lg" aria-label="See Mandatiq on a live deal">
+          See Mandatiq on a Live Deal
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#features" class="btn btn-ghost btn-lg">Explore Features</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          SEBI ICDR Compliant
+        </div>
+        <div class="trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          End-to-End Encrypted
+        </div>
+        <div class="trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Live in &lt;1 Business Day
+        </div>
+        <div class="trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          Data Hosted in India · DPDP Compliant
+        </div>
+        <div class="trust-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          A Thinkspire Product
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HERO SCREENSHOT: Dashboard ── -->
+    <div class="hero-visual fu" aria-label="Mandatiq dashboard preview">
+      <div class="ss-wrap">
+        <div class="ss-chrome">
+          <div class="ss-dots"><span></span><span></span><span></span></div>
+          <div class="ss-urlbar">app.mandatiq.com/dashboard</div>
+        </div>
+        <div class="ss-body">
+          <aside class="ss-sidebar">
+            <div class="ss-s-logo">
+              <div class="ss-s-m">M</div>
+              <span class="ss-s-name">mandatiq</span>
+            </div>
+            <div class="ss-nav-item active">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard
+            </div>
+            <div class="ss-nav-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Deals
+            </div>
+            <div class="ss-nav-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Regulatory
+            </div>
+            <div class="ss-nav-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Team
+            </div>
+          </aside>
+          <main class="ss-main">
+            <div class="ss-topbar">
+              <span class="ss-page-title">Dashboard</span>
+              <span class="ss-btn-sm">+ New Deal</span>
+            </div>
+            <div class="ss-stats">
+              <div class="ss-stat"><div class="ss-stat-val">₹245 Cr</div><div class="ss-stat-lbl">AUM Pipeline</div></div>
+              <div class="ss-stat"><div class="ss-stat-val">8</div><div class="ss-stat-lbl">Active Mandates</div></div>
+              <div class="ss-stat"><div class="ss-stat-val">2</div><div class="ss-stat-lbl">Overdue Docs</div></div>
+            </div>
+            <div class="ss-deals">
+              <div class="ss-deal">
+                <div><div class="ss-deal-name">Aryan BuildCon Ltd.</div><div class="ss-deal-sub">NSE SME · ₹48 Cr</div></div>
+                <span class="ss-badge badge-active">Active</span>
+              </div>
+              <div class="ss-deal">
+                <div><div class="ss-deal-name">TechNova Systems</div><div class="ss-deal-sub">BSE · ₹120 Cr</div></div>
+                <span class="ss-badge badge-filed">Filed</span>
+              </div>
+              <div class="ss-deal">
+                <div><div class="ss-deal-name">GreenPower Energy</div><div class="ss-deal-sub">NSE · ₹77 Cr</div></div>
+                <span class="ss-badge badge-diligence">Due Diligence</span>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-inner">
+    <!-- duplicated for seamless loop -->
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Deal Pipeline Management</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI Regulatory Calendar</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>DRHP Document Tracking</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Issuer Client Portal</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI Observation Register</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Due Diligence Issues Tracker</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cap Table &amp; Lock-in Tracking</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Team Role-Based Access</span>
+    <span class="ticker-sep"></span>
+    <!-- duplicate -->
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Deal Pipeline Management</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI Regulatory Calendar</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>DRHP Document Tracking</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Issuer Client Portal</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI Observation Register</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Due Diligence Issues Tracker</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cap Table &amp; Lock-in Tracking</span>
+    <span class="ticker-sep"></span>
+    <span class="ticker-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Team Role-Based Access</span>
+  </div>
+</div>
+
+<!-- ══ PAIN SECTION ══ -->
+<section class="pain sec" aria-labelledby="pain-h2">
+  <div class="mx">
+    <div class="pain-grid">
+      <div class="fu">
+        <span class="sec-label">The Problem</span>
+        <h2 id="pain-h2">India's IPO mandates run on Excel.<br><span class="grad-text">That's the problem.</span></h2>
+        <p style="color:var(--muted2);font-size:1.02rem;margin:1.25rem 0 2rem;max-width:460px;line-height:1.8">
+          SEBI-registered Merchant Bankers manage hundreds of crores in public issuances every year.
+          One missed SEBI deadline can mean an observation letter, a delayed listing,
+          or a regulatory notice. Yet most firms still use spreadsheets and email chains.
+        </p>
+        <blockquote class="pain-quote">"We were tracking 6 live mandates across 4 spreadsheets, 3 email threads and 2 WhatsApp groups. Something had to give."</blockquote>
+        <div class="pain-stats" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+          <div><div class="pain-stat" data-count="7" data-suffix="" aria-label="7 SEBI milestones">7</div><div style="font-size:.8rem;color:var(--muted)">SEBI milestones per IPO to track</div></div>
+          <div><div class="pain-stat" data-count="30" data-suffix=" days" aria-label="30 day response window">30 days</div><div style="font-size:.8rem;color:var(--muted)">SEBI observation response window</div></div>
+          <div><div class="pain-stat" data-count="100" data-suffix="+" aria-label="100+ documents">100+</div><div style="font-size:.8rem;color:var(--muted)">Documents per mandate</div></div>
+        </div>
+      </div>
+      <ul class="pain-items fu" aria-label="Problems Mandatiq solves">
+        <li class="pain-item">
+          <svg class="x-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+          No single view of all active mandates — status scattered across emails and files
+        </li>
+        <li class="pain-item">
+          <svg class="x-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+          SEBI observation deadlines missed because no one owns the regulatory calendar
+        </li>
+        <li class="pain-item">
+          <svg class="x-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+          Document versions exchanged over email with no audit trail for SEBI compliance
+        </li>
+        <li class="pain-item">
+          <svg class="x-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+          No dedicated portal — issuer clients call the banker to ask for status updates
+        </li>
+        <li class="pain-item">
+          <svg class="x-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+          SEBI observations, DD issues, and cap table data living in separate, disconnected files
+        </li>
+        <li class="pain-item">
+          <svg class="x-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+          When a deal team member leaves, institutional knowledge walks out with them
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURE SHOWCASE 1: Deal Pipeline ══ -->
+<section class="feat-show sec" id="features" aria-labelledby="fs1-h2">
+  <div class="mx">
+    <div class="fs-grid">
+      <div class="fs-text fu">
+        <span class="sec-label">Deal Pipeline</span>
+        <h2 id="fs1-h2">Every mandate.<br>One view.</h2>
+        <p>See all your active IPO mandates — sector, exchange, issue size, status, deal lead, and current phase — in a single, structured pipeline. No more hunting across spreadsheets to answer "where is the TechNova deal right now?"</p>
+        <div class="fs-points">
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Fresh, OFS, and combination issue types</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>NSE, BSE, NSE SME, BSE SME exchanges</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Price band, valuation, registrar, co-BRLM</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Status: draft → active → diligence → filed → listed</div>
+        </div>
+      </div>
+      <!-- Screenshot: Deal list -->
+      <div class="fu fu-d1">
+        <div class="ss-wrap">
+          <div class="ss-chrome">
+            <div class="ss-dots"><span></span><span></span><span></span></div>
+            <div class="ss-urlbar">app.mandatiq.com/deals</div>
+          </div>
+          <div class="ss-body">
+            <aside class="ss-sidebar">
+              <div class="ss-s-logo"><div class="ss-s-m">M</div><span class="ss-s-name">mandatiq</span></div>
+              <div class="ss-nav-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</div>
+              <div class="ss-nav-item active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Deals</div>
+            </aside>
+            <main class="ss-main">
+              <div class="ss-topbar">
+                <span class="ss-page-title">All Deals</span>
+                <span class="ss-btn-sm">+ New Deal</span>
+              </div>
+              <div class="ss-deals">
+                <div class="ss-deal"><div><div class="ss-deal-name">Aryan BuildCon Ltd.</div><div class="ss-deal-sub">NSE SME · Fresh Issue · ₹48 Cr · BRLM Lead</div></div><span class="ss-badge badge-active">Active</span></div>
+                <div class="ss-deal"><div><div class="ss-deal-name">TechNova Systems Pvt Ltd</div><div class="ss-deal-sub">BSE · Combination · ₹120 Cr · Co-BRLM</div></div><span class="ss-badge badge-filed">Filed</span></div>
+                <div class="ss-deal"><div><div class="ss-deal-name">GreenPower Energy Ltd</div><div class="ss-deal-sub">NSE · OFS · ₹77 Cr · BRLM Lead</div></div><span class="ss-badge badge-diligence">Due Diligence</span></div>
+                <div class="ss-deal"><div><div class="ss-deal-name">Medicare Pharma Ltd</div><div class="ss-deal-sub">NSE SME · Fresh · ₹35 Cr · BRLM Lead</div></div><span class="ss-badge" style="background:rgba(251,146,60,.15);color:#FB923C">Roadshow</span></div>
+                <div class="ss-deal"><div><div class="ss-deal-name">Stellar Logistics Corp</div><div class="ss-deal-sub">BSE · Fresh Issue · ₹62 Cr · Co-BRLM</div></div><span class="ss-badge" style="background:rgba(100,116,139,.15);color:#94A3B8">Draft</span></div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURE SHOWCASE 2: Regulatory Calendar ══ -->
+<section class="feat-show alt sec" aria-labelledby="fs2-h2">
+  <div class="mx">
+    <div class="fs-grid rev">
+      <!-- Screenshot: Regulatory Calendar -->
+      <div class="fu">
+        <div class="ss-wrap">
+          <div class="ss-chrome">
+            <div class="ss-dots"><span></span><span></span><span></span></div>
+            <div class="ss-urlbar">app.mandatiq.com/deals/aryan-buildcon/regulatory</div>
+          </div>
+          <div class="ss-body">
+            <aside class="ss-sidebar">
+              <div class="ss-s-logo"><div class="ss-s-m">M</div><span class="ss-s-name">mandatiq</span></div>
+              <div class="ss-nav-item active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Regulatory</div>
+            </aside>
+            <main class="ss-main">
+              <div class="ss-topbar"><span class="ss-page-title">Regulatory Calendar — Aryan BuildCon</span></div>
+              <div class="ss-cal">
+                <div class="ss-cal-row"><div class="ss-cal-dot" style="background:#6366F1"></div><span class="ss-cal-name">DRHP Filed with SEBI</span><span class="ss-cal-date">12 Jan 2025 ✓</span></div>
+                <div class="ss-cal-row"><div class="ss-cal-dot" style="background:#60A5FA"></div><span class="ss-cal-name">SEBI Observation Letter</span><span class="ss-cal-date">14 Feb 2025 ✓</span></div>
+                <div class="ss-cal-row" style="border:1px solid rgba(99,102,241,.4);border-radius:8px"><div class="ss-cal-dot" style="background:#F59E0B"></div><span class="ss-cal-name" style="color:#F59E0B;font-weight:600">RHP Filing — Due in 8 days</span><span class="ss-cal-date" style="color:#F59E0B">22 Feb 2025</span></div>
+                <div class="ss-cal-row"><div class="ss-cal-dot" style="background:rgba(255,255,255,.2)"></div><span class="ss-cal-name" style="color:var(--muted)">Subscription Opens</span><span class="ss-cal-date" style="color:var(--muted)">TBD</span></div>
+                <div class="ss-cal-row"><div class="ss-cal-dot" style="background:rgba(255,255,255,.2)"></div><span class="ss-cal-name" style="color:var(--muted)">Subscription Closes</span><span class="ss-cal-date" style="color:var(--muted)">TBD</span></div>
+                <div class="ss-cal-row"><div class="ss-cal-dot" style="background:rgba(255,255,255,.2)"></div><span class="ss-cal-name" style="color:var(--muted)">Allotment</span><span class="ss-cal-date" style="color:var(--muted)">TBD</span></div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div class="fs-text fu fu-d1">
+        <span class="sec-label">Regulatory Calendar</span>
+        <h2 id="fs2-h2">Never miss a<br>SEBI deadline again.</h2>
+        <p>Mandatiq auto-populates 7 SEBI regulatory milestones for every deal the moment you enter the DRHP filing date. Deadlines are tracked in real-time, colour-coded by urgency, and trigger automatic reminders before they come due.</p>
+        <div class="fs-points">
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>DRHP → Observation → RHP → Subscription → Allotment → Listing</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Automated cron reminders at 7-day and 2-day warnings</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI observation 30-day Reg 25(3) countdown</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>All milestones visible on the main dashboard</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURE SHOWCASE 3: Client Portal ══ -->
+<section class="feat-show sec" aria-labelledby="fs3-h2">
+  <div class="mx">
+    <div class="fs-grid">
+      <div class="fs-text fu">
+        <span class="sec-label">Issuer Client Portal</span>
+        <h2 id="fs3-h2">Your client stays informed.<br>Without calling you.</h2>
+        <p>Give your issuer company a dedicated portal where they can see exactly where their IPO stands — which documents are received, which are pending, what the next regulatory milestone is, and how to send you a message. Your phone stops ringing for status updates.</p>
+        <div class="fs-points">
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Phase progress bar with percentage complete</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>"Next Action" card — always tells the client what to do next</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Secure messaging to the deal team</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Red alerts for overdue documents that need attention</div>
+        </div>
+      </div>
+      <!-- Screenshot: Client Portal -->
+      <div class="fu fu-d1">
+        <div class="ss-wrap">
+          <div class="ss-chrome">
+            <div class="ss-dots"><span></span><span></span><span></span></div>
+            <div class="ss-urlbar">portal.mandatiq.com/aryan-buildcon</div>
+          </div>
+          <div class="ss-body" style="grid-template-columns:1fr">
+            <main class="ss-main" style="padding:1.25rem">
+              <div class="ss-topbar" style="margin-bottom:.875rem">
+                <span class="ss-page-title">Aryan BuildCon Ltd. — IPO Portal</span>
+              </div>
+              <div class="ss-portal-prog">
+                <div class="ss-prog-label"><span>Overall Progress</span><span style="color:var(--pri2);font-weight:600">62%</span></div>
+                <div class="ss-prog-bar"><div class="ss-prog-fill" style="width:62%"></div></div>
+              </div>
+              <div class="ss-next-action">
+                <div class="ss-na-label">⚡ Next Action Required</div>
+                <div class="ss-na-text">Submit Board Resolution for IPO (Phase 1 · Overdue)</div>
+              </div>
+              <div class="ss-phase-list">
+                <div class="ss-phase">
+                  <div class="ss-phase-hd"><span class="ss-phase-name">Phase 1 — Due Diligence</span><span class="ss-badge badge-active" style="font-size:.6rem">In Progress</span></div>
+                  <div class="ss-phase-prog"><div class="ss-phase-fill" style="width:75%"></div></div>
+                  <div class="ss-docs"><span class="ss-doc done">MOA ✓</span><span class="ss-doc done">Financials ✓</span><span class="ss-doc">Board Res.</span><span class="ss-doc done">PAN ✓</span></div>
+                </div>
+                <div class="ss-phase">
+                  <div class="ss-phase-hd"><span class="ss-phase-name">Phase 2 — DRHP Preparation</span><span class="ss-badge" style="background:rgba(100,116,139,.15);color:#94A3B8;font-size:.6rem">Upcoming</span></div>
+                  <div class="ss-phase-prog"><div class="ss-phase-fill" style="width:0%"></div></div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURE SHOWCASE 4: SEBI Compliance ══ -->
+<section class="feat-show alt sec" aria-labelledby="fs4-h2">
+  <div class="mx">
+    <div class="fs-grid rev">
+      <!-- Screenshot: SEBI Observation register -->
+      <div class="fu">
+        <div class="ss-wrap">
+          <div class="ss-chrome">
+            <div class="ss-dots"><span></span><span></span><span></span></div>
+            <div class="ss-urlbar">app.mandatiq.com/deals/technova/sebi-observations</div>
+          </div>
+          <div class="ss-body" style="grid-template-columns:1fr">
+            <main class="ss-main" style="padding:1.25rem">
+              <div class="ss-topbar"><span class="ss-page-title">SEBI Observations — TechNova</span><span class="ss-btn-sm">+ Add Observation</span></div>
+              <div style="display:flex;flex-direction:column;gap:.625rem;margin-bottom:.875rem">
+                <div style="background:var(--bg2);border:1px solid rgba(239,68,68,.25);border-radius:8px;padding:.875rem">
+                  <div style="display:flex;justify-content:space-between;margin-bottom:.375rem">
+                    <span style="font-size:.75rem;font-weight:600;color:#F87171">Observation #1 · Open</span>
+                    <span style="font-family:'Space Mono',monospace;font-size:.65rem;color:#F87171">18 days remaining</span>
+                  </div>
+                  <div style="font-size:.78rem;color:var(--text)">Clarification required on related party transactions FY23-24</div>
+                  <div style="font-size:.65rem;color:var(--muted);margin-top:.375rem">Ref: SEBI/HO/CFD/2025/0081 · Received: 22 Jan 2025</div>
+                </div>
+                <div style="background:var(--bg2);border:1px solid rgba(34,197,94,.2);border-radius:8px;padding:.875rem">
+                  <div style="display:flex;justify-content:space-between;margin-bottom:.375rem">
+                    <span style="font-size:.75rem;font-weight:600;color:#4ADE80">Observation #2 · Responded</span>
+                    <span style="font-family:'Space Mono',monospace;font-size:.65rem;color:#4ADE80">Closed</span>
+                  </div>
+                  <div style="font-size:.78rem;color:var(--text)">Promoter group shareholding disclosure gap — Section III</div>
+                </div>
+              </div>
+              <div style="background:var(--bg2);border:1px solid var(--bd);border-radius:8px;padding:.875rem">
+                <div style="font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pri2);margin-bottom:.625rem">DD Issues</div>
+                <div style="display:flex;flex-direction:column;gap:.375rem">
+                  <div style="display:flex;gap:.5rem;align-items:center"><span style="width:8px;height:8px;border-radius:50%;background:#F87171;flex-shrink:0"></span><span style="font-size:.75rem;color:var(--text)">Legal — Pending NCLT order (High)</span></div>
+                  <div style="display:flex;gap:.5rem;align-items:center"><span style="width:8px;height:8px;border-radius:50%;background:#FB923C;flex-shrink:0"></span><span style="font-size:.75rem;color:var(--text)">Financial — FY22 audit qualification (Medium)</span></div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+      <div class="fs-text fu fu-d1">
+        <span class="sec-label">SEBI Compliance Suite</span>
+        <h2 id="fs4-h2">SEBI compliance<br>is not an afterthought.</h2>
+        <p>Mandatiq is the only IPO workflow tool designed around SEBI ICDR regulations from the ground up — not a generic project management tool adapted for banking. Every observation, every DD issue, every cap table entry tracked exactly as the regulations require.</p>
+        <div class="fs-points">
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI observation register with Reg 25(3) 30-day tracking</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>DD issues log by area: legal, financial, regulatory, operational</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cap table with promoter lock-in (18m &amp; 6m) per ICDR Reg 14-18</div>
+          <div class="fs-point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Immutable activity log — every action timestamped and attributed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FULL FEATURES GRID ══ -->
+<section class="features-all sec" aria-labelledby="fa-h2">
+  <div class="fa-head fu">
+    <span class="sec-label">All Features</span>
+    <h2 id="fa-h2">Everything you need.<br>Nothing you don't.</h2>
+    <p>Built specifically for Indian IPO workflows. Every feature exists because a merchant banker asked for it.</p>
+  </div>
+  <div class="fa-grid">
+    <article class="fac fu">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+      <h3>Deal Pipeline</h3>
+      <p>All mandates, all stages, one view. Filter by status, sector, exchange, or deal lead.</p>
+    </article>
+    <article class="fac fu fu-d1">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <h3>Document Tracking</h3>
+      <p>Phase-based document checklists. Mark received, flag overdue, attach notes — with full version history.</p>
+    </article>
+    <article class="fac fu fu-d2">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+      <h3>Regulatory Calendar</h3>
+      <p>7 SEBI milestones auto-tracked per deal. Deadline alerts 7 days and 2 days before.</p>
+    </article>
+    <article class="fac fu fu-d3">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+      <h3>Client Portal</h3>
+      <p>Issuer company gets their own portal — progress bar, next action, document status, messaging.</p>
+    </article>
+    <article class="fac fu fu-d4">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3>SEBI Observation Register</h3>
+      <p>Track observation reference numbers, due dates, response status — with 30-day countdown.</p>
+    </article>
+    <article class="fac fu fu-d5">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      <h3>DD Issues Tracker</h3>
+      <p>Log due diligence issues by area and severity. Track status from open to resolved or waived.</p>
+    </article>
+    <article class="fac fu">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3>Live Dashboard</h3>
+      <p>AUM pipeline, active deal count, overdue documents, this week's regulatory events — one screen.</p>
+    </article>
+    <article class="fac fu fu-d1">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <h3>Bulk Follow-ups</h3>
+      <p>Send HTML follow-up emails to multiple clients across phases with one action. Full email log.</p>
+    </article>
+    <article class="fac fu fu-d2">
+      <div class="fac-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+      <h3>Export &amp; Reports</h3>
+      <p>One-click export to Excel-compatible CSV or print-ready PDF for partner reviews and SEBI submissions.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="hiw sec" id="workflow" aria-labelledby="hiw-h2">
+  <div class="mx">
+    <div class="hiw-head fu">
+      <span class="sec-label">How It Works</span>
+      <h2 id="hiw-h2">The IPO lifecycle,<br>structured end-to-end</h2>
+      <p style="color:var(--muted2);margin:.875rem auto 0;max-width:460px;font-size:1.02rem">Four steps. One platform. Zero missed deadlines.</p>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step fu">
+        <div class="hiw-num">01</div>
+        <h3>Intake the Mandate</h3>
+        <p>Create the deal, set the exchange, issue type, valuation, and price band. Assign your team and load phase templates in seconds.</p>
+      </div>
+      <div class="hiw-step fu fu-d1">
+        <div class="hiw-num">02</div>
+        <h3>Run Due Diligence</h3>
+        <p>Track every document across structured DD phases. Log issues by area and severity. Flag what's overdue and who owns it.</p>
+      </div>
+      <div class="hiw-step fu fu-d2">
+        <div class="hiw-num">03</div>
+        <h3>Manage SEBI Filing</h3>
+        <p>Regulatory calendar auto-populates from DRHP date. Track observation letters, response drafts, and every SEBI interaction.</p>
+      </div>
+      <div class="hiw-step fu fu-d3">
+        <div class="hiw-num">04</div>
+        <h3>Close the Listing</h3>
+        <p>Subscription tracking, allotment, listing day close. Complete audit trail archived from mandate letter to market debut.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ COMPLIANCE DEEP DIVE ══ -->
+<section class="compliance-sec sec" id="compliance" aria-labelledby="comp-h2">
+  <div class="mx">
+    <div class="comp-grid">
+      <div class="comp-left fu">
+        <span class="sec-label">Regulatory Depth</span>
+        <h2 id="comp-h2">Built around SEBI.<br>Not adapted for it.</h2>
+        <p>Most workflow tools are generic project management software "adapted" for banking. Mandatiq was designed from day one around SEBI ICDR — every field, every workflow, every alert exists because it maps to a real regulatory requirement.</p>
+        <div class="comp-checks">
+          <div class="comp-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>SEBI observation register with 30-day Reg 25(3) countdown</div>
+          <div class="comp-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cap table with promoter pre/post-IPO % — lock-in 18m &amp; 6m per ICDR Reg 14-18</div>
+          <div class="comp-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Co-BRLM, registrar, and syndicate tracking per mandate</div>
+          <div class="comp-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Automated reminders before every SEBI milestone due date</div>
+          <div class="comp-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Immutable activity log — every action timestamped, attributed, permanent</div>
+          <div class="comp-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Separate JWT-secured client portal — no issuer access to internal deal data</div>
+        </div>
+      </div>
+      <div class="fu fu-d1">
+        <div class="cal-card">
+          <div class="cal-title">SEBI Regulatory Milestone Tracker</div>
+          <div class="ms-row"><div class="ms-dot" style="background:#6366F1"></div><span class="ms-name">DRHP Filed with SEBI</span><span class="ms-chip">Day 0</span></div>
+          <div class="ms-row"><div class="ms-dot" style="background:#60A5FA"></div><span class="ms-name">SEBI Observation Letter</span><span class="ms-chip">~30 days</span></div>
+          <div class="ms-row"><div class="ms-dot" style="background:#A78BFA"></div><span class="ms-name">RHP Filed with ROC</span><span class="ms-chip">Post-obs.</span></div>
+          <div class="ms-row"><div class="ms-dot" style="background:#34D399"></div><span class="ms-name">Subscription Opens</span><span class="ms-chip">IPO Launch</span></div>
+          <div class="ms-row"><div class="ms-dot" style="background:#34D399"></div><span class="ms-name">Subscription Closes</span><span class="ms-chip">T+2</span></div>
+          <div class="ms-row"><div class="ms-dot" style="background:#FB923C"></div><span class="ms-name">Allotment Finalised</span><span class="ms-chip">T+4</span></div>
+          <div class="ms-row"><div class="ms-dot" style="background:#6366F1"></div><span class="ms-name">Listing Day</span><span class="ms-chip">T+6</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHO IT'S FOR ══ -->
+<section class="forw sec" id="who" aria-labelledby="who-h2">
+  <div class="mx">
+    <div class="forw-head fu">
+      <span class="sec-label">Who It's For</span>
+      <h2 id="who-h2">Purpose-built for<br>India's IPO ecosystem</h2>
+      <p>Not a generic CRM configured for banking. A platform built specifically for the professionals who take companies public on Indian exchanges.</p>
+    </div>
+    <div class="who-cards">
+      <article class="who-card fu">
+        <div class="who-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3>Merchant Banking Firms</h3>
+        <p>SEBI-registered Category I &amp; II BRLMs running SME and mainboard IPO mandates on NSE &amp; BSE. From boutique advisory to full-service investment banks.</p>
+      </article>
+      <article class="who-card fu fu-d1">
+        <div class="who-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Compliance &amp; Legal Officers</h3>
+        <p>Track SEBI observations, manage the DD issues log, and maintain the complete audit trail required for regulatory submissions — all in one place.</p>
+      </article>
+      <article class="who-card fu fu-d2">
+        <div class="who-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Deal Teams</h3>
+        <p>Analysts, associates, VPs, and MDs — each with role-based access to exactly the deals, phases, and documents they own. No more shared mailboxes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="faq-sec sec" id="faq" aria-labelledby="faq-h2">
+  <div class="faq-grid">
+    <div class="fu">
+      <span class="sec-label">FAQ</span>
+      <h2 id="faq-h2">Questions<br>answered.</h2>
+      <p style="color:var(--muted2);font-size:1rem;line-height:1.8;margin-top:1rem">
+        Everything you need to know before you book a demo. If your question isn't here, email us at
+        <a href="mailto:crm@thethinkspire.com" style="color:var(--pri2)">crm@thethinkspire.com</a>.
+      </p>
+    </div>
+    <div class="faq-list fu fu-d1" role="list">
+      <div class="faq-item" role="listitem">
+        <div class="faq-q">Is Mandatiq compliant with SEBI ICDR regulations?
+          <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner" style="padding-top:1rem">Yes. Mandatiq is designed from the ground up around SEBI ICDR regulations — including Reg 14-18 cap table and lock-in tracking, SEBI observation register with Reg 25(3) 30-day response tracking, and regulatory calendar milestones aligned to SEBI timelines. It is not a generic CRM adapted for IPOs.</div></div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q">What types of IPOs does it support?
+          <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner" style="padding-top:1rem">Mandatiq supports SME IPOs and mainboard IPOs on NSE and BSE, including NSE SME and BSE SME segments. It handles fresh issues, OFS, and combination issues, and supports BRLM, Co-BRLM, and syndicate structures.</div></div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q">How does the issuer client portal work?
+          <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner" style="padding-top:1rem">You invite the issuer company with a single email. They get a secure, password-protected portal where they can track document status across phases, see their regulatory calendar, view a "Next Action" card showing exactly what they need to submit, and message your deal team directly — without seeing any internal team notes or other client data.</div></div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q">Can multiple team members access the same mandate?
+          <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner" style="padding-top:1rem">Yes. Mandatiq has full role-based access — Org Admin, Admin, and Employee roles — with deal-level team assignment. Each team member is assigned to specific deals and sees the phases and documents relevant to their role. You can have unlimited team members.</div></div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q">Where is data stored? Is Mandatiq DPDP Act compliant?
+          <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner" style="padding-top:1rem">All data is stored in India on encrypted cloud infrastructure compliant with the Digital Personal Data Protection (DPDP) Act 2023. Deal data, document metadata, and client communications are encrypted at rest (AES-256) and in transit (TLS 1.3). No deal data is transmitted outside Indian jurisdiction — a key procurement requirement for regulated Merchant Banker workflows.</div></div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <div class="faq-q">How long does it take to go live?
+          <div class="faq-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner" style="padding-top:1rem">Most teams are live within one business day. Phase templates, regulatory calendars, and document checklists are pre-configured for standard IPO workflows — you only need to enter your current deal specifics. Our team will walk you through onboarding in the demo call.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="cta-final" aria-labelledby="cta-h2">
+  <div class="cta-box fu">
+    <span class="sec-label" style="justify-content:center">Get Started Today</span>
+    <h2 id="cta-h2">Stop managing IPOs<br>on spreadsheets.</h2>
+    <p>See Mandatiq run a complete IPO mandate in 30 minutes — from intake to listing day. Data hosted in India. DPDP Act 2023 compliant. No commitment required.</p>
+    <div class="cta-btns">
+      <a href="mailto:crm@thethinkspire.com?subject=Mandatiq%20Demo%20Request" class="btn btn-pri btn-lg">
+        See It on a Live Deal
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="mailto:crm@thethinkspire.com?subject=Mandatiq%20Enquiry" class="btn btn-ghost btn-lg">Contact Sales</a>
+    </div>
+    <p class="cta-sub">Write to us at <a href="mailto:crm@thethinkspire.com">crm@thethinkspire.com</a> · Response within 1 business day</p>
+  </div>
+</section>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer role="contentinfo">
+  <div class="ft-top">
+    <div class="ft-brand-col">
+      <div class="ft-logo">
+        <svg width="30" height="25" viewBox="0 0 36 30" fill="none" aria-hidden="true">
+          <polyline points="2,28 2,16 9,22 18,5 27,22 34,16 34,28"
+            stroke="url(#gf)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="18" cy="5" r="2.8" fill="url(#gf)"/>
+          <defs><linearGradient id="gf" x1="2" y1="5" x2="34" y2="28" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/>
+          </linearGradient></defs>
+        </svg>
+        <span class="ft-word">mandatiq</span>
+      </div>
+      <p class="ft-desc">The end-to-end IPO deal management platform for SEBI-registered Merchant Bankers. From mandate to market.</p>
+      <div class="ft-ts">A product by <strong>Thinkspire Consultancy LLP</strong></div>
+    </div>
+    <div class="ft-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#workflow">How It Works</a></li>
+        <li><a href="#compliance">Compliance</a></li>
+        <li><a href="#who">Who It's For</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="#features">IPO Deal Pipeline</a></li>
+        <li><a href="#features">Regulatory Calendar</a></li>
+        <li><a href="#features">Client Portal</a></li>
+        <li><a href="#compliance">SEBI Compliance</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="https://thethinkspire.com">Thinkspire</a></li>
+        <li><a href="mailto:crm@thethinkspire.com">Contact Us</a></li>
+        <li><a href="mailto:crm@thethinkspire.com?subject=Mandatiq%20Demo%20Request">Book a Demo</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p class="ft-copy">© 2026 Mandatiq. A product of Thinkspire Consultancy LLP. All rights reserved.</p>
+    <p class="ft-legal">
+      <a href="mailto:crm@thethinkspire.com">crm@thethinkspire.com</a>
+    </p>
+  </div>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
